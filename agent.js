@@ -1,4 +1,3 @@
-import OpenAI from "openai";
 import { jsonrepair } from "jsonrepair";
 import { buildSystemPrompt } from "./prompt.js";
 import { executeTool } from "./tools/executor.js";
@@ -93,13 +92,10 @@ import { getDecisionSummary } from "./decision-log.js";
 
 // Supports OpenRouter (default) or any OpenAI-compatible local server (e.g. LM Studio)
 // To use LM Studio: set LLM_BASE_URL=http://localhost:1234/v1 and LLM_API_KEY=lm-studio in .env
-const client = new OpenAI({
-  baseURL: process.env.LLM_BASE_URL || "https://openrouter.ai/api/v1",
-  apiKey: process.env.LLM_API_KEY || process.env.OPENROUTER_API_KEY,
-  timeout: 5 * 60 * 1000,
-});
+// Multi-key rotation: see llm-keys.js for pool / cooldown handling.
+import { getClient as getLlmClient, markRateLimited as markLlmRateLimited, getKeyCount as getLlmKeyCount } from "./llm-keys.js";
 
-const DEFAULT_MODEL = process.env.LLM_MODEL || "openrouter/healer-alpha";
+const DEFAULT_MODEL = process.env.LLM_MODEL || config.llm.generalModel || "MiniMax-M2.7";
 
 const MUTATING_TOOL_INTENTS = /\b(deploy|open position|add liquidity|lp into|invest in|close|exit|withdraw|remove liquidity|claim|harvest|collect|swap|convert|sell|exchange|block|unblock|blacklist|add smart wallet|remove smart wallet|add wallet|remove wallet|pin|unpin|clear lesson|add lesson|set active strategy|remove strategy|add strategy|set |change |update |self.?update|pull latest|git pull|update yourself)\b/i;
 const LIVE_DATA_TOOL_INTENTS = /\b(balance|wallet|position|portfolio|pnl|yield|range|show positions|open positions|screen|candidate|find pool|search|research|analyze|check pool|token holders|narrative|study top|top lpers?|lp behavior|who.?s lping|performance|history|stats|report|list smart wallets|list blacklist|list blocked deployers|list lessons)\b/i;
@@ -188,16 +184,20 @@ export async function agentLoop(goal, maxSteps = config.llm.maxSteps, sessionHis
       const activeModel = model || DEFAULT_MODEL;
 
       // Retry up to 3 times on transient provider errors (502, 503, 529)
-      const FALLBACK_MODEL = "stepfun/step-3.5-flash:free";
+      const FALLBACK_MODEL = "MiniMax-M2.7-highspeed";
       let response;
       let usedModel = activeModel;
       // Force a tool call on step 0 for action intents — prevents the model from inventing deploy/close outcomes
       const ACTION_INTENTS = /\b(deploy|open|add liquidity|close|exit|withdraw|claim|swap|block|unblock)\b/i;
       let toolChoice = (step === 0 && (ACTION_INTENTS.test(goal) || mustUseRealTool)) ? "required" : "auto";
 
-      for (let attempt = 0; attempt < 3; attempt++) {
+      // Allow up to (3 + keyCount) attempts so each key in the pool gets a fair shot on 429.
+      const maxAttempts = Math.max(3, 3 + getLlmKeyCount());
+      let activeKeyEntry = null;
+      for (let attempt = 0; attempt < maxAttempts; attempt++) {
         try {
-          response = await client.chat.completions.create({
+          activeKeyEntry = getLlmClient();
+          response = await activeKeyEntry.client.chat.completions.create({
             model: usedModel,
             messages,
             tools: getToolsForRole(agentType, goal),
@@ -206,6 +206,27 @@ export async function agentLoop(goal, maxSteps = config.llm.maxSteps, sessionHis
             max_tokens: maxOutputTokens ?? config.llm.maxTokens,
           });
         } catch (error) {
+          if (error?.status === 429 || /rate.?limit|quota/i.test(error?.message || "")) {
+            markLlmRateLimited(activeKeyEntry);
+            if (getLlmKeyCount() > 1) {
+              attempt -= 1; // rotation doesn't count against transient-error budget
+              continue;
+            }
+            // Single-key mode: fall through to outer retry which sleeps 30s
+            throw error;
+          }
+          if (error?.status === 403 || error?.status === 401) {
+            // Permission/quota issue — likely revoked, daily-quota-exceeded, or region-blocked.
+            // Park the key for an hour and rotate. Gives bad keys a chance to recover (e.g. quota reset)
+            // without burning every retry attempt on the same broken key.
+            markLlmRateLimited(activeKeyEntry, 60 * 60 * 1000);
+            log("agent", `Key ${activeKeyEntry?.mask} returned ${error.status} — parking 1h, rotating`);
+            if (getLlmKeyCount() > 1) {
+              attempt -= 1;
+              continue;
+            }
+            throw error;
+          }
           if (providerMode === "system" && isSystemRoleError(error)) {
             providerMode = "user_embedded";
             messages = buildMessages(systemPrompt, sessionHistory, goal, providerMode);
@@ -213,11 +234,41 @@ export async function agentLoop(goal, maxSteps = config.llm.maxSteps, sessionHis
             attempt -= 1;
             continue;
           }
-          if (toolChoice === "required" && isToolChoiceRequiredError(error)) {
+          if (toolChoice === "required" && (isToolChoiceRequiredError(error) || error?.status === 400)) {
             toolChoice = "auto";
-            log("agent", "Provider rejected tool_choice=required — retrying with tool_choice=auto");
+            log("agent", `Provider rejected tool_choice=required (status ${error?.status ?? "?"}) — retrying with tool_choice=auto`);
             attempt -= 1;
             continue;
+          }
+          if (error?.status === 400 && providerMode === "system") {
+            // Some Gemini paths return empty-body 400 when system role + long content combo
+            // confuses the OpenAI-compat layer. Try user-embedded as a graceful degradation.
+            providerMode = "user_embedded";
+            messages = buildMessages(systemPrompt, sessionHistory, goal, providerMode);
+            log("agent", `400 from ${activeKeyEntry?.mask} — retrying with embedded user role`);
+            attempt -= 1;
+            continue;
+          }
+          if (error?.status === 400) {
+            // Final 400 diagnostic: surface whatever body the provider returned
+            const bodyHint = error?.error?.message || error?.response?.data || error?.cause?.message || "(empty)";
+            log("agent_error", `400 from ${activeKeyEntry?.mask}: ${String(bodyHint).slice(0, 300)}`);
+            // Also dump the request body to a file for offline diagnosis. Limited to 1 file
+            // (overwrites each time) so we don't fill disk.
+            try {
+              const { writeFileSync } = await import("fs");
+              writeFileSync("./last-400-request.json", JSON.stringify({
+                model: usedModel,
+                messages,
+                toolCount: getToolsForRole(agentType, goal).length,
+                tool_choice: toolChoice,
+                providerMode,
+                temperature: config.llm.temperature,
+                max_tokens: maxOutputTokens ?? config.llm.maxTokens,
+                error: { status: error?.status, message: error?.message },
+              }, null, 2));
+              log("agent_error", "Wrote failing request to ./last-400-request.json for inspection");
+            } catch { /* ignore */ }
           }
           throw error;
         }

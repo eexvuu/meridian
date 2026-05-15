@@ -36,7 +36,18 @@ if (u.rpcUrl)    process.env.RPC_URL            ||= u.rpcUrl;
 if (u.walletKey) process.env.WALLET_PRIVATE_KEY ||= u.walletKey;
 if (u.llmModel)  process.env.LLM_MODEL          ||= u.llmModel;
 if (u.llmBaseUrl) process.env.LLM_BASE_URL      ||= u.llmBaseUrl;
-if (u.llmApiKey)  process.env.LLM_API_KEY       ||= u.llmApiKey;
+// Accept both `llmApiKeys` and `llmApiKey` — either may be a string or array.
+const rawKeyList = [
+  ...(Array.isArray(u.llmApiKeys) ? u.llmApiKeys : []),
+  ...(Array.isArray(u.llmApiKey)  ? u.llmApiKey  : []),
+  ...(typeof u.llmApiKeys === "string" ? [u.llmApiKeys] : []),
+  ...(typeof u.llmApiKey  === "string" ? [u.llmApiKey]  : []),
+];
+const cleanKeyList = rawKeyList.map((k) => String(k).trim()).filter(Boolean);
+if (cleanKeyList.length > 0) {
+  process.env.LLM_API_KEYS ||= cleanKeyList.join(",");
+  process.env.LLM_API_KEY  ||= cleanKeyList[0];
+}
 if (u.dryRun !== undefined) process.env.DRY_RUN ||= String(u.dryRun);
 if (u.publicApiKey) process.env.PUBLIC_API_KEY ||= u.publicApiKey;
 if (u.agentMeridianApiUrl) process.env.AGENT_MERIDIAN_API_URL ||= u.agentMeridianApiUrl;
@@ -171,6 +182,7 @@ export const config = {
     apiKey: nonEmptyString(u.hiveMindApiKey, process.env.HIVEMIND_API_KEY, DEFAULT_HIVEMIND_API_KEY),
     agentId: u.agentId ?? null,
     pullMode: u.hiveMindPullMode ?? "auto",
+    shareData: u.hiveMindShareData ?? true,
   },
 
   api: {

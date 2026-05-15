@@ -88,6 +88,10 @@ export function isHiveMindEnabled() {
   return !!(getBaseUrl() && getApiKey());
 }
 
+function isHiveMindPushEnabled() {
+  return config.hiveMind?.shareData !== false;
+}
+
 export function ensureAgentId() {
   const userConfig = readUserConfig();
   if (userConfig.agentId) {
@@ -291,6 +295,7 @@ function inferLessonSourceType(lesson) {
 
 export async function pushHiveLesson(lesson) {
   if (!isHiveMindEnabled()) return null;
+  if (!isHiveMindPushEnabled()) return null;
   const body = buildLessonEvent(lesson);
   if (!body) return null;
   try {
@@ -316,6 +321,7 @@ function shouldCountInAdjustedWinRate(closeReason) {
 
 export async function pushHivePerformanceEvent(perf) {
   if (!isHiveMindEnabled()) return null;
+  if (!isHiveMindPushEnabled()) return null;
   try {
     return await requestJson("/api/hivemind/performance/push", {
       method: "POST",
