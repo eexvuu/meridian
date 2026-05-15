@@ -12,7 +12,7 @@
 import fs from "fs";
 import { log } from "./logger.js";
 
-const WEIGHTS_FILE = "./signal-weights.json";
+const WEIGHTS_FILE = process.env.DRY_RUN === "true" ? "./paper-signal-weights.json" : "./signal-weights.json";
 
 // ─── Signal Definitions ─────────────────────────────────────────
 

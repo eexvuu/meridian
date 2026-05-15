@@ -15,7 +15,8 @@ import { getSharedLessonsForPrompt, pushHiveLesson, pushHivePerformanceEvent } f
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const USER_CONFIG_PATH = path.join(__dirname, "user-config.json");
 
-const LESSONS_FILE = "./lessons.json";
+const LESSONS_FILE = process.env.DRY_RUN === "true" ? "./paper-lessons.json" : "./lessons.json";
+const IS_DRY_RUN = process.env.DRY_RUN === "true";
 const MIN_EVOLVE_POSITIONS = 5;   // don't evolve until we have real data
 const MAX_CHANGE_PER_STEP  = 0.20; // never shift a threshold more than 20% at once
 const PERFORMANCE_SIGNAL_FIELDS = [
@@ -152,7 +153,7 @@ export async function recordPerformance(perf) {
   }
 
   save(data);
-  if (lesson) {
+  if (lesson && !IS_DRY_RUN) {
     void pushHiveLesson(lesson);
   }
 
@@ -196,12 +197,14 @@ export async function recordPerformance(perf) {
     }
   }
 
-  void pushHivePerformanceEvent({
-    ...entry,
-    base_mint: perf.base_mint || null,
-    fees_earned_sol: perf.fees_earned_sol || 0,
-    eventId: `close:${perf.position}:${entry.recorded_at}`,
-  });
+  if (!IS_DRY_RUN) {
+    void pushHivePerformanceEvent({
+      ...entry,
+      base_mint: perf.base_mint || null,
+      fees_earned_sol: perf.fees_earned_sol || 0,
+      eventId: `close:${perf.position}:${entry.recorded_at}`,
+    });
+  }
 
 }
 
@@ -309,6 +312,10 @@ function derivLesson(perf) {
  * @returns {{ changes: Object, rationale: Object } | null}
  */
 export function evolveThresholds(perfData, config) {
+  if (IS_DRY_RUN) {
+    log("evolve", "Skipping evolveThresholds in DRY_RUN — paper data must not write to user-config.json");
+    return null;
+  }
   if (!perfData || perfData.length < MIN_EVOLVE_POSITIONS) return null;
 
   const winners = perfData.filter((p) => p.pnl_pct > 0);
@@ -513,7 +520,7 @@ export function addLesson(rule, tags = [], { pinned = false, role = null } = {})
   data.lessons.push(lesson);
   save(data);
   log("lessons", `Manual lesson added${pinned ? " [PINNED]" : ""}${role ? ` [${role}]` : ""}: ${safeRule}`);
-  void pushHiveLesson(lesson);
+  if (!IS_DRY_RUN) void pushHiveLesson(lesson);
 }
 
 /**

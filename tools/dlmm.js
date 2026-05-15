@@ -22,9 +22,16 @@ import {
   getTrackedPosition,
   minutesOutOfRange,
   syncOpenPositions,
+  getStateSummary,
 } from "../state.js";
 import { recordPerformance } from "../lessons.js";
 import { isBaseMintOnCooldown, isPoolOnCooldown } from "../pool-memory.js";
+import {
+  isDryRun as isPaperDryRun,
+  computePaperPnl,
+  buildPaperTrackArgs,
+  computePaperCloseResult,
+} from "../paper-trading.js";
 import { normalizeMint } from "./wallet.js";
 import { appendDecision } from "../decision-log.js";
 import { agentMeridianJson, getAgentIdForRequests, getAgentMeridianHeaders } from "./agent-meridian.js";
@@ -571,10 +578,78 @@ export async function deployPosition({
   }
 
   if (process.env.DRY_RUN === "true") {
+    // Paper trading: fetch SOL/USD price + pool metadata, track simulated position.
+    // Use Meteora datapi's `current_price` (human-normalized, token_y per token_x)
+    // as the entry price — paper-trading.computePaperPnl reads the same field at tick time.
+    let solUsdPrice = 0;
+    let resolvedPoolName = pool_name;
+    let entryPriceHuman = null;
+    try {
+      const poolRes = await fetch(`https://dlmm.datapi.meteora.ag/pools/${pool_address}`);
+      if (poolRes.ok) {
+        const poolDetail = await poolRes.json();
+        solUsdPrice = Number(poolDetail.token_y?.price) || 0;
+        resolvedPoolName = resolvedPoolName || poolDetail.name || `${poolDetail.token_x?.symbol}-${poolDetail.token_y?.symbol}`;
+        entryPriceHuman = Number(poolDetail.current_price) || null;
+      }
+    } catch (err) {
+      log("paper_warn", `Pool detail fetch failed at deploy: ${err.message}`);
+    }
+    if (entryPriceHuman == null) {
+      // Fallback: derive from SDK lamport price using token decimal diff
+      try {
+        const decX = pool.tokenX?.mint?.decimals ?? 6;
+        const decY = pool.tokenY?.mint?.decimals ?? 9;
+        entryPriceHuman = activePrice * Math.pow(10, decX - decY);
+      } catch {
+        entryPriceHuman = activePrice;
+      }
+    }
+
+    const paperArgs = buildPaperTrackArgs({
+      pool_address,
+      pool_name: resolvedPoolName,
+      base_mint: baseMint,
+      amount_sol: finalAmountY,
+      strategy: activeStrategy,
+      bin_step: actualBinStep,
+      bins_below: activeBinsBelow,
+      bins_above: activeBinsAbove,
+      active_bin_id: activeBin.binId,
+      entry_price: entryPriceHuman,
+      sol_usd_price: solUsdPrice,
+      volatility: normalizedVolatility,
+      fee_tvl_ratio,
+      organic_score,
+    });
+
+    trackPosition(paperArgs);
+    _positionsCache = null; // invalidate cache so management cycle sees the new paper position immediately
+    log("paper_deploy", `Tracked paper position ${paperArgs.position.slice(0, 14)}… in ${resolvedPoolName || pool_address.slice(0, 8)} (entry=${entryPriceHuman.toFixed(8)} SOL, amount=${finalAmountY} SOL, est value=$${paperArgs.initial_value_usd.toFixed(2)})`);
+
+    appendDecision({
+      type: "deploy",
+      actor: "SCREENER",
+      pool: pool_address,
+      pool_name: resolvedPoolName,
+      position: paperArgs.position,
+      summary: `[PAPER] Deploy ${finalAmountY} SOL into ${resolvedPoolName || pool_address.slice(0, 8)}`,
+      metrics: {
+        strategy: activeStrategy,
+        bins_below: activeBinsBelow,
+        bins_above: activeBinsAbove,
+        entry_price: entryPriceHuman,
+        initial_value_usd: paperArgs.initial_value_usd,
+      },
+    });
+
     return {
       dry_run: true,
+      paper_trading: true,
+      position: paperArgs.position,
       would_deploy: {
         pool_address,
+        pool_name: resolvedPoolName,
         strategy: activeStrategy,
         bins_below: activeBinsBelow,
         bins_above: activeBinsAbove,
@@ -583,8 +658,10 @@ export async function deployPosition({
         amount_x: finalAmountX,
         amount_y: finalAmountY,
         wide_range: totalBins > 69,
+        entry_price: entryPriceHuman,
+        initial_value_usd: paperArgs.initial_value_usd,
       },
-      message: "DRY RUN — no transaction sent",
+      message: "PAPER DEPLOY — tracked in paper-state.json (DRY_RUN mode)",
     };
   }
 
@@ -959,6 +1036,45 @@ async function fetchDlmmPnlForPool(poolAddress, walletAddress) {
 export async function getPositionPnl({ pool_address, position_address }) {
   pool_address = normalizeMint(pool_address);
   position_address = normalizeMint(position_address);
+
+  // Paper trading path: compute PnL from paper-state.json snapshot.
+  if (isPaperDryRun()) {
+    const tracked = getTrackedPosition(position_address);
+    if (!tracked) return { error: "Paper position not found" };
+    const snap = tracked.signal_snapshot || {};
+    try {
+      const pnl = await computePaperPnl({
+        pool: tracked.pool,
+        amount_sol: tracked.amount_sol,
+        initial_value_usd: tracked.initial_value_usd,
+        deployed_at: tracked.deployed_at,
+        bin_range: tracked.bin_range,
+        active_bin_at_deploy: tracked.active_bin_at_deploy,
+        out_of_range_since: tracked.out_of_range_since,
+        entry_price: snap.entry_price,
+        lower_price: snap.lower_price,
+        sol_usd_price: snap.sol_usd_price,
+      });
+      return {
+        pnl_usd: pnl.pnl_usd,
+        pnl_pct: pnl.pnl_pct,
+        current_value_usd: pnl.current_value_usd,
+        unclaimed_fee_usd: pnl.unclaimed_fee_usd,
+        all_time_fees_usd: pnl.all_time_fees_usd,
+        fee_per_tvl_24h: pnl.fee_per_tvl_24h,
+        in_range: pnl.in_range,
+        lower_bin: pnl.lower_bin,
+        upper_bin: pnl.upper_bin,
+        active_bin: pnl.active_bin,
+        age_minutes: pnl.age_minutes,
+        paper_trading: true,
+        request_id: null,
+      };
+    } catch (err) {
+      return { error: `Paper PnL failed: ${err.message}` };
+    }
+  }
+
   const walletAddress = getWallet().publicKey.toString();
   if (shouldUseLpAgentRelay()) {
     try {
@@ -1170,6 +1286,76 @@ export async function getMyPositions({ force = false, silent = false, wallet_add
     walletAddress = walletOverride || getWallet().publicKey.toString();
   } catch {
     return { wallet: null, total_positions: 0, positions: [], error: "Wallet not configured" };
+  }
+
+  // Paper trading: enumerate paper-state.json positions, enrich with simulated PnL.
+  if (isPaperDryRun()) {
+    const summary = getStateSummary();
+    const openMeta = summary.positions || [];
+    if (!silent) log("positions", `[PAPER] Computing simulated PnL for ${openMeta.length} paper position(s)`);
+    const positions = [];
+    for (const meta of openMeta) {
+      const tracked = getTrackedPosition(meta.position);
+      if (!tracked) continue;
+      const snap = tracked.signal_snapshot || {};
+      try {
+        const pnl = await computePaperPnl({
+          pool: tracked.pool,
+          amount_sol: tracked.amount_sol,
+          initial_value_usd: tracked.initial_value_usd,
+          deployed_at: tracked.deployed_at,
+          bin_range: tracked.bin_range,
+          bin_step: tracked.bin_step,
+          active_bin_at_deploy: tracked.active_bin_at_deploy,
+          out_of_range_since: tracked.out_of_range_since,
+          entry_price: snap.entry_price,
+          lower_price: snap.lower_price,
+          sol_usd_price: snap.sol_usd_price,
+        });
+        // Sync OOR clock with state.js based on simulation result.
+        if (pnl.in_range === false && !tracked.out_of_range_since) markOutOfRange(tracked.position);
+        else if (pnl.in_range === true && tracked.out_of_range_since) markInRange(tracked.position);
+
+        positions.push({
+          position: tracked.position,
+          pool: tracked.pool,
+          pair: tracked.pool_name,
+          base_mint: snap.base_mint || null,
+          lower_bin: pnl.lower_bin,
+          upper_bin: pnl.upper_bin,
+          active_bin: pnl.active_bin,
+          in_range: pnl.in_range,
+          unclaimed_fees_usd: pnl.unclaimed_fee_usd,
+          total_value_usd: pnl.current_value_usd,
+          total_value_true_usd: pnl.current_value_usd,
+          collected_fees_usd: 0,
+          collected_fees_true_usd: 0,
+          pnl_usd: pnl.pnl_usd,
+          pnl_true_usd: pnl.pnl_usd,
+          pnl_pct: pnl.pnl_pct,
+          pnl_pct_derived: pnl.pnl_pct,
+          pnl_pct_diff: 0,
+          pnl_pct_suspicious: false,
+          unclaimed_fees_true_usd: pnl.unclaimed_fee_usd,
+          fee_per_tvl_24h: pnl.fee_per_tvl_24h,
+          age_minutes: pnl.age_minutes,
+          minutes_out_of_range: meta.minutes_out_of_range,
+          instruction: meta.instruction,
+        });
+      } catch (err) {
+        log("paper_warn", `Simulation failed for ${tracked.position.slice(0, 14)}: ${err.message}`);
+      }
+    }
+    const payload = {
+      wallet: walletAddress,
+      total_positions: positions.length,
+      positions,
+      paper_trading: true,
+      request_id: null,
+    };
+    _positionsCache = payload;
+    _positionsCacheAt = Date.now();
+    return payload;
   }
 
   const loadPositions = async () => { try {
@@ -1504,7 +1690,41 @@ export async function claimFees({ position_address }) {
 export async function closePosition({ position_address, reason }) {
   position_address = normalizeMint(position_address);
   if (process.env.DRY_RUN === "true") {
-    return { dry_run: true, would_close: position_address, message: "DRY RUN — no transaction sent" };
+    // Paper trading close: compute final PnL, record performance, mark closed.
+    const tracked = getTrackedPosition(position_address);
+    if (!tracked) {
+      return { dry_run: true, error: "Paper position not found", position: position_address };
+    }
+    if (tracked.closed) {
+      return { dry_run: true, paper_trading: true, already_closed: true, position: position_address };
+    }
+    try {
+      const { perf, payload } = await computePaperCloseResult(tracked, reason || "manual_close");
+      await recordPerformance(perf);
+      recordClose(position_address, reason || "manual_close");
+      appendDecision({
+        type: "close",
+        actor: "MANAGER",
+        pool: tracked.pool,
+        pool_name: tracked.pool_name,
+        position: position_address,
+        summary: `[PAPER] Close ${tracked.pool_name || tracked.pool.slice(0, 8)} — ${reason}`,
+        metrics: {
+          pnl_usd: payload.pnl_usd,
+          pnl_pct: payload.pnl_pct,
+          fees_earned_usd: perf.fees_earned_usd,
+          minutes_held: perf.minutes_held,
+          minutes_in_range: perf.minutes_in_range,
+        },
+      });
+      // Invalidate positions cache so subsequent reads exclude the closed position.
+      _positionsCache = null;
+      log("paper_close", `Closed paper ${position_address.slice(0, 14)}… (${tracked.pool_name}) — PnL ${payload.pnl_pct}% / $${payload.pnl_usd} — reason: ${reason}`);
+      return payload;
+    } catch (err) {
+      log("paper_error", `Paper close failed for ${position_address}: ${err.message}`);
+      return { dry_run: true, error: err.message, position: position_address };
+    }
   }
 
   const tracked = getTrackedPosition(position_address);

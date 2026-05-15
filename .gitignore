@@ -2,9 +2,9 @@
 node_modules/
 
 # Environment & secrets
-.env
-.env.*
-!.env.example
+# .env
+# .env.*
+# !.env.example
 .envrypt
 
 # User config (contains RPC URL, wallet key, API keys)
@@ -20,6 +20,17 @@ strategy-library.json
 decision-log.json
 hivemind-cache.json
 signal-weights.json
+
+# Paper trading state (DRY_RUN-aware mirrors)
+paper-state.json
+paper-lessons.json
+paper-pool-memory.json
+paper-signal-weights.json
+
+# Debug dumps and temp working files (may contain prompts / secrets)
+last-400-request.json
+screener-tools.tmp.json
+.claude/settings.local.json
 
 # Logs
 logs/

@@ -14,6 +14,7 @@ prompt.js           Builds system prompt per agent role (SCREENER / MANAGER / GE
 state.js            Position registry (state.json): tracks bin ranges, OOR timestamps, notes
 lessons.js          Learning engine: records closed-position perf, derives lessons, evolves thresholds
 pool-memory.js      Per-pool deploy history + snapshots (pool-memory.json)
+paper-trading.js    DRY_RUN simulator: IL + fee accrual for single-side bid_ask (see PAPER_TRADING.md)
 strategy-library.js Saved LP strategies (strategy-library.json)
 briefing.js         Daily Telegram briefing (HTML)
 telegram.js         Telegram bot: polling, notifications (deploy/close/swap/OOR)
@@ -226,3 +227,20 @@ Agent Meridian HiveMind sync is handled by `hivemind.js`. It uses built-in Agent
 
 - `lessons.js evolveThresholds()` evolves `maxVolatility` + `minFeeTvlRatio` (wrong key names — should be `minFeeActiveTvlRatio`; `maxVolatility` doesn't exist in config at all). The evolution is a no-op for those keys.
 - `get_wallet_positions` tool (dlmm.js) is in definitions.js but not in MANAGER_TOOLS or SCREENER_TOOLS — only available in GENERAL role.
+
+---
+
+## Paper Trading Mode
+
+When `DRY_RUN=true`, the bot enters **paper trading mode**:
+
+- All position state writes go to `paper-state.json` (not `state.json`)
+- Performance/lessons go to `paper-lessons.json`; pool memory to `paper-pool-memory.json`
+- `evolveThresholds()` is skipped (paper data must not write `user-config.json`)
+- HiveMind push (lessons + performance) is skipped (paper data must not pollute the hive)
+- `deploy_position` simulates: trackPosition with `paper_<hex>` ID, no on-chain tx
+- `getMyPositions` / `getPositionPnl` compute from paper-state via `paper-trading.js:computePaperPnl`
+- `close_position` simulates: computePaperCloseResult → recordPerformance → recordClose
+- Telegram notifs prefixed with `[PAPER]`
+
+PnL simulation accuracy: ±15-20%. See `PAPER_TRADING.md` for the full IL/fee model, file reference, and operational guide.
