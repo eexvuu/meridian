@@ -154,7 +154,7 @@ WARNING: This executes a real on-chain transaction. Check DRY_RUN mode.`,
           },
           amount_y: {
             type: "number",
-            description: "Amount of quote token (usually SOL) to deposit."
+            description: "REQUIRED. Amount of quote token (SOL) to deposit. Must be > 0. The bot deploys single-side SOL only — this is the deposit size. Use the deploy size from the system context (typically computeDeployAmount result, ~0.3-0.5 SOL)."
           },
           amount_x: {
             type: "number",
@@ -194,7 +194,7 @@ WARNING: This executes a real on-chain transaction. Check DRY_RUN mode.`,
           organic_score: { type: "number", description: "Base token organic score at deploy time" },
           initial_value_usd: { type: "number", description: "Estimated USD value being deployed" }
         },
-        required: ["pool_address"]
+        required: ["pool_address", "amount_y"]
       }
     }
   },

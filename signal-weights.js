@@ -58,7 +58,7 @@ function loadWeights() {
       history: [],
     };
     saveWeights(initial);
-    log("signal_weights", "Created signal-weights.json with default weights");
+    log("signal_weights", `Created ${WEIGHTS_FILE} with default weights`);
     return initial;
   }
   try {

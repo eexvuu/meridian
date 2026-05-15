@@ -1756,11 +1756,13 @@ if (isMain && isTTY) {
 
   busy = true;
   try {
-    const [wallet, positions, { candidates, total_eligible, total_screened }] = await Promise.all([
+    const [wallet, positions, screenResult] = await Promise.all([
       getWalletBalances(),
       getMyPositions({ force: true }),
       getTopCandidates({ limit: 5 }),
     ]);
+    const { candidates, total_screened } = screenResult;
+    const total_eligible = screenResult.total_eligible ?? candidates.length;
 
     setLatestCandidates(candidates);
 
@@ -1880,10 +1882,11 @@ Commands:
 
     if (input === "/candidates") {
       await runBusy(async () => {
-        const { candidates, total_eligible, total_screened } = await getTopCandidates({ limit: 5 });
-        setLatestCandidates(candidates);
-        console.log(`\nTop pools (${total_eligible} eligible from ${total_screened} screened):\n`);
-        console.log(formatCandidates(candidates));
+        const result = await getTopCandidates({ limit: 5 });
+        setLatestCandidates(result.candidates);
+        const eligible = result.total_eligible ?? result.candidates.length;
+        console.log(`\nTop pools (${eligible} eligible from ${result.total_screened} screened):\n`);
+        console.log(formatCandidates(result.candidates));
         console.log();
       });
       return;
