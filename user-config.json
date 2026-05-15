@@ -17,6 +17,8 @@
   "takeProfitFeePct": 5,
   "stopLossPct": -15,
   "outOfRangeWaitMinutes": 30,
+  "minFeePerTvl24h": 2,
+  "minAgeBeforeYieldCheck": 120,
 
   "repeatDeployCooldownEnabled": true,
   "repeatDeployCooldownTriggerCount": 3,
