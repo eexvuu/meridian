@@ -16,6 +16,7 @@ const ALLOWED_USER_IDS = new Set(
 );
 
 let chatId   = process.env.TELEGRAM_CHAT_ID || null;
+let topicId  = process.env.TELEGRAM_TOPIC_ID ? Number(process.env.TELEGRAM_TOPIC_ID) : null;
 let _offset  = 0;
 let _polling = false;
 let _liveMessageDepth = 0;
@@ -28,6 +29,9 @@ function loadChatId() {
     if (fs.existsSync(USER_CONFIG_PATH)) {
       const cfg = JSON.parse(fs.readFileSync(USER_CONFIG_PATH, "utf8"));
       if (cfg.telegramChatId) chatId = cfg.telegramChatId;
+      if (cfg.telegramTopicId != null && Number.isFinite(Number(cfg.telegramTopicId))) {
+        topicId = Number(cfg.telegramTopicId);
+      }
     }
   } catch (error) {
     log("telegram_warn", `Invalid user-config.json; chatId not loaded: ${error.message}`);
@@ -83,13 +87,21 @@ export function isEnabled() {
   return !!TOKEN;
 }
 
+// Methods that support message_thread_id (forum topic routing).
+// editMessageText / answerCallbackQuery don't accept it — Telegram resolves thread via message_id.
+const THREAD_AWARE_METHODS = new Set(["sendMessage", "sendChatAction", "sendPhoto", "sendDocument"]);
+
 async function postTelegram(method, body) {
   if (!TOKEN || !chatId) return null;
   try {
+    const payload = { chat_id: chatId, ...body };
+    if (topicId != null && THREAD_AWARE_METHODS.has(method) && payload.message_thread_id == null) {
+      payload.message_thread_id = topicId;
+    }
     const res = await fetch(`${BASE}/${method}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ chat_id: chatId, ...body }),
+      body: JSON.stringify(payload),
     });
     if (!res.ok) {
       const err = await res.text();
@@ -141,7 +153,7 @@ export async function sendHTML(html) {
   return postTelegram("sendMessage", { text: html.slice(0, 4096), parse_mode: "HTML" });
 }
 
-async function editMessage(text, messageId) {
+export async function editMessage(text, messageId) {
   if (!TOKEN || !chatId || !messageId) return null;
   return postTelegram("editMessageText", {
     message_id: messageId,
