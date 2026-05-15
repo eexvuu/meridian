@@ -1,14 +1,14 @@
 # Dependencies
 node_modules/
 
-# Environment & secrets
-# .env
-# .env.*
-# !.env.example
+# Environment & secrets — keep all real secrets here (gitignored)
+.env
+.env.*
+!.env.example
 .envrypt
 
-# User config (contains RPC URL, wallet key, API keys)
-user-config.json
+# User config is tracked (tuning params only — no secrets).
+# Secrets (RPC URL, wallet key, API keys) live in .env.
 
 # Runtime state (position tracking, lessons — user-specific)
 state.json

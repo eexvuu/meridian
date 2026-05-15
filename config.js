@@ -180,7 +180,7 @@ export const config = {
   hiveMind: {
     url: nonEmptyString(u.hiveMindUrl, DEFAULT_HIVEMIND_URL),
     apiKey: nonEmptyString(u.hiveMindApiKey, process.env.HIVEMIND_API_KEY, DEFAULT_HIVEMIND_API_KEY),
-    agentId: u.agentId ?? null,
+    agentId: nonEmptyString(u.agentId, process.env.MERIDIAN_AGENT_ID),
     pullMode: u.hiveMindPullMode ?? "auto",
     shareData: u.hiveMindShareData ?? true,
   },

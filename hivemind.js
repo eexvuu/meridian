@@ -99,6 +99,12 @@ export function ensureAgentId() {
     return userConfig.agentId;
   }
 
+  // Env override: keep agentId out of tracked user-config when MERIDIAN_AGENT_ID is set
+  if (process.env.MERIDIAN_AGENT_ID) {
+    config.hiveMind.agentId = process.env.MERIDIAN_AGENT_ID;
+    return process.env.MERIDIAN_AGENT_ID;
+  }
+
   const agentId = `agt_${crypto.randomBytes(12).toString("hex")}`;
   userConfig.agentId = agentId;
   writeUserConfig(userConfig);
