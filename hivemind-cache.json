@@ -1,0 +1,170 @@
+{
+  "sharedLessons": [
+    {
+      "id": "1778859696575",
+      "rule": "PREFER: BABYTROLL-SOL-type pools (volatility=19.21, bin_step=80) with strategy=\"bid_ask\" — 90.9% in-range efficiency, PnL +2.93%.",
+      "tags": [
+        "efficient",
+        "bid_ask"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.28,
+      "created_at": "2026-05-15T15:41:36.575Z"
+    },
+    {
+      "id": "1778859965731",
+      "rule": "PREFER: Apple-SOL-type pools (volatility=1.55, bin_step=80) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +2.55%.",
+      "tags": [
+        "efficient",
+        "bid_ask"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.28,
+      "created_at": "2026-05-15T15:46:05.731Z"
+    },
+    {
+      "id": "1778859981428",
+      "rule": "PREFER: RoyalPop-SOL-type pools (volatility=2.357, bin_step=100) with strategy=\"spot\" — 98.3% in-range efficiency, PnL +3.83%.",
+      "tags": [
+        "efficient",
+        "spot"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.28,
+      "created_at": "2026-05-15T15:46:21.428Z"
+    },
+    {
+      "id": "1778859660793",
+      "rule": "PREFER: BABYTROLL-SOL-type pools (volatility=3.5, bin_step=80) with strategy=\"spot\" — 81.3% in-range efficiency, PnL +2.31%.",
+      "tags": [
+        "efficient",
+        "spot"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.28,
+      "created_at": "2026-05-15T15:41:00.793Z"
+    },
+    {
+      "id": "1778859244403",
+      "rule": "PREFER: Apple-SOL-type pools (volatility=1.6846, bin_step=80) with strategy=\"spot\" — 100% in-range efficiency, PnL +0.74%.",
+      "tags": [
+        "efficient",
+        "spot"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.27,
+      "created_at": "2026-05-15T15:34:04.403Z"
+    },
+    {
+      "id": "1778859444705",
+      "rule": "PREFER: DIAMOND-SOL-type pools (volatility=10.4112, bin_step=100) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +3.13%.",
+      "tags": [
+        "efficient",
+        "bid_ask",
+        "degen",
+        "entry"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.27,
+      "created_at": "2026-05-15T15:37:24.705Z"
+    },
+    {
+      "id": "1778858491851",
+      "rule": "PREFER: Dust-SOL-type pools (volatility=9.57, bin_step=100) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +5.59%.",
+      "tags": [
+        "efficient",
+        "bid_ask"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.26,
+      "created_at": "2026-05-15T15:21:31.851Z"
+    },
+    {
+      "id": "1778858503996",
+      "rule": "PREFER: Dust-SOL-type pools (volatility=4.7634, bin_step=100) with strategy=\"spot\" — 100% in-range efficiency, PnL +36.51%.",
+      "tags": [
+        "efficient",
+        "spot",
+        "regime_choppy_undefined"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.26,
+      "created_at": "2026-05-15T15:21:43.996Z"
+    },
+    {
+      "id": "1778858990036",
+      "rule": "PREFER: PAIN-SOL-type pools (volatility=4.9552, bin_step=100) with strategy=\"bid_ask\" — 84.6% in-range efficiency, PnL +0.49%.",
+      "tags": [
+        "efficient",
+        "bid_ask",
+        "screening",
+        "deployment",
+        "strategy"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.24,
+      "created_at": "2026-05-15T15:29:50.036Z"
+    },
+    {
+      "id": "1778855028868",
+      "rule": "PREFER: PAIN-SOL-type pools (volatility=4.3986, bin_step=100) with strategy=\"spot\" — 100% in-range efficiency, PnL +2.38%.",
+      "tags": [
+        "efficient",
+        "spot"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.22,
+      "created_at": "2026-05-15T14:23:48.868Z"
+    },
+    {
+      "id": "1778852740844",
+      "rule": "PREFER: RoyalPop-SOL-type pools (volatility=3.485, bin_step=100) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +1.88%.",
+      "tags": [
+        "efficient",
+        "bid_ask",
+        "degen",
+        "entry"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.2,
+      "created_at": "2026-05-15T13:45:40.844Z"
+    },
+    {
+      "id": "1778845089689",
+      "rule": "PREFER: RKC-SOL-type pools (volatility=2.4124, bin_step=100) with strategy=\"spot\" — 95.3% in-range efficiency, PnL +3.02%.",
+      "tags": [
+        "efficient",
+        "spot"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.11,
+      "created_at": "2026-05-15T11:38:09.689Z"
+    }
+  ],
+  "presets": [],
+  "pulledAt": "2026-05-15T15:47:13.279Z"
+}

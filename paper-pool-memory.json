@@ -1,0 +1,892 @@
+{
+  "J9sHie1N29rKZRtM8H13zcCeVv1XBzx3FPTPcGEXjJ2i": {
+    "name": "Dust-SOL",
+    "base_mint": "6veQU7HDdXV5DC2Eqhnri5q71gkMzG73qKkSSudnpump",
+    "deploys": [
+      {
+        "deployed_at": "2026-05-15T13:41:59.559Z",
+        "closed_at": "2026-05-15T15:44:47.363Z",
+        "pnl_pct": 0.93,
+        "pnl_usd": 0.25,
+        "fees_earned_usd": 0.25,
+        "fees_earned_sol": 0.002749,
+        "fee_earned_pct": 0.9324878776575904,
+        "range_efficiency": 75.4,
+        "minutes_held": 122,
+        "close_reason": "OOR 30min — exit trigger",
+        "strategy": "spot",
+        "volatility_at_deploy": 4.7024
+      }
+    ],
+    "total_deploys": 1,
+    "avg_pnl_pct": 0.93,
+    "win_rate": 1,
+    "adjusted_win_rate": 0,
+    "adjusted_win_rate_sample_count": 0,
+    "last_deployed_at": "2026-05-15T15:44:47.363Z",
+    "last_outcome": "profit",
+    "notes": [],
+    "snapshots": [
+      {
+        "ts": "2026-05-15T13:45:01.386Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": -0.23,
+        "pnl_usd": -0.06,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 3
+      },
+      {
+        "ts": "2026-05-15T13:50:03.314Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": -2.91,
+        "pnl_usd": -0.78,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 8
+      },
+      {
+        "ts": "2026-05-15T13:55:01.010Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.06,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 3,
+        "age_minutes": 13
+      },
+      {
+        "ts": "2026-05-15T14:00:01.284Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.07,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 8,
+        "age_minutes": 18
+      },
+      {
+        "ts": "2026-05-15T14:05:02.293Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": -4.56,
+        "pnl_usd": -1.22,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.04,
+        "minutes_out_of_range": 0,
+        "age_minutes": 23
+      },
+      {
+        "ts": "2026-05-15T14:10:01.967Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": -3.44,
+        "pnl_usd": -0.92,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.04,
+        "minutes_out_of_range": 0,
+        "age_minutes": 28
+      },
+      {
+        "ts": "2026-05-15T14:15:01.981Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": -2.76,
+        "pnl_usd": -0.74,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.05,
+        "minutes_out_of_range": 0,
+        "age_minutes": 33
+      },
+      {
+        "ts": "2026-05-15T14:20:02.290Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": -0.92,
+        "pnl_usd": -0.25,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.06,
+        "minutes_out_of_range": 0,
+        "age_minutes": 38
+      },
+      {
+        "ts": "2026-05-15T14:25:01.624Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": -0.86,
+        "pnl_usd": -0.23,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.08,
+        "minutes_out_of_range": 0,
+        "age_minutes": 43
+      },
+      {
+        "ts": "2026-05-15T14:30:02.261Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": -0.62,
+        "pnl_usd": -0.17,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.09,
+        "minutes_out_of_range": 0,
+        "age_minutes": 48
+      },
+      {
+        "ts": "2026-05-15T14:35:01.982Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": -1.22,
+        "pnl_usd": -0.33,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.1,
+        "minutes_out_of_range": 0,
+        "age_minutes": 53
+      },
+      {
+        "ts": "2026-05-15T14:40:01.259Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": -0.56,
+        "pnl_usd": -0.15,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.1,
+        "minutes_out_of_range": 0,
+        "age_minutes": 58
+      },
+      {
+        "ts": "2026-05-15T14:45:01.944Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.46,
+        "pnl_usd": 0.12,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.12,
+        "minutes_out_of_range": 1,
+        "age_minutes": 63
+      },
+      {
+        "ts": "2026-05-15T14:50:02.669Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.39,
+        "pnl_usd": 0.1,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.1,
+        "minutes_out_of_range": 6,
+        "age_minutes": 68
+      },
+      {
+        "ts": "2026-05-15T14:55:02.516Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.4,
+        "pnl_usd": 0.11,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.11,
+        "minutes_out_of_range": 11,
+        "age_minutes": 73
+      },
+      {
+        "ts": "2026-05-15T14:56:08.972Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.4,
+        "pnl_usd": 0.11,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.11,
+        "minutes_out_of_range": 13,
+        "age_minutes": 74
+      },
+      {
+        "ts": "2026-05-15T15:00:02.975Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.41,
+        "pnl_usd": 0.11,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.11,
+        "minutes_out_of_range": 16,
+        "age_minutes": 78
+      },
+      {
+        "ts": "2026-05-15T15:05:03.173Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.08,
+        "pnl_usd": 0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.15,
+        "minutes_out_of_range": 0,
+        "age_minutes": 83
+      },
+      {
+        "ts": "2026-05-15T15:10:03.652Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.34,
+        "pnl_usd": 0.09,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.16,
+        "minutes_out_of_range": 0,
+        "age_minutes": 88
+      },
+      {
+        "ts": "2026-05-15T15:15:01.670Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.93,
+        "pnl_usd": 0.25,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.25,
+        "minutes_out_of_range": 0,
+        "age_minutes": 93
+      },
+      {
+        "ts": "2026-05-15T15:20:01.935Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 1,
+        "pnl_usd": 0.27,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.27,
+        "minutes_out_of_range": 5,
+        "age_minutes": 98
+      },
+      {
+        "ts": "2026-05-15T15:25:03.395Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 1.32,
+        "pnl_usd": 0.35,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.35,
+        "minutes_out_of_range": 10,
+        "age_minutes": 103
+      },
+      {
+        "ts": "2026-05-15T15:30:07.211Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 1.19,
+        "pnl_usd": 0.32,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.32,
+        "minutes_out_of_range": 15,
+        "age_minutes": 108
+      },
+      {
+        "ts": "2026-05-15T15:35:02.094Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 1.1,
+        "pnl_usd": 0.3,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.3,
+        "minutes_out_of_range": 20,
+        "age_minutes": 113
+      },
+      {
+        "ts": "2026-05-15T15:40:02.675Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.91,
+        "pnl_usd": 0.24,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.24,
+        "minutes_out_of_range": 25,
+        "age_minutes": 118
+      },
+      {
+        "ts": "2026-05-15T15:44:39.629Z",
+        "position": "paper_2a4daa4de0952e37",
+        "pnl_pct": 0.92,
+        "pnl_usd": 0.25,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.25,
+        "minutes_out_of_range": 30,
+        "age_minutes": 122
+      }
+    ]
+  },
+  "HYETXRgcCHztgff2iZtfNDZ2nENmmxUoBqtQGuvqUZvG": {
+    "name": "DIRECTOR-SOL",
+    "base_mint": "Do6N8m8ssowyAvXs2tkGKkJ8vaNC8H5oRkMdr9shpump",
+    "deploys": [
+      {
+        "deployed_at": "2026-05-15T13:56:04.377Z",
+        "closed_at": "2026-05-15T14:56:14.920Z",
+        "pnl_pct": -1.57,
+        "pnl_usd": -0.42,
+        "fees_earned_usd": 0.04,
+        "fees_earned_sol": 0.000425,
+        "fee_earned_pct": 0.14964459408903852,
+        "range_efficiency": 100,
+        "minutes_held": 60,
+        "close_reason": "Low yield: fee/TVL 3.40% < min 7% (age: 60m)",
+        "strategy": "spot",
+        "volatility_at_deploy": 3.9763
+      }
+    ],
+    "total_deploys": 1,
+    "avg_pnl_pct": -1.57,
+    "win_rate": 0,
+    "adjusted_win_rate": 0,
+    "adjusted_win_rate_sample_count": 1,
+    "last_deployed_at": "2026-05-15T14:56:14.920Z",
+    "last_outcome": "loss",
+    "notes": [
+      {
+        "note": "Closed: low yield (fee/TVL below threshold) at 2026-05-15",
+        "added_at": "2026-05-15T14:56:14.947Z"
+      }
+    ],
+    "snapshots": [
+      {
+        "ts": "2026-05-15T14:00:01.295Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -0.9,
+        "pnl_usd": -0.24,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 3
+      },
+      {
+        "ts": "2026-05-15T14:05:02.301Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -0.11,
+        "pnl_usd": -0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 8
+      },
+      {
+        "ts": "2026-05-15T14:10:01.974Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -0.49,
+        "pnl_usd": -0.13,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 13
+      },
+      {
+        "ts": "2026-05-15T14:15:01.990Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -0.87,
+        "pnl_usd": -0.23,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 18
+      },
+      {
+        "ts": "2026-05-15T14:20:02.299Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -0.65,
+        "pnl_usd": -0.17,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 23
+      },
+      {
+        "ts": "2026-05-15T14:25:01.637Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -6.9,
+        "pnl_usd": -1.84,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 0,
+        "age_minutes": 28
+      },
+      {
+        "ts": "2026-05-15T14:30:02.275Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -5.28,
+        "pnl_usd": -1.41,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 0,
+        "age_minutes": 33
+      },
+      {
+        "ts": "2026-05-15T14:35:01.991Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -5.27,
+        "pnl_usd": -1.41,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 0,
+        "age_minutes": 38
+      },
+      {
+        "ts": "2026-05-15T14:40:01.271Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -6.87,
+        "pnl_usd": -1.84,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 0,
+        "age_minutes": 43
+      },
+      {
+        "ts": "2026-05-15T14:45:01.958Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -2.97,
+        "pnl_usd": -0.79,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 0,
+        "age_minutes": 48
+      },
+      {
+        "ts": "2026-05-15T14:50:02.681Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -3.37,
+        "pnl_usd": -0.9,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 0,
+        "age_minutes": 53
+      },
+      {
+        "ts": "2026-05-15T14:55:02.532Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -3.78,
+        "pnl_usd": -1.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.04,
+        "minutes_out_of_range": 0,
+        "age_minutes": 58
+      },
+      {
+        "ts": "2026-05-15T14:56:08.992Z",
+        "position": "paper_3b25229dc19e1c16",
+        "pnl_pct": -1.55,
+        "pnl_usd": -0.41,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.04,
+        "minutes_out_of_range": 0,
+        "age_minutes": 60
+      }
+    ]
+  },
+  "Bmovbz2FMD3qgTYfKE7wJHJbm8MJDvHCn9ZCAreCA9RR": {
+    "name": "RKC-SOL",
+    "base_mint": "7HgfXftRBBqsYtAEYcqjGLQrNJLL6Tww9ek4rE3Apump",
+    "deploys": [
+      {
+        "deployed_at": "2026-05-15T14:00:50.667Z",
+        "closed_at": "2026-05-15T14:40:08.794Z",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "fees_earned_usd": 0.01,
+        "fees_earned_sol": 0.000109,
+        "fee_earned_pct": 0.037608123354644606,
+        "range_efficiency": 23.1,
+        "minutes_held": 39,
+        "close_reason": "⚡ Exit: Out of range for 30m (limit: 30m) — OOR cooldown triggered",
+        "strategy": "spot",
+        "volatility_at_deploy": 1.5664
+      }
+    ],
+    "total_deploys": 1,
+    "avg_pnl_pct": 0.04,
+    "win_rate": 1,
+    "adjusted_win_rate": 0,
+    "adjusted_win_rate_sample_count": 0,
+    "last_deployed_at": "2026-05-15T14:40:08.794Z",
+    "last_outcome": "profit",
+    "notes": [],
+    "snapshots": [
+      {
+        "ts": "2026-05-15T14:05:02.309Z",
+        "position": "paper_fd46ce75fda33511",
+        "pnl_pct": 0.02,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 4
+      },
+      {
+        "ts": "2026-05-15T14:10:01.981Z",
+        "position": "paper_fd46ce75fda33511",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 9
+      },
+      {
+        "ts": "2026-05-15T14:15:02.000Z",
+        "position": "paper_fd46ce75fda33511",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 5,
+        "age_minutes": 14
+      },
+      {
+        "ts": "2026-05-15T14:20:02.309Z",
+        "position": "paper_fd46ce75fda33511",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 10,
+        "age_minutes": 19
+      },
+      {
+        "ts": "2026-05-15T14:25:01.651Z",
+        "position": "paper_fd46ce75fda33511",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 15,
+        "age_minutes": 24
+      },
+      {
+        "ts": "2026-05-15T14:30:02.284Z",
+        "position": "paper_fd46ce75fda33511",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 20,
+        "age_minutes": 29
+      },
+      {
+        "ts": "2026-05-15T14:35:02.003Z",
+        "position": "paper_fd46ce75fda33511",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 25,
+        "age_minutes": 34
+      },
+      {
+        "ts": "2026-05-15T14:40:01.285Z",
+        "position": "paper_fd46ce75fda33511",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 30,
+        "age_minutes": 39
+      }
+    ]
+  },
+  "4d4XPuZ5392FMYGMoPfTdoSDXfBV9nByAcVbbT7ZQ4Ho": {
+    "name": "HANTA-SOL",
+    "base_mint": null,
+    "deploys": [],
+    "total_deploys": 0,
+    "avg_pnl_pct": 0,
+    "win_rate": 0,
+    "adjusted_win_rate": 0,
+    "adjusted_win_rate_sample_count": 0,
+    "last_deployed_at": null,
+    "last_outcome": null,
+    "notes": [],
+    "snapshots": [
+      {
+        "ts": "2026-05-15T14:50:02.692Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 2
+      },
+      {
+        "ts": "2026-05-15T14:55:02.542Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 5,
+        "age_minutes": 7
+      },
+      {
+        "ts": "2026-05-15T14:56:09.001Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 7,
+        "age_minutes": 8
+      },
+      {
+        "ts": "2026-05-15T15:00:02.987Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 10,
+        "age_minutes": 12
+      },
+      {
+        "ts": "2026-05-15T15:05:03.183Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 15,
+        "age_minutes": 17
+      },
+      {
+        "ts": "2026-05-15T15:10:03.661Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 20,
+        "age_minutes": 22
+      },
+      {
+        "ts": "2026-05-15T15:15:01.679Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.07,
+        "pnl_usd": 0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 0,
+        "age_minutes": 27
+      },
+      {
+        "ts": "2026-05-15T15:20:01.943Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.09,
+        "pnl_usd": 0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 0,
+        "age_minutes": 32
+      },
+      {
+        "ts": "2026-05-15T15:25:03.405Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.1,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 2,
+        "age_minutes": 37
+      },
+      {
+        "ts": "2026-05-15T15:30:07.220Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.1,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 7,
+        "age_minutes": 42
+      },
+      {
+        "ts": "2026-05-15T15:35:02.102Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.1,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 12,
+        "age_minutes": 47
+      },
+      {
+        "ts": "2026-05-15T15:40:02.684Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.1,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 17,
+        "age_minutes": 52
+      },
+      {
+        "ts": "2026-05-15T15:44:39.642Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.1,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 22,
+        "age_minutes": 57
+      },
+      {
+        "ts": "2026-05-15T15:45:03.539Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.1,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 22,
+        "age_minutes": 57
+      },
+      {
+        "ts": "2026-05-15T15:50:03.076Z",
+        "position": "paper_b6875476b34d5ec9",
+        "pnl_pct": 0.1,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 27,
+        "age_minutes": 62
+      }
+    ]
+  },
+  "6jSFZ7p2EEALRD5BeufzjxEpYgaskcTvBKSPzX4ivz4p": {
+    "name": "CHUD-SOL",
+    "base_mint": null,
+    "deploys": [],
+    "total_deploys": 0,
+    "avg_pnl_pct": 0,
+    "win_rate": 0,
+    "adjusted_win_rate": 0,
+    "adjusted_win_rate_sample_count": 0,
+    "last_deployed_at": null,
+    "last_outcome": null,
+    "notes": [],
+    "snapshots": [
+      {
+        "ts": "2026-05-15T15:00:02.994Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -1.87,
+        "pnl_usd": -0.5,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 2
+      },
+      {
+        "ts": "2026-05-15T15:05:03.190Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -1.53,
+        "pnl_usd": -0.41,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 7
+      },
+      {
+        "ts": "2026-05-15T15:10:03.668Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -1.22,
+        "pnl_usd": -0.33,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 12
+      },
+      {
+        "ts": "2026-05-15T15:15:01.686Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -1.2,
+        "pnl_usd": -0.32,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 0,
+        "age_minutes": 17
+      },
+      {
+        "ts": "2026-05-15T15:20:01.950Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -0.92,
+        "pnl_usd": -0.25,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 0,
+        "age_minutes": 22
+      },
+      {
+        "ts": "2026-05-15T15:25:03.412Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -1.45,
+        "pnl_usd": -0.39,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 0,
+        "age_minutes": 27
+      },
+      {
+        "ts": "2026-05-15T15:30:07.228Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -2.09,
+        "pnl_usd": -0.56,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.04,
+        "minutes_out_of_range": 0,
+        "age_minutes": 32
+      },
+      {
+        "ts": "2026-05-15T15:35:02.109Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -2.07,
+        "pnl_usd": -0.55,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.04,
+        "minutes_out_of_range": 0,
+        "age_minutes": 37
+      },
+      {
+        "ts": "2026-05-15T15:40:02.710Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -1.38,
+        "pnl_usd": -0.37,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.05,
+        "minutes_out_of_range": 0,
+        "age_minutes": 42
+      },
+      {
+        "ts": "2026-05-15T15:44:39.648Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -1.36,
+        "pnl_usd": -0.36,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.05,
+        "minutes_out_of_range": 0,
+        "age_minutes": 46
+      },
+      {
+        "ts": "2026-05-15T15:45:03.551Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -1.36,
+        "pnl_usd": -0.36,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.06,
+        "minutes_out_of_range": 0,
+        "age_minutes": 47
+      },
+      {
+        "ts": "2026-05-15T15:50:03.087Z",
+        "position": "paper_7cdd15c26c7d0014",
+        "pnl_pct": -1.32,
+        "pnl_usd": -0.35,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.06,
+        "minutes_out_of_range": 0,
+        "age_minutes": 52
+      }
+    ]
+  },
+  "4fAQF2roWPBwWg5Z2pLaBkkxkbmtM94EKeBGNynLcAAW": {
+    "name": "BABYTROLL-SOL",
+    "base_mint": null,
+    "deploys": [],
+    "total_deploys": 0,
+    "avg_pnl_pct": 0,
+    "win_rate": 0,
+    "adjusted_win_rate": 0,
+    "adjusted_win_rate_sample_count": 0,
+    "last_deployed_at": null,
+    "last_outcome": null,
+    "notes": [],
+    "snapshots": [
+      {
+        "ts": "2026-05-15T15:50:03.094Z",
+        "position": "paper_a1dfef4481d7721f",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 2,
+        "age_minutes": 3
+      }
+    ]
+  }
+}

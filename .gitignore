@@ -10,22 +10,8 @@ node_modules/
 # User config is tracked (tuning params only — no secrets).
 # Secrets (RPC URL, wallet key, API keys) live in .env.
 
-# Runtime state (position tracking, lessons — user-specific)
-state.json
-lessons.json
-smart-wallets.json
-pool-memory.json
-token-blacklist.json
-strategy-library.json
-decision-log.json
-hivemind-cache.json
-signal-weights.json
-
-# Paper trading state (DRY_RUN-aware mirrors)
-paper-state.json
-paper-lessons.json
-paper-pool-memory.json
-paper-signal-weights.json
+# Runtime state files are TRACKED so they sync between server and local.
+# (state.json, paper-*.json, lessons, pool-memory, blacklists, weights, etc.)
 
 # Debug dumps and temp working files (may contain prompts / secrets)
 last-400-request.json

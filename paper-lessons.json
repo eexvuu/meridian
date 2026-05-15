@@ -1,0 +1,116 @@
+{
+  "lessons": [],
+  "performance": [
+    {
+      "position": "paper_fd46ce75fda33511",
+      "pool": "Bmovbz2FMD3qgTYfKE7wJHJbm8MJDvHCn9ZCAreCA9RR",
+      "pool_name": "RKC-SOL",
+      "strategy": "spot",
+      "bin_range": {
+        "min": -365,
+        "max": -313,
+        "bins_below": 52,
+        "bins_above": 0
+      },
+      "bin_step": 100,
+      "volatility": 1.5664,
+      "fee_tvl_ratio": 0.3384,
+      "organic_score": 90,
+      "amount_sol": 0.3,
+      "fees_earned_usd": 0.01,
+      "fees_earned_sol": 0.000109,
+      "final_value_usd": 26.59,
+      "initial_value_usd": 26.59,
+      "minutes_in_range": 9,
+      "minutes_held": 39,
+      "close_reason": "⚡ Exit: Out of range for 30m (limit: 30m) — OOR cooldown triggered",
+      "base_mint": "7HgfXftRBBqsYtAEYcqjGLQrNJLL6Tww9ek4rE3Apump",
+      "deployed_at": "2026-05-15T14:00:50.667Z",
+      "closed_at": "2026-05-15T14:40:08.792Z",
+      "signal_snapshot": {
+        "base_mint": "7HgfXftRBBqsYtAEYcqjGLQrNJLL6Tww9ek4rE3Apump",
+        "organic_score": 90,
+        "fee_tvl_ratio": 0.3384,
+        "volatility": 1.5664
+      },
+      "pnl_usd": 0.01,
+      "pnl_pct": 0.04,
+      "range_efficiency": 23.1,
+      "recorded_at": "2026-05-15T14:40:08.794Z"
+    },
+    {
+      "position": "paper_3b25229dc19e1c16",
+      "pool": "HYETXRgcCHztgff2iZtfNDZ2nENmmxUoBqtQGuvqUZvG",
+      "pool_name": "DIRECTOR-SOL",
+      "strategy": "spot",
+      "bin_range": {
+        "min": -481,
+        "max": -440,
+        "bins_below": 41,
+        "bins_above": 0
+      },
+      "bin_step": 100,
+      "volatility": 3.9763,
+      "fee_tvl_ratio": 2.615,
+      "organic_score": 82,
+      "amount_sol": 0.3,
+      "fees_earned_usd": 0.04,
+      "fees_earned_sol": 0.000425,
+      "final_value_usd": 26.27,
+      "initial_value_usd": 26.73,
+      "minutes_in_range": 60,
+      "minutes_held": 60,
+      "close_reason": "Low yield: fee/TVL 3.40% < min 7% (age: 60m)",
+      "base_mint": "Do6N8m8ssowyAvXs2tkGKkJ8vaNC8H5oRkMdr9shpump",
+      "deployed_at": "2026-05-15T13:56:04.377Z",
+      "closed_at": "2026-05-15T14:56:14.919Z",
+      "signal_snapshot": {
+        "base_mint": "Do6N8m8ssowyAvXs2tkGKkJ8vaNC8H5oRkMdr9shpump",
+        "organic_score": 82,
+        "fee_tvl_ratio": 2.615,
+        "volatility": 3.9763
+      },
+      "pnl_usd": -0.42,
+      "pnl_pct": -1.57,
+      "range_efficiency": 100,
+      "recorded_at": "2026-05-15T14:56:14.920Z"
+    },
+    {
+      "position": "paper_2a4daa4de0952e37",
+      "pool": "J9sHie1N29rKZRtM8H13zcCeVv1XBzx3FPTPcGEXjJ2i",
+      "pool_name": "Dust-SOL",
+      "strategy": "spot",
+      "bin_range": {
+        "min": -596,
+        "max": -527,
+        "bins_below": 69,
+        "bins_above": 0
+      },
+      "bin_step": 100,
+      "volatility": 4.7024,
+      "fee_tvl_ratio": 7.9227,
+      "organic_score": 75,
+      "amount_sol": 0.3,
+      "fees_earned_usd": 0.25,
+      "fees_earned_sol": 0.002749,
+      "final_value_usd": 26.81,
+      "initial_value_usd": 26.81,
+      "minutes_in_range": 92,
+      "minutes_held": 122,
+      "close_reason": "OOR 30min — exit trigger",
+      "base_mint": "6veQU7HDdXV5DC2Eqhnri5q71gkMzG73qKkSSudnpump",
+      "deployed_at": "2026-05-15T13:41:59.559Z",
+      "closed_at": "2026-05-15T15:44:47.363Z",
+      "signal_snapshot": {
+        "base_mint": "6veQU7HDdXV5DC2Eqhnri5q71gkMzG73qKkSSudnpump",
+        "organic_score": 75,
+        "fee_tvl_ratio": 7.9227,
+        "volatility": 4.7024
+      },
+      "pnl_usd": 0.25,
+      "pnl_pct": 0.93,
+      "range_efficiency": 75.4,
+      "recorded_at": "2026-05-15T15:44:47.363Z"
+    }
+  ]
+}
