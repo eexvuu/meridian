@@ -150,6 +150,14 @@ async function validateDeployPoolThresholds(args) {
     };
   }
 
+  const maxVol = numberOrNull(config.screening.maxVolatilityForDeploy);
+  if (maxVol != null && volatility > maxVol) {
+    return {
+      pass: false,
+      reason: `Pool ${volatilityTimeframe} volatility ${volatility} exceeds maxVolatilityForDeploy ${maxVol}. Refusing deploy.`,
+    };
+  }
+
   const actualBinStep = poolDetailBinStep(detail);
   const minStep = numberOrNull(config.screening.minBinStep);
   const maxStep = numberOrNull(config.screening.maxBinStep);
@@ -346,6 +354,7 @@ const toolMap = {
       maxMcap: ["screening", "maxMcap"],
       minBinStep: ["screening", "minBinStep"],
       maxBinStep: ["screening", "maxBinStep"],
+      maxVolatilityForDeploy: ["screening", "maxVolatilityForDeploy"],
       timeframe: ["screening", "timeframe"],
       category: ["screening", "category"],
       minTokenFeesSol: ["screening", "minTokenFeesSol"],
@@ -367,6 +376,8 @@ const toolMap = {
       autoSwapAfterClaim: ["management", "autoSwapAfterClaim"],
       outOfRangeBinsToClose: ["management", "outOfRangeBinsToClose"],
       outOfRangeWaitMinutes: ["management", "outOfRangeWaitMinutes"],
+      oorWaitMinutesUp: ["management", "oorWaitMinutesUp"],
+      oorWaitMinutesDown: ["management", "oorWaitMinutesDown"],
       oorCooldownTriggerCount: ["management", "oorCooldownTriggerCount"],
       oorCooldownHours: ["management", "oorCooldownHours"],
       repeatDeployCooldownEnabled: ["management", "repeatDeployCooldownEnabled"],

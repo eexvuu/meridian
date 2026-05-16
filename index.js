@@ -921,7 +921,7 @@ function getDeterministicCloseRule(position, managementConfig) {
     position.active_bin != null &&
     position.upper_bin != null &&
     position.active_bin > position.upper_bin &&
-    (position.minutes_out_of_range ?? 0) >= managementConfig.outOfRangeWaitMinutes
+    (position.minutes_out_of_range ?? 0) >= (managementConfig.oorWaitMinutesUp ?? managementConfig.outOfRangeWaitMinutes)
   ) {
     return { action: "CLOSE", rule: 4, reason: "OOR" };
   }

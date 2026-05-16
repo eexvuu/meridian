@@ -367,7 +367,7 @@ export function getStateSummary() {
  * Returns { action, reason } or null if no exit needed.
  */
 export function updatePnlAndCheckExits(position_address, positionData, mgmtConfig) {
-  const { pnl_pct: currentPnlPct, pnl_pct_suspicious, in_range, fee_per_tvl_24h } = positionData;
+  const { pnl_pct: currentPnlPct, pnl_pct_suspicious, in_range, fee_per_tvl_24h, active_bin, upper_bin, lower_bin } = positionData;
   const state = load();
   const pos = state.positions[position_address];
   if (!pos || pos.closed) return null;
@@ -432,10 +432,19 @@ export function updatePnlAndCheckExits(position_address, positionData, mgmtConfi
   // ── Out of range too long ──────────────────────────────────────
   if (pos.out_of_range_since) {
     const minutesOOR = Math.floor((Date.now() - new Date(pos.out_of_range_since).getTime()) / 60000);
-    if (minutesOOR >= mgmtConfig.outOfRangeWaitMinutes) {
+    let waitMinutes = mgmtConfig.outOfRangeWaitMinutes;
+    let direction = "";
+    if (active_bin != null && upper_bin != null && active_bin > upper_bin) {
+      direction = " up";
+      waitMinutes = mgmtConfig.oorWaitMinutesUp ?? mgmtConfig.outOfRangeWaitMinutes;
+    } else if (active_bin != null && lower_bin != null && active_bin < lower_bin) {
+      direction = " down";
+      waitMinutes = mgmtConfig.oorWaitMinutesDown ?? mgmtConfig.outOfRangeWaitMinutes;
+    }
+    if (minutesOOR >= waitMinutes) {
       return {
         action: "OUT_OF_RANGE",
-        reason: `Out of range for ${minutesOOR}m (limit: ${mgmtConfig.outOfRangeWaitMinutes}m)`,
+        reason: `Out of range${direction} for ${minutesOOR}m (limit: ${waitMinutes}m)`,
       };
     }
   }
