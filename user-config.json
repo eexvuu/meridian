@@ -20,6 +20,7 @@
   "minFeePerTvl24h": 2,
   "minAgeBeforeYieldCheck": 120,
   "trailingTriggerPct": 5,
+  "oorCooldownTriggerCount": 2,
 
   "repeatDeployCooldownEnabled": true,
   "repeatDeployCooldownTriggerCount": 3,
