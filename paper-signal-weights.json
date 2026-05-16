@@ -1,7 +1,7 @@
 {
   "weights": {
     "organic_score": 1,
-    "fee_tvl_ratio": 1,
+    "fee_tvl_ratio": 0.858,
     "volume": 1,
     "mcap": 1,
     "holder_count": 1,
@@ -9,9 +9,76 @@
     "narrative_quality": 1,
     "study_win_rate": 1,
     "hive_consensus": 1,
-    "volatility": 1
+    "volatility": 1.158
   },
-  "last_recalc": null,
-  "recalc_count": 0,
-  "history": []
+  "last_recalc": "2026-05-16T01:47:08.050Z",
+  "recalc_count": 3,
+  "history": [
+    {
+      "timestamp": "2026-05-15T20:07:08.204Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1,
+          "to": 1.05,
+          "lift": 0.359,
+          "action": "boosted"
+        },
+        {
+          "signal": "fee_tvl_ratio",
+          "from": 1,
+          "to": 0.95,
+          "lift": -0.227,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 10,
+      "win_count": 5,
+      "loss_count": 5
+    },
+    {
+      "timestamp": "2026-05-15T22:57:37.020Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.05,
+          "to": 1.103,
+          "lift": 0.344,
+          "action": "boosted"
+        },
+        {
+          "signal": "fee_tvl_ratio",
+          "from": 0.95,
+          "to": 0.903,
+          "lift": -0.229,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 15,
+      "win_count": 10,
+      "loss_count": 5
+    },
+    {
+      "timestamp": "2026-05-16T01:47:08.050Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.103,
+          "to": 1.158,
+          "lift": 0.292,
+          "action": "boosted"
+        },
+        {
+          "signal": "fee_tvl_ratio",
+          "from": 0.903,
+          "to": 0.858,
+          "lift": -0.193,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 20,
+      "win_count": 14,
+      "loss_count": 6
+    }
+  ]
 }
