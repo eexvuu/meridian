@@ -16,6 +16,8 @@
   "maxMcap": 10000000,
   "minTokenAgeHours": 8,
   "maxVolatilityForDeploy": 5.0,
+  "maxSniperPct": 10,
+  "maxBundlePct": 25,
 
   "takeProfitFeePct": 5,
   "stopLossPct": -15,
@@ -35,6 +37,21 @@
 
   "managementIntervalMin": 5,
   "screeningIntervalMin": 10,
+
+  "chartIndicators": {
+    "enabled": true,
+    "entryPreset": "supertrend_break",
+    "exitPreset": "bb_plus_rsi",
+    "rsiLength": 14,
+    "rsiOversold": 30,
+    "rsiOverbought": 90,
+    "intervals": ["15_MINUTE"],
+    "candles": 200,
+    "requireAllIntervals": false,
+    "entryShadowMode": true,
+    "exitShadowMode": true,
+    "exitMinPnlPct": 0
+  },
 
   "lpAgentRelayEnabled": true,
   "useDiscordSignals": false,

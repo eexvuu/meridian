@@ -22,23 +22,17 @@
  */
 
 import { log } from "./logger.js";
+import { meteoraDatapiJson } from "./tools/meteora-datapi.js";
 
 const METEORA_POOL_URL = (addr) => `https://dlmm.datapi.meteora.ag/pools/${addr}`;
 const POOL_CACHE_TTL_MS = 20_000;
-const _poolCache = new Map();
 
 export function isDryRun() {
   return process.env.DRY_RUN === "true";
 }
 
 async function fetchPoolDetail(pool_address) {
-  const cached = _poolCache.get(pool_address);
-  if (cached && Date.now() - cached.ts < POOL_CACHE_TTL_MS) return cached.data;
-  const res = await fetch(METEORA_POOL_URL(pool_address));
-  if (!res.ok) throw new Error(`Meteora pool detail ${res.status}`);
-  const data = await res.json();
-  _poolCache.set(pool_address, { data, ts: Date.now() });
-  return data;
+  return meteoraDatapiJson(METEORA_POOL_URL(pool_address), { ttlMs: POOL_CACHE_TTL_MS });
 }
 
 function num(value, fallback = 0) {

@@ -5,6 +5,7 @@ import { log } from "../logger.js";
 import { isBaseMintOnCooldown, isPoolOnCooldown } from "../pool-memory.js";
 import { confirmIndicatorPreset } from "./chart-indicators.js";
 import { getAgentMeridianBase, getAgentMeridianHeaders } from "./agent-meridian.js";
+import { meteoraDatapiJson } from "./meteora-datapi.js";
 
 const DATAPI_JUP = "https://datapi.jup.ag/v1";
 
@@ -277,9 +278,7 @@ async function enrichDiscordSignalLaunchpads(rawPools) {
 
 async function findRivalPool(mint) {
   const url = `https://dlmm.datapi.meteora.ag/pools?query=${encodeURIComponent(mint)}&sort_by=${encodeURIComponent("tvl:desc")}&filter_by=${encodeURIComponent(`tvl>${PVP_MIN_ACTIVE_TVL}`)}`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`rival pool search ${res.status}`);
-  const data = await res.json();
+  const data = await meteoraDatapiJson(url, { ttlMs: 60_000 });
   const pools = Array.isArray(data?.data) ? data.data : [];
   return pools.find((pool) => pool?.token_x?.address === mint || pool?.token_y?.address === mint) || null;
 }
@@ -629,6 +628,38 @@ export async function getTopCandidates({ limit = 10 } = {}) {
       return true;
     }));
 
+    // Sniper concentration hard filter — high sniper % = early dumpers waiting
+    const maxSniper = config.screening.maxSniperPct;
+    if (maxSniper != null) {
+      const before = eligible.length;
+      eligible.splice(0, eligible.length, ...eligible.filter((p) => {
+        if (p.sniper_pct == null) return true; // no data → don't filter
+        if (p.sniper_pct > maxSniper) {
+          log("screening", `Sniper filter: dropped ${p.name} — sniper_pct ${p.sniper_pct}% > ${maxSniper}%`);
+          pushFilteredReason(filteredOut, p, `sniper_pct ${p.sniper_pct}% > ${maxSniper}% limit`);
+          return false;
+        }
+        return true;
+      }));
+      if (eligible.length < before) log("screening", `Sniper filter removed ${before - eligible.length} pool(s)`);
+    }
+
+    // Bundle concentration hard filter — bundled wallets = coordinated dump risk
+    const maxBundle = config.screening.maxBundlePct;
+    if (maxBundle != null) {
+      const before = eligible.length;
+      eligible.splice(0, eligible.length, ...eligible.filter((p) => {
+        if (p.bundle_pct == null) return true; // no data → don't filter
+        if (p.bundle_pct > maxBundle) {
+          log("screening", `Bundle filter: dropped ${p.name} — bundle_pct ${p.bundle_pct}% > ${maxBundle}%`);
+          pushFilteredReason(filteredOut, p, `bundle_pct ${p.bundle_pct}% > ${maxBundle}% limit`);
+          return false;
+        }
+        return true;
+      }));
+      if (eligible.length < before) log("screening", `Bundle filter removed ${before - eligible.length} pool(s)`);
+    }
+
     // ATH filter — drop pools where price is too close to ATH
     const athFilter = config.screening.athFilterPct;
     if (athFilter != null) {
@@ -685,16 +716,21 @@ export async function getTopCandidates({ limit = 10 } = {}) {
     );
     const confirmationByPool = new Map(confirmations.map((entry) => [entry.pool, entry.confirmation]));
     const before = eligible.length;
+    const entryShadow = !!config.indicators.entryShadowMode;
     const confirmedEligible = eligible.filter((pool) => {
       const confirmation = confirmationByPool.get(pool.pool);
       pool.indicator_confirmation = confirmation || null;
       if (!confirmation || confirmation.confirmed) return true;
+      if (entryShadow) {
+        log("indicator_shadow", `[SHADOW] Would reject ${pool.name} (${pool.pool.slice(0, 8)}): ${confirmation.reason}`);
+        return true;
+      }
       pushFilteredReason(filteredOut, pool, `indicator reject: ${confirmation.reason}`);
       log("screening", `Indicator rejected ${pool.name} (${pool.pool.slice(0, 8)}): ${confirmation.reason}`);
       return false;
     });
     eligible.splice(0, eligible.length, ...confirmedEligible);
-    if (eligible.length < before) {
+    if (!entryShadow && eligible.length < before) {
       log("screening", `Indicator confirmation removed ${before - eligible.length} candidate(s)`);
     }
   }

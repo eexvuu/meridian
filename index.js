@@ -34,6 +34,7 @@ import { stageSignals } from "./signal-tracker.js";
 import { getWeightsSummary } from "./signal-weights.js";
 import { bootstrapHiveMind, ensureAgentId, getHiveMindPullMode, isHiveMindEnabled, pullHiveMindLessons, pullHiveMindPresets, registerHiveMindAgent, startHiveMindBackgroundSync } from "./hivemind.js";
 import { appendDecision } from "./decision-log.js";
+import { confirmIndicatorPreset } from "./tools/chart-indicators.js";
 
 const entrypointPath = process.env.pm_exec_path || process.argv[1];
 const isMain = entrypointPath
@@ -247,6 +248,30 @@ export async function runManagementCycle({ silent = false } = {}) {
         exitMap.set(p.position, exit.reason);
         log("state", `Exit alert for ${p.pair}: ${exit.reason}`);
       }
+    }
+
+    // ── TA exit check (indicator-based take-profit at top) ─────────
+    if (config.indicators.enabled) {
+      const minPnl = Number(config.indicators.exitMinPnlPct ?? 0);
+      const shadow = !!config.indicators.exitShadowMode;
+      await Promise.all(positionData.map(async (p) => {
+        if (exitMap.has(p.position)) return;
+        if (p.pnl_pct == null || p.pnl_pct <= minPnl) return;
+        if (!p.base_mint) return;
+        try {
+          const confirmation = await confirmIndicatorPreset({ mint: p.base_mint, side: "exit" });
+          if (!confirmation?.confirmed || confirmation.skipped) return;
+          const msg = `TA exit (${confirmation.preset}): ${confirmation.reason} | pnl ${p.pnl_pct.toFixed(2)}%`;
+          if (shadow) {
+            log("indicator_shadow", `[SHADOW] Would close ${p.pair}: ${msg}`);
+          } else {
+            exitMap.set(p.position, msg);
+            log("state", `TA exit alert for ${p.pair}: ${msg}`);
+          }
+        } catch (e) {
+          log("indicators_warn", `TA exit check failed for ${p.pair}: ${e.message}`);
+        }
+      }));
     }
 
     // ── Deterministic rule checks (no LLM) ──────────────────────────
