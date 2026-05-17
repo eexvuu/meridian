@@ -1,7 +1,7 @@
 {
   "weights": {
-    "organic_score": 1,
-    "fee_tvl_ratio": 0.858,
+    "organic_score": 0.903,
+    "fee_tvl_ratio": 0.774,
     "volume": 1,
     "mcap": 1,
     "holder_count": 1,
@@ -9,10 +9,10 @@
     "narrative_quality": 1,
     "study_win_rate": 1,
     "hive_consensus": 1,
-    "volatility": 1.158
+    "volatility": 1.408
   },
-  "last_recalc": "2026-05-16T01:47:08.050Z",
-  "recalc_count": 3,
+  "last_recalc": "2026-05-16T21:17:02.653Z",
+  "recalc_count": 7,
   "history": [
     {
       "timestamp": "2026-05-15T20:07:08.204Z",
@@ -79,6 +79,94 @@
       "window_size": 20,
       "win_count": 14,
       "loss_count": 6
+    },
+    {
+      "timestamp": "2026-05-16T04:52:52.345Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.158,
+          "to": 1.216,
+          "lift": 0.096,
+          "action": "boosted"
+        },
+        {
+          "signal": "organic_score",
+          "from": 1,
+          "to": 0.95,
+          "lift": -0.197,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 25,
+      "win_count": 15,
+      "loss_count": 10
+    },
+    {
+      "timestamp": "2026-05-16T09:57:28.862Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.216,
+          "to": 1.277,
+          "lift": 0.044,
+          "action": "boosted"
+        },
+        {
+          "signal": "organic_score",
+          "from": 0.95,
+          "to": 0.903,
+          "lift": -0.103,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 30,
+      "win_count": 17,
+      "loss_count": 13
+    },
+    {
+      "timestamp": "2026-05-16T13:15:32.757Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.277,
+          "to": 1.341,
+          "lift": 0.038,
+          "action": "boosted"
+        },
+        {
+          "signal": "fee_tvl_ratio",
+          "from": 0.858,
+          "to": 0.815,
+          "lift": -0.071,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 35,
+      "win_count": 20,
+      "loss_count": 15
+    },
+    {
+      "timestamp": "2026-05-16T21:17:02.653Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.341,
+          "to": 1.408,
+          "lift": 0.031,
+          "action": "boosted"
+        },
+        {
+          "signal": "fee_tvl_ratio",
+          "from": 0.815,
+          "to": 0.774,
+          "lift": -0.062,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 40,
+      "win_count": 23,
+      "loss_count": 17
     }
   ]
 }
