@@ -2,8 +2,9 @@ import fs from "fs";
 import { log } from "./logger.js";
 import { getPerformanceSummary } from "./lessons.js";
 
-const STATE_FILE = "./state.json";
-const LESSONS_FILE = "./lessons.json";
+const IS_DRY_RUN = process.env.DRY_RUN === "true";
+const STATE_FILE = IS_DRY_RUN ? "./paper-state.json" : "./state.json";
+const LESSONS_FILE = IS_DRY_RUN ? "./paper-lessons.json" : "./lessons.json";
 
 export async function generateBriefing() {
   const state = loadJson(STATE_FILE) || { positions: {}, recentEvents: [] };
