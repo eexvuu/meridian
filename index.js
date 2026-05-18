@@ -392,8 +392,16 @@ After executing, write a brief one-line result per position.
         else sendMessage(`🔄 Management Cycle\n\n${stripThink(mgmtReport)}`).catch(() => { });
       }
       for (const p of positions) {
-        if (!p.in_range && p.minutes_out_of_range >= config.management.outOfRangeWaitMinutes) {
-          notifyOutOfRange({ pair: p.pair, minutesOOR: p.minutes_out_of_range }).catch(() => { });
+        if (!p.in_range) {
+          let waitMinutes = config.management.outOfRangeWaitMinutes;
+          if (p.active_bin != null && p.upper_bin != null && p.active_bin > p.upper_bin) {
+            waitMinutes = config.management.oorWaitMinutesUp ?? waitMinutes;
+          } else if (p.active_bin != null && p.lower_bin != null && p.active_bin < p.lower_bin) {
+            waitMinutes = config.management.oorWaitMinutesDown ?? waitMinutes;
+          }
+          if (p.minutes_out_of_range >= waitMinutes) {
+            notifyOutOfRange({ pair: p.pair, minutesOOR: p.minutes_out_of_range }).catch(() => { });
+          }
         }
       }
     }
@@ -948,7 +956,15 @@ function getDeterministicCloseRule(position, managementConfig) {
     position.active_bin > position.upper_bin &&
     (position.minutes_out_of_range ?? 0) >= (managementConfig.oorWaitMinutesUp ?? managementConfig.outOfRangeWaitMinutes)
   ) {
-    return { action: "CLOSE", rule: 4, reason: "OOR" };
+    return { action: "CLOSE", rule: 4, reason: "OOR up" };
+  }
+  if (
+    position.active_bin != null &&
+    position.lower_bin != null &&
+    position.active_bin < position.lower_bin &&
+    (position.minutes_out_of_range ?? 0) >= (managementConfig.oorWaitMinutesDown ?? managementConfig.outOfRangeWaitMinutes)
+  ) {
+    return { action: "CLOSE", rule: 4, reason: "OOR down" };
   }
   if (
     position.fee_per_tvl_24h != null &&

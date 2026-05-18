@@ -88,6 +88,7 @@ export function trackPosition({
     signal_snapshot: signal_snapshot || null,
     deployed_at: new Date().toISOString(),
     out_of_range_since: null,
+    oor_total_minutes: 0,
     last_claim_at: null,
     total_fees_claimed_usd: 0,
     rebalance_count: 0,
@@ -125,16 +126,18 @@ export function markOutOfRange(position_address) {
 }
 
 /**
- * Mark a position as back in range (clears OOR timestamp).
+ * Mark a position as back in range (clears OOR timestamp and accumulates duration).
  */
 export function markInRange(position_address) {
   const state = load();
   const pos = state.positions[position_address];
   if (!pos) return;
   if (pos.out_of_range_since) {
+    const oorMinutes = Math.max(0, Math.floor((Date.now() - new Date(pos.out_of_range_since).getTime()) / 60000));
+    pos.oor_total_minutes = (pos.oor_total_minutes || 0) + oorMinutes;
     pos.out_of_range_since = null;
     save(state);
-    log("state", `Position ${position_address} back in range`);
+    log("state", `Position ${position_address} back in range (+${oorMinutes}m OOR, cum=${pos.oor_total_minutes}m)`);
   }
 }
 
@@ -399,9 +402,11 @@ export function updatePnlAndCheckExits(position_address, positionData, mgmtConfi
     changed = true;
     log("state", `Position ${position_address} marked out of range`);
   } else if (in_range === true && pos.out_of_range_since) {
+    const oorMinutes = Math.max(0, Math.floor((Date.now() - new Date(pos.out_of_range_since).getTime()) / 60000));
+    pos.oor_total_minutes = (pos.oor_total_minutes || 0) + oorMinutes;
     pos.out_of_range_since = null;
     changed = true;
-    log("state", `Position ${position_address} back in range`);
+    log("state", `Position ${position_address} back in range (+${oorMinutes}m OOR, cum=${pos.oor_total_minutes}m)`);
   }
 
   if (changed) save(state);

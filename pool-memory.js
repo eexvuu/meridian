@@ -190,14 +190,35 @@ export function recordPoolDeploy(poolAddress, deployData) {
     const cooldownHours = Math.max(0, Number(config.management.repeatDeployCooldownHours ?? 12));
     const rawScope = String(config.management.repeatDeployCooldownScope || "token").toLowerCase();
     const scope = ["pool", "token", "both"].includes(rawScope) ? rawScope : "token";
-    const recentRepeatDeploys = entry.deploys.slice(-triggerCount);
-    const repeatedFeeGeneratingDeploys =
-      cooldownHours > 0 &&
-      recentRepeatDeploys.length >= triggerCount &&
-      recentRepeatDeploys.every((d) => d.pnl_pct != null && isFeeGeneratingDeploy(d));
 
-    if (repeatedFeeGeneratingDeploys) {
-      const reason = `repeat fee-generating deploys (${triggerCount}x)`;
+    // Per-pool trigger: last N deploys in THIS pool are all fee-generating.
+    const recentPoolDeploys = entry.deploys.slice(-triggerCount);
+    const poolTriggered =
+      cooldownHours > 0 &&
+      recentPoolDeploys.length >= triggerCount &&
+      recentPoolDeploys.every((d) => d.pnl_pct != null && isFeeGeneratingDeploy(d));
+
+    // Token-wide trigger: aggregate last N deploys for the same base_mint across ALL pools,
+    // ordered by close time, then check fee-generating consistency. Without this, switching
+    // pools resets the counter and lets the bot redeploy the same token unchecked.
+    let tokenTriggered = false;
+    if ((scope === "token" || scope === "both") && entry.base_mint && cooldownHours > 0) {
+      const tokenDeploys = [];
+      for (const e of Object.values(db)) {
+        if (e?.base_mint === entry.base_mint && Array.isArray(e.deploys)) {
+          tokenDeploys.push(...e.deploys);
+        }
+      }
+      tokenDeploys.sort((a, b) => String(a.closed_at || "").localeCompare(String(b.closed_at || "")));
+      const recentTokenDeploys = tokenDeploys.slice(-triggerCount);
+      tokenTriggered =
+        recentTokenDeploys.length >= triggerCount &&
+        recentTokenDeploys.every((d) => d.pnl_pct != null && isFeeGeneratingDeploy(d));
+    }
+
+    if (poolTriggered || tokenTriggered) {
+      const trigger = tokenTriggered && !poolTriggered ? "token-wide" : "pool";
+      const reason = `repeat fee-generating deploys (${triggerCount}x ${trigger})`;
       if (scope === "pool" || scope === "both" || !entry.base_mint) {
         const poolCooldownUntil = setPoolCooldown(entry, cooldownHours, reason);
         log("pool-memory", `Cooldown set for ${entry.name} until ${poolCooldownUntil} (${reason})`);

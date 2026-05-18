@@ -1827,9 +1827,9 @@ export async function closePosition({ position_address, reason }) {
       if (tracked) {
         const deployedAt = new Date(tracked.deployed_at).getTime();
         const minutesHeld = Math.floor((Date.now() - deployedAt) / 60000);
-        let minutesOOR = 0;
+        let minutesOOR = tracked.oor_total_minutes || 0;
         if (tracked.out_of_range_since) {
-          minutesOOR = Math.floor((Date.now() - new Date(tracked.out_of_range_since).getTime()) / 60000);
+          minutesOOR += Math.floor((Date.now() - new Date(tracked.out_of_range_since).getTime()) / 60000);
         }
 
         let pnlUsd = 0;
@@ -2070,9 +2070,9 @@ export async function closePosition({ position_address, reason }) {
       const deployedAt = new Date(tracked.deployed_at).getTime();
       const minutesHeld = Math.floor((Date.now() - deployedAt) / 60000);
 
-      let minutesOOR = 0;
+      let minutesOOR = tracked.oor_total_minutes || 0;
       if (tracked.out_of_range_since) {
-        minutesOOR = Math.floor((Date.now() - new Date(tracked.out_of_range_since).getTime()) / 60000);
+        minutesOOR += Math.floor((Date.now() - new Date(tracked.out_of_range_since).getTime()) / 60000);
       }
 
       const shouldRejectClosedPnl = (pct, closeReasonText) => {

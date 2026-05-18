@@ -193,9 +193,8 @@ const actualBaseFee = baseFactor > 0
 
 `lessons.js` records closed position performance and auto-derives lessons. Key points:
 - `getLessonsForPrompt({ agentType })` — injects relevant lessons into system prompt
-- `evolveThresholds()` — adjusts screening thresholds based on winners vs losers
+- `evolveThresholds()` — adjusts screening thresholds based on winners vs losers (`maxVolatilityForDeploy`, `minFeeActiveTvlRatio`, `minOrganic`). Skipped entirely in `DRY_RUN`. If `maxVolatilityForDeploy` is `null` in config the volatility branch is a no-op (user has disabled the cap).
 - Performance recorded via `recordPerformance()` called from executor.js after `close_position`
-- **Known issue**: `evolveThresholds()` references `maxVolatility` and `minFeeTvlRatio` but config.js uses `minFeeActiveTvlRatio` and has no `maxVolatility` key — the evolution of these keys is a no-op
 
 ---
 
@@ -225,8 +224,9 @@ Agent Meridian HiveMind sync is handled by `hivemind.js`. It uses built-in Agent
 
 ## Known Issues / Tech Debt
 
-- `lessons.js evolveThresholds()` evolves `maxVolatility` + `minFeeTvlRatio` (wrong key names — should be `minFeeActiveTvlRatio`; `maxVolatility` doesn't exist in config at all). The evolution is a no-op for those keys.
 - `get_wallet_positions` tool (dlmm.js) is in definitions.js but not in MANAGER_TOOLS or SCREENER_TOOLS — only available in GENERAL role.
+- `chartIndicators.entryShadowMode` / `exitShadowMode` default `true`: TA presets log rejections but do not actually filter deploys / trigger exits. Flip to `false` after A/B validation.
+- `signal-weights.js` recalculates Darwinian weights and persists them, but the values are only surfaced to the LLM via `getWeightsSummary` in the prompt — they do not hard-rank or filter candidates.
 
 ---
 

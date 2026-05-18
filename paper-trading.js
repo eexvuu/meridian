@@ -111,12 +111,13 @@ export async function computePaperPnl(pos) {
   // feeRatio is fee_tvl_ratio["24h"] in PERCENT per day (e.g. 6.31 = 6.31%/day on TVL).
   // Convert to fraction-per-minute: (percent / 100) / 1440.
   // Approximation: fee_sol_per_minute ≈ feesPerMinFraction × amount_sol  (small-share assumption).
-  // minutes_in_range: minutes_held minus current contiguous OOR duration (state.js OOR clock).
+  // minutes_in_range: minutes_held minus cumulative OOR (state.js tracks total + current contiguous).
   const feesPerMinFraction = (feeRatio / 100) / 1440;
   const currentOorMinutes = pos.out_of_range_since
     ? Math.max(0, Math.floor((Date.now() - new Date(pos.out_of_range_since).getTime()) / 60000))
     : 0;
-  const minutesInRange = Math.max(0, minutesHeld - currentOorMinutes);
+  const totalOorMinutes = (pos.oor_total_minutes || 0) + currentOorMinutes;
+  const minutesInRange = Math.max(0, minutesHeld - totalOorMinutes);
   const feesSolAccrued = feesPerMinFraction * pos.amount_sol * minutesInRange;
   const feesUsdAccrued = feesSolAccrued * solUsd;
 
@@ -227,6 +228,7 @@ export async function computePaperCloseResult(trackedPos, closeReason) {
     bin_step: trackedPos.bin_step,
     active_bin_at_deploy: trackedPos.active_bin_at_deploy,
     out_of_range_since: trackedPos.out_of_range_since,
+    oor_total_minutes: trackedPos.oor_total_minutes || 0,
     entry_price: snap.entry_price,
     lower_price: snap.lower_price,
     sol_usd_price: snap.sol_usd_price,
