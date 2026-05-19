@@ -23,7 +23,7 @@
   "stopLossPct": -15,
   "outOfRangeWaitMinutes": 30,
   "oorWaitMinutesUp": 120,
-  "oorWaitMinutesDown": 5,
+  "oorWaitMinutesDown": 15,
   "minFeePerTvl24h": 2,
   "minAgeBeforeYieldCheck": 120,
   "trailingTriggerPct": 5,

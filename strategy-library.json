@@ -1,5 +1,5 @@
 {
-  "active": "custom_ratio_spot",
+  "active": "single_sided_reseed",
   "strategies": {
     "custom_ratio_spot": {
       "id": "custom_ratio_spot",

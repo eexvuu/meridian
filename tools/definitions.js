@@ -385,12 +385,13 @@ WARNING: This executes a real on-chain transaction.`,
 Changes persist to user-config.json and take effect immediately — no restart needed.
 
 VALID KEYS (use EXACTLY these key names, nothing else):
-Screening: minFeeActiveTvlRatio, minTvl, maxTvl, minVolume, minOrganic, minQuoteOrganic, minHolders, minMcap, maxMcap, minBinStep, maxBinStep, timeframe, category, minTokenFeesSol, excludeHighSupplyConcentration, allowedLaunchpads, blockedLaunchpads
-Management: minClaimAmount, outOfRangeBinsToClose, outOfRangeWaitMinutes, oorCooldownTriggerCount, oorCooldownHours, repeatDeployCooldownEnabled, repeatDeployCooldownTriggerCount, repeatDeployCooldownHours, repeatDeployCooldownScope, repeatDeployCooldownMinFeeEarnedPct, minVolumeToRebalance, stopLossPct, takeProfitPct, minSolToOpen, deployAmountSol, gasReserve, positionSizePct
+Screening: minFeeActiveTvlRatio, minTvl, maxTvl, minVolume, minOrganic, minQuoteOrganic, minHolders, minMcap, maxMcap, minBinStep, maxBinStep, maxVolatilityForDeploy, timeframe, category, minTokenFeesSol, excludeHighSupplyConcentration, allowedLaunchpads, blockedLaunchpads, minTokenAgeHours, maxTokenAgeHours, athFilterPct, maxBundlePct, maxSniperPct, maxTop10Pct, maxBotHoldersPct, useDiscordSignals, discordSignalMode, avoidPvpSymbols, blockPvpSymbols
+Management: minClaimAmount, autoSwapAfterClaim, outOfRangeBinsToClose, outOfRangeWaitMinutes, oorWaitMinutesUp, oorWaitMinutesDown, oorCooldownTriggerCount, oorCooldownHours, repeatDeployCooldownEnabled, repeatDeployCooldownTriggerCount, repeatDeployCooldownHours, repeatDeployCooldownScope, repeatDeployCooldownMinFeeEarnedPct, minVolumeToRebalance, stopLossPct, takeProfitPct, takeProfitFeePct, trailingTakeProfit, trailingTriggerPct, trailingDropPct, pnlSanityMaxDiffPct, solMode, minSolToOpen, deployAmountSol, gasReserve, positionSizePct, minAgeBeforeYieldCheck, minFeePerTvl24h
 Risk: maxPositions, maxDeployAmount
-Schedule: managementIntervalMin, screeningIntervalMin
-Models: managementModel, screeningModel, generalModel
-Strategy: minBinsBelow, maxBinsBelow, defaultBinsBelow (legacy binsBelow maps to maxBinsBelow)
+Schedule: managementIntervalMin, screeningIntervalMin, healthCheckIntervalMin
+Models: managementModel, screeningModel, generalModel, temperature, maxTokens, maxSteps
+Strategy: strategy (spot|bid_ask|curve), minBinsBelow, maxBinsBelow, defaultBinsBelow (legacy binsBelow maps to maxBinsBelow)
+Indicators: chartIndicatorsEnabled, indicatorEntryPreset, indicatorExitPreset, indicatorIntervals, indicatorCandles, rsiLength, rsiOversold, rsiOverbought, requireAllIntervals
 
 Reason is optional but helpful — logged as a lesson when provided.`,
       parameters: {

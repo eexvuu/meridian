@@ -476,7 +476,13 @@ export async function deployPosition({
   initial_value_usd,
 }) {
   pool_address = normalizeMint(pool_address);
-  const activeStrategy = strategy || config.strategy.strategy;
+  // "any"/"mixed" come from library entries that don't impose a shape (e.g. fee_compounding,
+  // multi_layer, partial_harvest). Treat them as "use the config default" so set_active_strategy
+  // on those entries doesn't throw.
+  const rawStrategy = strategy || config.strategy.strategy;
+  const activeStrategy = rawStrategy === "any" || rawStrategy === "mixed"
+    ? (config.strategy.strategy || "spot")
+    : rawStrategy;
   let activeBinsBelow = bins_below ?? config.strategy.defaultBinsBelow ?? config.strategy.minBinsBelow;
   let activeBinsAbove = bins_above ?? 0;
   const parsedVolatility = volatility == null ? null : Number(volatility);

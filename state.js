@@ -142,15 +142,18 @@ export function markInRange(position_address) {
 }
 
 /**
- * How many minutes has a position been out of range?
- * Returns 0 if currently in range.
+ * Cumulative minutes a position has been out of range across its lifetime.
+ * Sums oor_total_minutes (committed by previous in-range transitions) plus the
+ * current contiguous OOR window if the position is OOR right now.
  */
 export function minutesOutOfRange(position_address) {
   const state = load();
   const pos = state.positions[position_address];
-  if (!pos || !pos.out_of_range_since) return 0;
+  if (!pos) return 0;
+  const cum = pos.oor_total_minutes || 0;
+  if (!pos.out_of_range_since) return cum;
   const ms = Date.now() - new Date(pos.out_of_range_since).getTime();
-  return Math.floor(ms / 60000);
+  return cum + Math.max(0, Math.floor(ms / 60000));
 }
 
 /**
@@ -436,7 +439,8 @@ export function updatePnlAndCheckExits(position_address, positionData, mgmtConfi
 
   // ── Out of range too long ──────────────────────────────────────
   if (pos.out_of_range_since) {
-    const minutesOOR = Math.floor((Date.now() - new Date(pos.out_of_range_since).getTime()) / 60000);
+    const currentOOR = Math.max(0, Math.floor((Date.now() - new Date(pos.out_of_range_since).getTime()) / 60000));
+    const minutesOOR = (pos.oor_total_minutes || 0) + currentOOR;
     let waitMinutes = mgmtConfig.outOfRangeWaitMinutes;
     let direction = "";
     if (active_bin != null && upper_bin != null && active_bin > upper_bin) {
