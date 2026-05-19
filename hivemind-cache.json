@@ -1,21 +1,34 @@
 {
   "sharedLessons": [
     {
-      "id": "1778980057679",
-      "rule": "PREFER: PRIMIS-SOL-type pools (volatility=3.1348, bin_step=80) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +1%.",
+      "id": "1779161088450",
+      "rule": "PREFER: Ebola-SOL-type pools (volatility=1, bin_step=100) with strategy=\"spot\" — 97.7% in-range efficiency, PnL +4.45%.",
       "tags": [
         "efficient",
-        "bid_ask"
+        "spot"
       ],
       "role": null,
       "outcome": "good",
       "sourceType": "performance",
       "score": 57.28,
-      "created_at": "2026-05-17T01:07:37.679Z"
+      "created_at": "2026-05-19T03:24:48.450Z"
     },
     {
-      "id": "1778979812878",
-      "rule": "PREFER: PAIN-SOL-type pools (volatility=2.3, bin_step=100) with strategy=\"spot\" — 91% in-range efficiency, PnL +2.81%.",
+      "id": "1779160762008",
+      "rule": "PREFER: TOLYBOT-SOL-type pools (volatility=2.2848, bin_step=100) with strategy=\"spot\" — 99.2% in-range efficiency, PnL +3.31%.",
+      "tags": [
+        "efficient",
+        "spot"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.28,
+      "created_at": "2026-05-19T03:19:22.008Z"
+    },
+    {
+      "id": "1779160272554",
+      "rule": "PREFER: Embrace-SOL-type pools (volatility=3.9596, bin_step=100) with strategy=\"spot\" — 84.3% in-range efficiency, PnL +6.35%.",
       "tags": [
         "efficient",
         "spot"
@@ -24,11 +37,24 @@
       "outcome": "good",
       "sourceType": "performance",
       "score": 57.27,
-      "created_at": "2026-05-17T01:03:32.878Z"
+      "created_at": "2026-05-19T03:11:12.554Z"
     },
     {
-      "id": "1778978570701",
-      "rule": "PREFER: Yae-SOL-type pools (volatility=3.1093, bin_step=100) with strategy=\"spot\" — 100% in-range efficiency, PnL +19.91%.",
+      "id": "1779160209869",
+      "rule": "PREFER: PIGEON-SOL-type pools (volatility=3.4654, bin_step=100) with strategy=\"spot\" — 100% in-range efficiency, PnL +6.58%.",
+      "tags": [
+        "efficient",
+        "spot"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.27,
+      "created_at": "2026-05-19T03:10:09.869Z"
+    },
+    {
+      "id": "1779159510590",
+      "rule": "PREFER: PRIMIS-SOL-type pools (volatility=4.5542, bin_step=80) with strategy=\"spot\" — 100% in-range efficiency, PnL +2.73%.",
       "tags": [
         "efficient",
         "spot"
@@ -37,50 +63,40 @@
       "outcome": "good",
       "sourceType": "performance",
       "score": 57.26,
-      "created_at": "2026-05-17T00:42:50.701Z"
+      "created_at": "2026-05-19T02:58:30.590Z"
     },
     {
-      "id": "1778980168586",
-      "rule": "PREFER: Yae-SOL-type pools (volatility=3.1346, bin_step=100) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +1.32%.",
+      "id": "1779158753903",
+      "rule": "PREFER: TRK-SOL-type pools (volatility=0.5745, bin_step=null) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +4.71%.",
       "tags": [
         "efficient",
-        "bid_ask"
+        "bid_ask",
+        "regime_dump_with_pullback"
       ],
       "role": null,
       "outcome": "good",
       "sourceType": "performance",
       "score": 57.25,
-      "created_at": "2026-05-17T01:09:28.586Z"
+      "created_at": "2026-05-19T02:45:53.903Z"
     },
     {
-      "id": "1778976630855",
-      "rule": "PREFER: SPCX-SOL-type pools (volatility=3.3051, bin_step=100) with strategy=\"spot\" — 100% in-range efficiency, PnL +3.09%.",
+      "id": "1779157103896",
+      "rule": "PREFER: SCAM-SOL-type pools (volatility=2.338, bin_step=80) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +2.21%.",
       "tags": [
         "efficient",
-        "spot"
+        "bid_ask",
+        "degen",
+        "entry"
       ],
       "role": null,
       "outcome": "good",
       "sourceType": "performance",
-      "score": 57.24,
-      "created_at": "2026-05-17T00:10:30.855Z"
+      "score": 57.23,
+      "created_at": "2026-05-19T02:18:23.896Z"
     },
     {
-      "id": "1778976776159",
-      "rule": "PREFER: MONET-SOL-type pools (volatility=4.92, bin_step=100) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +12.95%.",
-      "tags": [
-        "efficient",
-        "bid_ask"
-      ],
-      "role": null,
-      "outcome": "good",
-      "sourceType": "performance",
-      "score": 57.24,
-      "created_at": "2026-05-17T00:12:56.159Z"
-    },
-    {
-      "id": "1778975950265",
-      "rule": "PREFER: SPCX-SOL-type pools (volatility=3.8162, bin_step=100) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +1.26%.",
+      "id": "1779160136593",
+      "rule": "PREFER: Embrace-SOL-type pools (volatility=3.81, bin_step=100) with strategy=\"bid_ask\" — 92.5% in-range efficiency, PnL +2.37%.",
       "tags": [
         "efficient",
         "bid_ask"
@@ -89,11 +105,11 @@
       "outcome": "good",
       "sourceType": "performance",
       "score": 57.23,
-      "created_at": "2026-05-16T23:59:10.265Z"
+      "created_at": "2026-05-19T03:08:56.593Z"
     },
     {
-      "id": "1778975206528",
-      "rule": "PREFER: LADA-SOL-type pools (volatility=1.7337, bin_step=100) with strategy=\"spot\" — 100% in-range efficiency, PnL +12.61%.",
+      "id": "1779156196326",
+      "rule": "PREFER: RoyalPop-SOL-type pools (volatility=10.9303, bin_step=100) with strategy=\"spot\" — 100% in-range efficiency, PnL +1.18%.",
       "tags": [
         "efficient",
         "spot"
@@ -102,11 +118,37 @@
       "outcome": "good",
       "sourceType": "performance",
       "score": 57.22,
-      "created_at": "2026-05-16T23:46:46.528Z"
+      "created_at": "2026-05-19T02:03:16.326Z"
     },
     {
-      "id": "1778975243847",
-      "rule": "PREFER: Dust-SOL-type pools (volatility=4.82, bin_step=100) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +0.84%.",
+      "id": "1779156319402",
+      "rule": "PREFER: SPCX-SOL-type pools (volatility=0.7, bin_step=100) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +3.14%.",
+      "tags": [
+        "efficient",
+        "bid_ask"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.22,
+      "created_at": "2026-05-19T02:05:19.402Z"
+    },
+    {
+      "id": "1779160845190",
+      "rule": "PREFER: Ebola-SOL-type pools (volatility=null, bin_step=100) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +2.25%.",
+      "tags": [
+        "efficient",
+        "bid_ask"
+      ],
+      "role": null,
+      "outcome": "good",
+      "sourceType": "performance",
+      "score": 57.22,
+      "created_at": "2026-05-19T03:20:45.190Z"
+    },
+    {
+      "id": "1779155474928",
+      "rule": "PREFER: BABYTROLL-SOL-type pools (volatility=1.7551, bin_step=80) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +3.66%.",
       "tags": [
         "efficient",
         "bid_ask"
@@ -115,48 +157,9 @@
       "outcome": "good",
       "sourceType": "performance",
       "score": 57.21,
-      "created_at": "2026-05-16T23:47:23.847Z"
-    },
-    {
-      "id": "1778974177564",
-      "rule": "PREFER: LADA-SOL-type pools (volatility=2.12, bin_step=100) with strategy=\"bid_ask\" — 100% in-range efficiency, PnL +1.78%.",
-      "tags": [
-        "efficient",
-        "bid_ask"
-      ],
-      "role": null,
-      "outcome": "good",
-      "sourceType": "performance",
-      "score": 57.21,
-      "created_at": "2026-05-16T23:29:37.564Z"
-    },
-    {
-      "id": "1778973369293",
-      "rule": "PREFER: RoyalPop-SOL-type pools (volatility=2.7367, bin_step=100) with strategy=\"spot\" — 100% in-range efficiency, PnL +6.68%.",
-      "tags": [
-        "efficient",
-        "spot"
-      ],
-      "role": null,
-      "outcome": "good",
-      "sourceType": "performance",
-      "score": 57.2,
-      "created_at": "2026-05-16T23:16:09.293Z"
-    },
-    {
-      "id": "1778973575202",
-      "rule": "PREFER: WORLDCUP-SOL-type pools (volatility=3.58, bin_step=100) with strategy=\"spot\" — 98.3% in-range efficiency, PnL +5%.",
-      "tags": [
-        "efficient",
-        "spot"
-      ],
-      "role": null,
-      "outcome": "good",
-      "sourceType": "performance",
-      "score": 57.2,
-      "created_at": "2026-05-16T23:19:35.202Z"
+      "created_at": "2026-05-19T01:51:14.928Z"
     }
   ],
   "presets": [],
-  "pulledAt": "2026-05-17T01:11:26.841Z"
+  "pulledAt": "2026-05-19T03:25:10.868Z"
 }
