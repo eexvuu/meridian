@@ -1,6 +1,6 @@
 {
   "weights": {
-    "organic_score": 0.811,
+    "organic_score": 0.537,
     "fee_tvl_ratio": 0.9,
     "volume": 1,
     "mcap": 1,
@@ -9,10 +9,10 @@
     "narrative_quality": 1,
     "study_win_rate": 1,
     "hive_consensus": 1,
-    "volatility": 1.337
+    "volatility": 1.975
   },
-  "last_recalc": "2026-05-19T03:21:55.128Z",
-  "recalc_count": 10,
+  "last_recalc": "2026-05-20T12:25:57.619Z",
+  "recalc_count": 18,
   "history": [
     {
       "timestamp": "2026-05-17T15:27:02.603Z",
@@ -233,6 +233,182 @@
       "window_size": 55,
       "win_count": 24,
       "loss_count": 31
+    },
+    {
+      "timestamp": "2026-05-19T05:04:58.422Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.337,
+          "to": 1.404,
+          "lift": 0.035,
+          "action": "boosted"
+        },
+        {
+          "signal": "organic_score",
+          "from": 0.811,
+          "to": 0.77,
+          "lift": -0.047,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 60,
+      "win_count": 26,
+      "loss_count": 34
+    },
+    {
+      "timestamp": "2026-05-19T08:28:12.081Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.404,
+          "to": 1.474,
+          "lift": 0.011,
+          "action": "boosted"
+        },
+        {
+          "signal": "organic_score",
+          "from": 0.77,
+          "to": 0.731,
+          "lift": -0.043,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 65,
+      "win_count": 28,
+      "loss_count": 37
+    },
+    {
+      "timestamp": "2026-05-19T12:06:01.186Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.474,
+          "to": 1.548,
+          "lift": 0,
+          "action": "boosted"
+        },
+        {
+          "signal": "organic_score",
+          "from": 0.731,
+          "to": 0.694,
+          "lift": -0.042,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 70,
+      "win_count": 30,
+      "loss_count": 40
+    },
+    {
+      "timestamp": "2026-05-19T16:51:31.746Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.548,
+          "to": 1.625,
+          "lift": 0.009,
+          "action": "boosted"
+        },
+        {
+          "signal": "organic_score",
+          "from": 0.694,
+          "to": 0.659,
+          "lift": -0.048,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 75,
+      "win_count": 32,
+      "loss_count": 43
+    },
+    {
+      "timestamp": "2026-05-19T20:20:59.545Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.625,
+          "to": 1.706,
+          "lift": 0.042,
+          "action": "boosted"
+        },
+        {
+          "signal": "organic_score",
+          "from": 0.659,
+          "to": 0.626,
+          "lift": -0.043,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 80,
+      "win_count": 35,
+      "loss_count": 45
+    },
+    {
+      "timestamp": "2026-05-20T00:01:00.769Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.706,
+          "to": 1.791,
+          "lift": 0.028,
+          "action": "boosted"
+        },
+        {
+          "signal": "organic_score",
+          "from": 0.626,
+          "to": 0.595,
+          "lift": -0.065,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 85,
+      "win_count": 36,
+      "loss_count": 49
+    },
+    {
+      "timestamp": "2026-05-20T08:53:34.621Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.791,
+          "to": 1.881,
+          "lift": 0.026,
+          "action": "boosted"
+        },
+        {
+          "signal": "organic_score",
+          "from": 0.595,
+          "to": 0.565,
+          "lift": -0.058,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 90,
+      "win_count": 38,
+      "loss_count": 52
+    },
+    {
+      "timestamp": "2026-05-20T12:25:57.619Z",
+      "changes": [
+        {
+          "signal": "volatility",
+          "from": 1.881,
+          "to": 1.975,
+          "lift": 0.004,
+          "action": "boosted"
+        },
+        {
+          "signal": "organic_score",
+          "from": 0.565,
+          "to": 0.537,
+          "lift": -0.038,
+          "action": "decayed"
+        }
+      ],
+      "window_size": 95,
+      "win_count": 43,
+      "loss_count": 52
     }
   ]
 }
