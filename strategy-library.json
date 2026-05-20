@@ -1,6 +1,38 @@
 {
-  "active": "single_sided_reseed",
+  "active": "evil_panda",
   "strategies": {
+    "evil_panda": {
+      "id": "evil_panda",
+      "name": "Evil Panda (LogicalTA)",
+      "author": "tendorian9",
+      "lp_strategy": "bid_ask",
+      "token_criteria": {
+        "notes": "MC >= $250k AND 24h volume >= $1M. Total GMGN fees > 50 (we use minOrganic 65). Top10 < 30%, Insiders < 10%, Bundling < 60%, Phishing < 30%. Bluechip > 0.5%. Initial LP must be burnt. AVOID: political/celebrity/Justice/CTO/Vamped/PumpfunOffchain/no-logo coins. AVOID Dev with rug history."
+      },
+      "entry": {
+        "condition": "Wait for price to BREAK ABOVE Supertrend on 15m candle. Only deploy after confirmed break. Use 80/100/125 bin step pools with 5-10% fee.",
+        "single_side": "sol",
+        "notes": "One-sided SOL bid-ask. Do NOT chase pumps — open on the break, let price come into wide range naturally. Be the 'last liquidity standing' when others dump into our pool at 5-10% fees."
+      },
+      "range": {
+        "type": "wide",
+        "bins_below": "100-250 (Fib-based: 100bins≈49%, 125≈57%, 200≈73%, 250≈81% downside)",
+        "notes": "ALWAYS pick range BELOW Supertrend support. After big pumps, use bigger range (200-250 bins). Wide range = insurance for vertical dumps. Choose nearest pool bin range below Supertrend support line."
+      },
+      "exit": {
+        "notes": "Trigger: Supertrend support BREAK on 15m = first sign of weakness — start watching. Then exit on EITHER (a) RSI(2) closes above 90, OR (b) price closes above BB upper band, OR (c) MACD first green histogram after dump. ALWAYS exit on a GREEN candle to minimize slippage. Cut immediately ONLY if confirmed rug."
+      },
+      "risk_rules": {
+        "max_positions": "6+ recommended (current bot: 3 due to wallet size)",
+        "no_overnight": "Avoid opening positions after 6pm — overnight babysit kills sleep",
+        "no_revenge": "After a loss, take a break. No revenge LP.",
+        "reward_scaling": "Increase position size only after a clean profitable day"
+      },
+      "best_for": "Capturing fees from large dumps (-50% to -95%) on quality memecoins with strong tokenomics. Be the final exit liquidity at juicy fee tiers.",
+      "source": "guide/twitter/5-Big-Summary-of-Evil-Panda-Strategy.md",
+      "added_at": "2026-05-20T00:00:00.000Z",
+      "updated_at": "2026-05-20T00:00:00.000Z"
+    },
     "custom_ratio_spot": {
       "id": "custom_ratio_spot",
       "name": "Custom Ratio Spot",

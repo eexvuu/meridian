@@ -98,6 +98,7 @@ export const config = {
     maxTop10Pct:       u.maxTop10Pct       ?? 60,  // max top 10 holders concentration
     allowedLaunchpads: u.allowedLaunchpads ?? [],  // allow-list launchpads, [] = no allow-list
     blockedLaunchpads:  u.blockedLaunchpads  ?? [],  // e.g. ["letsbonk.fun", "pump.fun"]
+    blockedTokenKeywords: u.blockedTokenKeywords ?? [], // substrings matched against token symbol/name (case-insensitive). Evil Panda blacklist.
     minTokenAgeHours:   u.minTokenAgeHours   ?? null, // null = no minimum
     maxTokenAgeHours:   u.maxTokenAgeHours   ?? null, // null = no maximum
     athFilterPct:       u.athFilterPct       ?? null, // e.g. -20 = only deploy if price is >= 20% below ATH
@@ -131,6 +132,8 @@ export const config = {
     trailingDropPct:       u.trailingDropPct       ?? 1.5,  // close when drops X% from peak
     oorWaitMinutesUp:      u.oorWaitMinutesUp      ?? null,  // pumped above range; null → use outOfRangeWaitMinutes
     oorWaitMinutesDown:    u.oorWaitMinutesDown    ?? null,  // dumped below range; null → use outOfRangeWaitMinutes
+    postLossCooldownHours: u.postLossCooldownHours ?? 0,    // after a losing close, pause all new deploys for this many hours (0 disables)
+    postLossPnlThresholdPct: u.postLossPnlThresholdPct ?? -5, // PnL % at or below which a close counts as a "loss" for the cooldown
     pnlSanityMaxDiffPct:   u.pnlSanityMaxDiffPct   ?? 5,    // max allowed diff between reported and derived pnl % before ignoring a tick
     // SOL mode — positions, PnL, and balances reported in SOL instead of USD
     solMode:               u.solMode               ?? false,
@@ -286,6 +289,7 @@ export function reloadScreeningThresholds() {
     if (fresh.maxBotHoldersPct  != null) s.maxBotHoldersPct = fresh.maxBotHoldersPct;
     if (fresh.allowedLaunchpads !== undefined) s.allowedLaunchpads = fresh.allowedLaunchpads;
     if (fresh.blockedLaunchpads !== undefined) s.blockedLaunchpads = fresh.blockedLaunchpads;
+    if (fresh.blockedTokenKeywords !== undefined) s.blockedTokenKeywords = fresh.blockedTokenKeywords;
     const minBinsBelow = numericConfig(fresh.minBinsBelow) ?? config.strategy.minBinsBelow;
     const maxBinsBelow = numericConfig(fresh.maxBinsBelow) ?? numericConfig(fresh.binsBelow) ?? config.strategy.maxBinsBelow;
     const defaultBinsBelow = numericConfig(fresh.defaultBinsBelow) ?? numericConfig(fresh.binsBelow) ?? config.strategy.defaultBinsBelow ?? maxBinsBelow;

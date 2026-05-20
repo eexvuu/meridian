@@ -135,6 +135,11 @@ function getRawPoolScreeningRejectReason(pool, s) {
   if (includesCaseInsensitive(s.blockedLaunchpads, launchpad)) {
     return `blocked launchpad (${launchpad})`;
   }
+  if (Array.isArray(s.blockedTokenKeywords) && s.blockedTokenKeywords.length > 0) {
+    const haystack = `${base?.symbol || ""} ${base?.name || ""}`.toLowerCase();
+    const hit = s.blockedTokenKeywords.find((kw) => kw && haystack.includes(String(kw).toLowerCase()));
+    if (hit) return `blocked keyword in token (${hit})`;
+  }
   if (s.minTokenAgeHours != null) {
     const maxCreatedAt = Date.now() - s.minTokenAgeHours * 3_600_000;
     if (createdAt == null || createdAt > maxCreatedAt) return `token age below minTokenAgeHours ${s.minTokenAgeHours}`;
@@ -492,6 +497,30 @@ export async function discoverPools({
  */
 export async function getTopCandidates({ limit = 10 } = {}) {
   const { config } = await import("../config.js");
+
+  // Post-loss cooldown ("no revenge LP" — Evil Panda rule).
+  const cooldownHours = Number(config.management.postLossCooldownHours ?? 0);
+  if (cooldownHours > 0) {
+    const thresholdPct = Number(config.management.postLossPnlThresholdPct ?? -5);
+    const { getMostRecentLossAt } = await import("../lessons.js");
+    const lastLossAt = getMostRecentLossAt({ thresholdPct });
+    if (lastLossAt != null) {
+      const cooldownMs = cooldownHours * 3_600_000;
+      const remainingMs = lastLossAt + cooldownMs - Date.now();
+      if (remainingMs > 0) {
+        const remainingMin = Math.ceil(remainingMs / 60_000);
+        log("screening", `Post-loss cooldown active: ${remainingMin}min remaining (last loss ${new Date(lastLossAt).toISOString()}, threshold ${thresholdPct}%)`);
+        return {
+          pools: [],
+          filtered_examples: [{
+            name: "all pools",
+            reason: `post-loss cooldown active (${remainingMin}min remaining after a ${thresholdPct}% close)`,
+          }],
+        };
+      }
+    }
+  }
+
   const discovery = await discoverPools({ page_size: 50 });
   const { pools } = discovery;
   const filteredOut = Array.isArray(discovery.filtered_examples) ? [...discovery.filtered_examples] : [];

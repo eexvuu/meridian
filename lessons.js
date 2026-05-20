@@ -747,6 +747,26 @@ export function getPerformanceHistory({ hours = 24, limit = 50 } = {}) {
 /**
  * Get performance stats summary.
  */
+/**
+ * Returns the timestamp (ms epoch) of the most recent closed position whose
+ * pnl_pct is at or below `thresholdPct`, or null if none. Used by the
+ * "no revenge LP" cooldown — see screening.js.
+ */
+export function getMostRecentLossAt({ thresholdPct = -5 } = {}) {
+  const data = load();
+  if (!Array.isArray(data.performance) || data.performance.length === 0) return null;
+  let latest = null;
+  for (const entry of data.performance) {
+    if (entry == null) continue;
+    if (!Number.isFinite(entry.pnl_pct)) continue;
+    if (entry.pnl_pct > thresholdPct) continue;
+    const ts = Date.parse(entry.recorded_at || entry.closed_at || entry.deployed_at || "");
+    if (!Number.isFinite(ts)) continue;
+    if (latest == null || ts > latest) latest = ts;
+  }
+  return latest;
+}
+
 export function getPerformanceSummary() {
   const data = load();
   const p = data.performance;
