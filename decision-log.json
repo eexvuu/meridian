@@ -1,1536 +1,1669 @@
 {
   "decisions": [
     {
-      "id": "dec_1779283200724_84ank6",
-      "ts": "2026-05-20T13:20:00.724Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779282600520_poa1cm",
-      "ts": "2026-05-20T13:10:00.520Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779282000470_5odcw2",
-      "ts": "2026-05-20T13:00:00.470Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779281403541_ot6eyb",
-      "ts": "2026-05-20T12:50:03.541Z",
+      "id": "dec_1779415209170_j2q9oe",
+      "ts": "2026-05-22T02:00:09.170Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "LLM chose no deploy",
-      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE RKC-SOL WHY SKIPPED Wallet has 0 SOL and 0 USDC — no capital available to deploy 0.3 SOL. RKC-SOL was the top candidate with strongest narrative (Roaring Kitty origin event), highest organic score (89), and acceptable volatility (1.1161), but the position count (2/3) and deploy parameters are locked — funds must be replenished before deployment can proceed. REJECTED - RKC-SOL: wallet unfunded - BURNIE-SOL: wallet unfunded",
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: already have an open position in this pool - 我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: already have an open position in this pool",
+        "我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
     },
     {
-      "id": "dec_1779281364398_kqu920",
-      "ts": "2026-05-20T12:49:24.398Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "uQFKuMm3mJhd8ZpYgGLqFCvtLTpEb6TBWdHYryaEzKV",
-      "pool_name": "BURNIE-SOL",
-      "position": "paper_2c0a8fb8de7386fc",
-      "summary": "[PAPER] Deploy 0.3 SOL into BURNIE-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 45,
-        "bins_above": 0,
-        "entry_price": 0.000091588377846854,
-        "initial_value_usd": 25.504325106754617
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779281339140_21obku",
-      "ts": "2026-05-20T12:48:59.140Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "DRWNnjNpmrWTs7mmNYyH8d9qmPmcVQHenKh369cwUiLp",
-      "pool_name": "Clude-SOL",
-      "position": "paper_6f6cbbc1d85b9abe",
-      "summary": "[PAPER] Close Clude-SOL — Out of range for 30m (limit: 30m)",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "pnl_usd": 0,
-        "pnl_pct": 0,
-        "fees_earned_usd": 0,
-        "minutes_held": 32,
-        "minutes_in_range": 1
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779280800771_ynxhhn",
-      "ts": "2026-05-20T12:40:00.771Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779280200472_t4olnp",
-      "ts": "2026-05-20T12:30:00.472Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779280010661_lb3upv",
-      "ts": "2026-05-20T12:26:50.661Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "GxshbrXDJU1arcrGSqcp59eSf4QYimiBbTM35MwBQtU5",
-      "pool_name": "VIRL-SOL",
-      "position": "paper_506d502882044f4c",
-      "summary": "[PAPER] Deploy 0.3 SOL into VIRL-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 63,
-        "bins_above": 0,
-        "entry_price": 0.000034941487590489,
-        "initial_value_usd": 25.41981827670482
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779279957623_7jyr2m",
-      "ts": "2026-05-20T12:25:57.623Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "GxshbrXDJU1arcrGSqcp59eSf4QYimiBbTM35MwBQtU5",
-      "pool_name": "VIRL-SOL",
-      "position": "paper_15093a7fb2631ad4",
-      "summary": "[PAPER] Close VIRL-SOL — Out of range for 30m (limit: 30m)",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "pnl_usd": 0.02,
-        "pnl_pct": 0.07,
-        "fees_earned_usd": 0.02,
-        "minutes_held": 79,
-        "minutes_in_range": 49
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779279600211_wkm5e6",
-      "ts": "2026-05-20T12:20:00.211Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779279389347_elg6pa",
-      "ts": "2026-05-20T12:16:29.347Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "DRWNnjNpmrWTs7mmNYyH8d9qmPmcVQHenKh369cwUiLp",
-      "pool_name": "Clude-SOL",
-      "position": "paper_6f6cbbc1d85b9abe",
-      "summary": "[PAPER] Deploy 0.3 SOL into Clude-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 69,
-        "bins_above": 0,
-        "entry_price": 0.000028094856101448,
-        "initial_value_usd": 25.41888147342772
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779279003996_erc5xx",
-      "ts": "2026-05-20T12:10:03.996Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "rk51a7BHnsdQcD3heYoyZkJYy23KsPSTFMFL4uMwczR",
-      "pool_name": "unc-SOL",
-      "position": "paper_2c9709bafa5a0b68",
-      "summary": "[PAPER] Close unc-SOL — Low yield exit: fee/TVL 0.75% < min 2% (age: 120m)",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "pnl_usd": 0.02,
-        "pnl_pct": 0.06,
-        "fees_earned_usd": 0.02,
-        "minutes_held": 120,
-        "minutes_in_range": 120
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779279000964_94xzsr",
-      "ts": "2026-05-20T12:10:00.964Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779278400748_7y97wt",
-      "ts": "2026-05-20T12:00:00.748Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779277800497_cf9b1a",
-      "ts": "2026-05-20T11:50:00.497Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779277200244_ediy1k",
-      "ts": "2026-05-20T11:40:00.244Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779276601044_o19w81",
-      "ts": "2026-05-20T11:30:01.044Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779276000816_yqrvvf",
-      "ts": "2026-05-20T11:20:00.816Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779275400581_8dt3fn",
-      "ts": "2026-05-20T11:10:00.581Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779275163399_bqor0l",
-      "ts": "2026-05-20T11:06:03.399Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "GxshbrXDJU1arcrGSqcp59eSf4QYimiBbTM35MwBQtU5",
-      "pool_name": "VIRL-SOL",
-      "position": "paper_15093a7fb2631ad4",
-      "summary": "[PAPER] Deploy 0.3 SOL into VIRL-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 69,
-        "bins_above": 0,
-        "entry_price": 0.000034084060444922,
-        "initial_value_usd": 25.47618384805759
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779274883396_pqhtru",
-      "ts": "2026-05-20T11:01:23.396Z",
+      "id": "dec_1779414906022_0vu2sp",
+      "ts": "2026-05-22T01:55:06.022Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "No successful deploy in screening cycle",
-      "reason": "I couldn't complete that reliably because no tool call was made. Please retry after checking the logs.",
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: already have an open position in this pool - 我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: already have an open position in this pool",
+        "我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
     },
     {
-      "id": "dec_1779274628573_wt6ix2",
-      "ts": "2026-05-20T10:57:08.573Z",
+      "id": "dec_1779414604306_fnpp7w",
+      "ts": "2026-05-22T01:50:04.306Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "LLM chose no deploy",
-      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE **BURNIE-SOL** — strongest narrative (Toly/Andy Ayrey political satire), organic 84, vol 1.45, low bots 9.5%, solid recent momentum (222 net buyers/h), fee/TVL 0.18. WHY SKIPPED - **VIRL-SOL**: Blocked — volatility 5.03 exceeds max threshold (5.0). Fails the volatility cap hard gate. - **BURNIE-SOL**: Blocked — deploy already attempted this session (internal retry guard). Was the logical top pick before the block. - No rem",
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: already have an open position in this pool - 我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: already have an open position in this pool",
+        "我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
     },
     {
-      "id": "dec_1779274358857_vg20dw",
-      "ts": "2026-05-20T10:52:38.857Z",
+      "id": "dec_1779414302942_wnm7h9",
+      "ts": "2026-05-22T01:45:02.942Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "LLM chose no deploy",
-      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Goblin-SOL WHY SKIPPED All deploy attempts blocked by system — \"deploy_position already attempted this session\" error repeated across 3 different pools (VIRL-SOL, Goblin-SOL, BURNIE-SOL). VIRL-SOL also exceeded max volatility (5.03 > 5.0 limit). No actual deploy could be executed this cycle. REJECTED - VIRL-SOL: volatility 5.03 exceeds max threshold (5.0) - Goblin-SOL: blocked (already attempted), high fee_tvl 0.5164 but",
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: already have an open position in this pool",
       "risks": [],
       "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: already have an open position in this pool"
+      ]
+    },
+    {
+      "id": "dec_1779414010219_050x3l",
+      "ts": "2026-05-22T01:40:10.219Z",
+      "type": "deploy",
+      "actor": "SCREENER",
+      "pool": "4fAQF2roWPBwWg5Z2pLaBkkxkbmtM94EKeBGNynLcAAW",
+      "pool_name": "BABYTROLL-SOL",
+      "position": "paper_4340330ea8484d9d",
+      "summary": "[PAPER] Deploy 0.3 SOL into BABYTROLL-SOL",
+      "reason": null,
+      "risks": [],
+      "metrics": {
+        "strategy": "bid_ask",
+        "bins_below": 169,
+        "bins_above": 0,
+        "entry_price": 0.000011910888169825,
+        "initial_value_usd": 25.98920377443267
+      },
       "rejected": []
     },
     {
-      "id": "dec_1779273934208_pcgsy1",
-      "ts": "2026-05-20T10:45:34.208Z",
+      "id": "dec_1779413705402_yd33x5",
+      "ts": "2026-05-22T01:35:05.402Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "LLM chose no deploy",
-      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE VIRL-SOL (GxshbrXDJU1arcrGSqcp59eSf4QYimiBbTM35MwBQtU5) WHY SKIPPED Every candidate either has poor pool memory (OOR in 6/6 cycles, low yield closures), low fee/TVL ratios (0.09-0.15%), or has been previously flagged as low yield and closed. No smart wallets present in any pool — the only override that justifies deploying into marginal metrics. VIRL-SOL had the highest volatility (5.43) and organic score (87), but VIRL's b",
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
     },
     {
-      "id": "dec_1779273816130_x9gnav",
-      "ts": "2026-05-20T10:43:36.130Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "HNPsPeDXAPN5keviUiJjzpGfATPNZb5PKpxtg1ex6kLp",
-      "pool_name": "Punch-SOL",
-      "position": "paper_6d35c8fc5e48fe84",
-      "summary": "[PAPER] Close Punch-SOL — OOR cooldown: out of range for 30m (limit: 30m)",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "pnl_usd": 0.01,
-        "pnl_pct": 0.03,
-        "fees_earned_usd": 0.01,
-        "minutes_held": 63,
-        "minutes_in_range": 33
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779273600804_iyxm09",
-      "ts": "2026-05-20T10:40:00.804Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779273000619_z1ta1v",
-      "ts": "2026-05-20T10:30:00.619Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779272400380_8pvat7",
-      "ts": "2026-05-20T10:20:00.380Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779271800182_0b5mo2",
-      "ts": "2026-05-20T10:10:00.182Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779271775645_8ds5qx",
-      "ts": "2026-05-20T10:09:35.645Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "rk51a7BHnsdQcD3heYoyZkJYy23KsPSTFMFL4uMwczR",
-      "pool_name": "unc-SOL",
-      "position": "paper_2c9709bafa5a0b68",
-      "summary": "[PAPER] Deploy 0.3 SOL into unc-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 53,
-        "bins_above": 0,
-        "entry_price": 0.000042670183538058,
-        "initial_value_usd": 25.462103247351685
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779271713291_zlqdqb",
-      "ts": "2026-05-20T10:08:33.291Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "EPsYCPk2iCdi8BYJdU6wfUkDhudMCUHs397Te4mCiiUc",
-      "pool_name": "MOBY-SOL",
-      "position": "paper_21b966a6edb43f6c",
-      "summary": "[PAPER] Close MOBY-SOL — Out of range for 30m (limit: 30m)",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "pnl_usd": 0.01,
-        "pnl_pct": 0.05,
-        "fees_earned_usd": 0.01,
-        "minutes_held": 72,
-        "minutes_in_range": 42
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779271200895_45cj7e",
-      "ts": "2026-05-20T10:00:00.895Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779270600723_61krch",
-      "ts": "2026-05-20T09:50:00.723Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779270023559_gpnzir",
-      "ts": "2026-05-20T09:40:23.559Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "HNPsPeDXAPN5keviUiJjzpGfATPNZb5PKpxtg1ex6kLp",
-      "pool_name": "Punch-SOL",
-      "position": "paper_6d35c8fc5e48fe84",
-      "summary": "[PAPER] Deploy 0.3 SOL into Punch-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 47,
-        "bins_above": 0,
-        "entry_price": 0.000028615588318663,
-        "initial_value_usd": 25.486352918972607
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779269980127_qhajqd",
-      "ts": "2026-05-20T09:39:40.127Z",
+      "id": "dec_1779413405997_n2m8xs",
+      "ts": "2026-05-22T01:30:05.997Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "LLM chose no deploy",
-      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Punch-SOL WHY SKIPPED Punch-SOL was the top candidate by a wide margin — highest volatility (1.67), strong 1h net buyers (22), solid narrative tied to a real baby monkey at Ichikawa City Zoo, no rugpull/wash flags, and reasonable top10 concentration (17.2%). However, the deploy attempt failed due to a typo in the pool address on first try, and the safety lockout prevented retry. All other candidates either had inadequate f",
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
     },
     {
-      "id": "dec_1779269462657_oxt3gu",
-      "ts": "2026-05-20T09:31:02.657Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "8aQBjuutghvFxJaiPiKNSgbmuAQcotyWpcmBFR9pkzsP",
-      "pool_name": "SPCX-SOL",
-      "position": "paper_0fd7814d6138a04d",
-      "summary": "[PAPER] Close SPCX-SOL — OOR 30m (limit: 30m) — ⚡ exit alert",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "pnl_usd": 0.65,
-        "pnl_pct": 2.56,
-        "fees_earned_usd": 0.65,
-        "minutes_held": 735,
-        "minutes_in_range": 705
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779269400230_vpq83v",
-      "ts": "2026-05-20T09:30:00.230Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779268800986_eh0hlx",
-      "ts": "2026-05-20T09:20:00.986Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779268200788_46gu6f",
-      "ts": "2026-05-20T09:10:00.788Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779267600526_6uasc6",
-      "ts": "2026-05-20T09:00:00.526Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779267357521_jeatog",
-      "ts": "2026-05-20T08:55:57.521Z",
+      "id": "dec_1779413105152_ftpj80",
+      "ts": "2026-05-22T01:25:05.152Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "LLM chose no deploy",
-      "reason": "🚫 DRY RUN — NO ACTUAL DEPLOY The deploy_position call returned dry_run=true. No real on-chain transaction was executed. ⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE MOBY-SOL WHY SKIPPED Volatility 2.79 and fee/TVL 0.68 are moderate, but MOBY's narrative is generic tool/AI without a viral catalyst. Zero smart wallets present. Previous deploys show 0% avg PnL and OOR in all 6 recent cycles — consistent underperformance. Fee/TVL below the 1% threshold that historical",
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
     },
     {
-      "id": "dec_1779267345180_hcu89k",
-      "ts": "2026-05-20T08:55:45.180Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "EPsYCPk2iCdi8BYJdU6wfUkDhudMCUHs397Te4mCiiUc",
-      "pool_name": "MOBY-SOL",
-      "position": "paper_21b966a6edb43f6c",
-      "summary": "[PAPER] Deploy 0.3 SOL into MOBY-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 79,
-        "bins_above": 0,
-        "entry_price": 0.000039799250583613,
-        "initial_value_usd": 25.470384162980263
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779267214625_hcz47i",
-      "ts": "2026-05-20T08:53:34.625Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "FCL8pjNQsDAggZVczYfnn6tfbYoMnJykGT2cpdTULAxB",
-      "pool_name": "PENGUIN-SOL",
-      "position": "paper_8ea659d501382b10",
-      "summary": "[PAPER] Close PENGUIN-SOL — OOR: Out of range for 30m (limit: 30m) — PnL 0.01%, fee/TVL 1.33%",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "pnl_usd": 0,
-        "pnl_pct": 0.01,
-        "fees_earned_usd": 0,
-        "minutes_held": 36,
-        "minutes_in_range": 6
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779267000295_irs3lv",
-      "ts": "2026-05-20T08:50:00.295Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779266400970_flc5p8",
-      "ts": "2026-05-20T08:40:00.970Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779265800724_0qpt3k",
-      "ts": "2026-05-20T08:30:00.724Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779265200501_l7ao6n",
-      "ts": "2026-05-20T08:20:00.501Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779265022584_vpzaef",
-      "ts": "2026-05-20T08:17:02.584Z",
+      "id": "dec_1779412804323_bkizkm",
+      "ts": "2026-05-22T01:20:04.323Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "LLM chose no deploy",
-      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE PENGUIN-SOL WHY SKIPPED All 6 candidates were previously deployed and closed at low yield (fee/TVL below threshold) — 5/6 pools have been OOR in every recent cycle, indicating a systematic issue with strategy parameters on these pool types. PENGUIN had the strongest narrative (viral TikTok + Werner Herzog reference) and best fee_TVL ratio (1.03%), but the dry-run simulation showed insufficient price impact ($25.42 estimate",
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
     },
     {
-      "id": "dec_1779265005730_559f8n",
-      "ts": "2026-05-20T08:16:45.730Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "FCL8pjNQsDAggZVczYfnn6tfbYoMnJykGT2cpdTULAxB",
-      "pool_name": "PENGUIN-SOL",
-      "position": "paper_8ea659d501382b10",
-      "summary": "[PAPER] Deploy 0.3 SOL into PENGUIN-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 52,
-        "bins_above": 0,
-        "entry_price": 0.000044708744809284,
-        "initial_value_usd": 25.420232265262943
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779264689645_px0773",
-      "ts": "2026-05-20T08:11:29.645Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "Adjc5ZVA5SXXfVoetF8NTsiGt1C8wm4gbEW89nys11JS",
-      "pool_name": "67-SOL",
-      "position": "paper_9f6afe9bac0864ad",
-      "summary": "[PAPER] Close 67-SOL — Low yield: fee/TVL 1.38% < min 2% (age: 120m)",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "pnl_usd": 0.01,
-        "pnl_pct": 0.03,
-        "fees_earned_usd": 0.02,
-        "minutes_held": 120,
-        "minutes_in_range": 92
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779264600138_msxd19",
-      "ts": "2026-05-20T08:10:00.138Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779264000932_gdtsyy",
-      "ts": "2026-05-20T08:00:00.932Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779263400690_kfo40d",
-      "ts": "2026-05-20T07:50:00.690Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779262800366_3iqu9g",
-      "ts": "2026-05-20T07:40:00.366Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779262200179_n6k1by",
-      "ts": "2026-05-20T07:30:00.179Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779261600943_m95r52",
-      "ts": "2026-05-20T07:20:00.943Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779261000671_folebq",
-      "ts": "2026-05-20T07:10:00.671Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779260400384_je1ywa",
-      "ts": "2026-05-20T07:00:00.384Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779259801129_ozf4uh",
-      "ts": "2026-05-20T06:50:01.129Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779259200863_1ny7gc",
-      "ts": "2026-05-20T06:40:00.863Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779258600647_gwqfy5",
-      "ts": "2026-05-20T06:30:00.647Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779258000379_n34u8b",
-      "ts": "2026-05-20T06:20:00.379Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779257461446_ufms3r",
-      "ts": "2026-05-20T06:11:01.446Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "Adjc5ZVA5SXXfVoetF8NTsiGt1C8wm4gbEW89nys11JS",
-      "pool_name": "67-SOL",
-      "position": "paper_9f6afe9bac0864ad",
-      "summary": "[PAPER] Deploy 0.3 SOL into 67-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 46,
-        "bins_above": 0,
-        "entry_price": 0.000036029742359902,
-        "initial_value_usd": 25.43232980383835
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779257318218_eb4rpn",
-      "ts": "2026-05-20T06:08:38.218Z",
+      "id": "dec_1779412510961_mx2trb",
+      "ts": "2026-05-22T01:15:10.961Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "LLM chose no deploy",
-      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE Clude-SOL (highest volatility at 4.2853, strong 1h price +6.63%) WHY SKIPPED Every single pre-loaded candidate carries **pool memory with repeated OOR closes + low yield closes** — a strong disqualifier. Clude-SOL closed twice OOR in a single cycle. LMAO!-SOL has 4 deploys, avg PnL -0.04%. Both 67-SOL pools show 6/6 OOR cycles with flat PnL. No smart wallets present on any pool to override the weak narrative. Low fee/TVL r",
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
     },
     {
-      "id": "dec_1779257280943_pfpzro",
-      "ts": "2026-05-20T06:08:00.943Z",
+      "id": "dec_1779412203523_wb2h7h",
+      "ts": "2026-05-22T01:10:03.523Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779411904961_duwnxi",
+      "ts": "2026-05-22T01:05:04.961Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779411610091_q3sowk",
+      "ts": "2026-05-22T01:00:10.091Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779411306604_21qdaf",
+      "ts": "2026-05-22T00:55:06.604Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779411004984_mp45uh",
+      "ts": "2026-05-22T00:50:04.984Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779410709102_d3az86",
+      "ts": "2026-05-22T00:45:09.102Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779410404170_268qcw",
+      "ts": "2026-05-22T00:40:04.170Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779410105365_clgenr",
+      "ts": "2026-05-22T00:35:05.365Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779409810972_p3t7b9",
+      "ts": "2026-05-22T00:30:10.972Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779409505457_b6qyp7",
+      "ts": "2026-05-22T00:25:05.457Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779409207349_owpr1c",
+      "ts": "2026-05-22T00:20:07.349Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779408910090_ls7iqd",
+      "ts": "2026-05-22T00:15:10.090Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779408604244_xk1aw9",
+      "ts": "2026-05-22T00:10:04.244Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779408305425_f40w6j",
+      "ts": "2026-05-22T00:05:05.425Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779408018283_e5zeww",
+      "ts": "2026-05-22T00:00:18.283Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779407705255_5ghdbn",
+      "ts": "2026-05-21T23:55:05.255Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779407404575_yu7stz",
+      "ts": "2026-05-21T23:50:04.575Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779407108984_7cbvnp",
+      "ts": "2026-05-21T23:45:08.984Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779406805415_d8wn55",
+      "ts": "2026-05-21T23:40:05.415Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779406506219_xpd6oi",
+      "ts": "2026-05-21T23:35:06.219Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779406215352_a233vh",
+      "ts": "2026-05-21T23:30:15.352Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779405906071_y3kzs8",
+      "ts": "2026-05-21T23:25:06.071Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779405604434_e6ywcw",
+      "ts": "2026-05-21T23:20:04.434Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779405311091_6z8d5l",
+      "ts": "2026-05-21T23:15:11.091Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779405005641_rx9rx0",
+      "ts": "2026-05-21T23:10:05.642Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779404705498_xhuj41",
+      "ts": "2026-05-21T23:05:05.498Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779404408435_3uwcrl",
+      "ts": "2026-05-21T23:00:08.435Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779404105097_xfplx8",
+      "ts": "2026-05-21T22:55:05.097Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1779403801144_n6zv9j",
+      "ts": "2026-05-21T22:50:01.144Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779403501883_9fnjfh",
+      "ts": "2026-05-21T22:45:01.883Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779403202048_r5c67d",
+      "ts": "2026-05-21T22:40:02.048Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779402902743_4n0osu",
+      "ts": "2026-05-21T22:35:02.743Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779402601873_cdmgy6",
+      "ts": "2026-05-21T22:30:01.873Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779402302454_wyqjzl",
+      "ts": "2026-05-21T22:25:02.454Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779402001686_5jzqnl",
+      "ts": "2026-05-21T22:20:01.686Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779401702284_0rdj0t",
+      "ts": "2026-05-21T22:15:02.284Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779401401449_o7vpng",
+      "ts": "2026-05-21T22:10:01.449Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779401102091_6mavy6",
+      "ts": "2026-05-21T22:05:02.091Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779400801215_5qvihf",
+      "ts": "2026-05-21T22:00:01.215Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779400502796_yr660l",
+      "ts": "2026-05-21T21:55:02.796Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779400202019_1v5n46",
+      "ts": "2026-05-21T21:50:02.019Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779399902655_6mu7hb",
+      "ts": "2026-05-21T21:45:02.655Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779399601825_rbjkgu",
+      "ts": "2026-05-21T21:40:01.825Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779399302453_5gmg1l",
+      "ts": "2026-05-21T21:35:02.453Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779399001571_crv5vv",
+      "ts": "2026-05-21T21:30:01.571Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779398702189_wraif7",
+      "ts": "2026-05-21T21:25:02.189Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779398401287_qi1mft",
+      "ts": "2026-05-21T21:20:01.287Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779398101658_5k2sj9",
+      "ts": "2026-05-21T21:15:01.658Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779397801164_ck8o9e",
+      "ts": "2026-05-21T21:10:01.164Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779397502771_humplp",
+      "ts": "2026-05-21T21:05:02.771Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779397201954_sy5mdi",
+      "ts": "2026-05-21T21:00:01.954Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779396902633_pyfiir",
+      "ts": "2026-05-21T20:55:02.633Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779396601658_nuxi01",
+      "ts": "2026-05-21T20:50:01.658Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779396302338_k5q10c",
+      "ts": "2026-05-21T20:45:02.338Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779396001558_brj107",
+      "ts": "2026-05-21T20:40:01.558Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779395702236_hsev9l",
+      "ts": "2026-05-21T20:35:02.236Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779395401361_ajd779",
+      "ts": "2026-05-21T20:30:01.361Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779395101953_etz1ot",
+      "ts": "2026-05-21T20:25:01.953Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779394802071_6b38oa",
+      "ts": "2026-05-21T20:20:02.071Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779394502682_edcxip",
+      "ts": "2026-05-21T20:15:02.682Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779394201898_pbutb0",
+      "ts": "2026-05-21T20:10:01.898Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779393902519_xj3kpq",
+      "ts": "2026-05-21T20:05:02.519Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779393601590_8kq3c4",
+      "ts": "2026-05-21T20:00:01.590Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779393304742_yhssfb",
+      "ts": "2026-05-21T19:55:04.742Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 35.01% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 35.01% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779393003673_2skbmh",
+      "ts": "2026-05-21T19:50:03.673Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 35.14% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 35.14% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779392701982_k05cgx",
+      "ts": "2026-05-21T19:45:01.982Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779392403218_rpjuo5",
+      "ts": "2026-05-21T19:40:03.218Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 35.38% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 35.38% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779392105158_q9l4si",
+      "ts": "2026-05-21T19:35:05.158Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 35.90% > 30% - USDC-SOL: bot holders 35.90% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 35.90% > 30%",
+        "USDC-SOL: bot holders 35.90% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779391805907_0j91j8",
+      "ts": "2026-05-21T19:30:05.907Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 36.07% > 30% - USDC-SOL: bot holders 36.07% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 36.07% > 30%",
+        "USDC-SOL: bot holders 36.07% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779391502655_jlbi9l",
+      "ts": "2026-05-21T19:25:02.655Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779391201810_5y3j6m",
+      "ts": "2026-05-21T19:20:01.810Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779390902402_ooolmx",
+      "ts": "2026-05-21T19:15:02.402Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779390603653_gafds6",
+      "ts": "2026-05-21T19:10:03.653Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 36.78% > 30% - USDC-SOL: bot holders 36.78% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 36.78% > 30%",
+        "USDC-SOL: bot holders 36.78% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779390302191_lho76f",
+      "ts": "2026-05-21T19:05:02.191Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)"
+      ]
+    },
+    {
+      "id": "dec_1779390007614_qwsbsl",
+      "ts": "2026-05-21T19:00:07.614Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 36.68% > 30% - USDC-SOL: bot holders 36.68% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 36.68% > 30%",
+        "USDC-SOL: bot holders 36.68% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779389705268_xxopck",
+      "ts": "2026-05-21T18:55:05.268Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 37.29% > 30% - USDC-SOL: bot holders 37.29% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 37.29% > 30%",
+        "USDC-SOL: bot holders 37.29% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779389404181_kh3old",
+      "ts": "2026-05-21T18:50:04.181Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 36.09% > 30% - USDC-SOL: bot holders 36.09% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 36.09% > 30%",
+        "USDC-SOL: bot holders 36.09% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779389105887_fi2dk3",
+      "ts": "2026-05-21T18:45:05.887Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 36.62% > 30% - USDC-SOL: bot holders 36.62% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 36.62% > 30%",
+        "USDC-SOL: bot holders 36.62% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779388804101_bnqj8l",
+      "ts": "2026-05-21T18:40:04.101Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 36.52% > 30% - USDC-SOL: bot holders 36.52% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 36.52% > 30%",
+        "USDC-SOL: bot holders 36.52% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779388507867_kmngn1",
+      "ts": "2026-05-21T18:35:07.867Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 36.86% > 30% - USDC-SOL: bot holders 36.86% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 36.86% > 30%",
+        "USDC-SOL: bot holders 36.86% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779388206371_49zz65",
+      "ts": "2026-05-21T18:30:06.371Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 37.15% > 30% - USDC-SOL: bot holders 37.15% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 37.15% > 30%",
+        "USDC-SOL: bot holders 37.15% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779387912783_tfcwez",
+      "ts": "2026-05-21T18:25:12.783Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 38.18% > 30% - USDC-SOL: bot holders 38.18% > 30%",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "USDC-SOL: bot holders 38.18% > 30%",
+        "USDC-SOL: bot holders 38.18% > 30%"
+      ]
+    },
+    {
+      "id": "dec_1779387908909_ota86m",
+      "ts": "2026-05-21T18:25:08.909Z",
       "type": "close",
       "actor": "MANAGER",
-      "pool": "Hox5o75Kh9KAMJKzVV6FCFt3daGUAvC6pjL3UMahDDJR",
-      "pool_name": "testicle-SOL",
-      "position": "paper_5af62553443e8c0f",
-      "summary": "[PAPER] Close testicle-SOL — Low yield: fee/TVL 0.28% < min 2% (age: 120m)",
+      "pool": "CBsWwE4F2h8awoALcdGVGbNPyGVDZrZ4WFvCvWr8PL66",
+      "pool_name": "Ball-SOL",
+      "position": "paper_a695992faecd93cf",
+      "summary": "[PAPER] Close Ball-SOL — TA exit: bb_plus_rsi confirmed on 15_MINUTE | PnL 0.86% | fee_per_tvl_24h 7.85%",
       "reason": null,
       "risks": [],
       "metrics": {
-        "pnl_usd": 0,
-        "pnl_pct": -0.01,
-        "fees_earned_usd": 0.01,
-        "minutes_held": 120,
-        "minutes_in_range": 120
+        "pnl_usd": 0.18,
+        "pnl_pct": 0.71,
+        "fees_earned_usd": 0.18,
+        "minutes_held": 159,
+        "minutes_in_range": 130
       },
       "rejected": []
     },
     {
-      "id": "dec_1779256800884_7osrrk",
-      "ts": "2026-05-20T06:00:00.884Z",
-      "type": "skip",
+      "id": "dec_1779387604970_kedkxn",
+      "ts": "2026-05-21T18:20:04.970Z",
+      "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 37.94% > 30% - USDC-SOL: bot holders 37.94% > 30%",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "USDC-SOL: bot holders 37.94% > 30%",
+        "USDC-SOL: bot holders 37.94% > 30%"
+      ]
     },
     {
-      "id": "dec_1779256200659_5ga06s",
-      "ts": "2026-05-20T05:50:00.659Z",
-      "type": "skip",
+      "id": "dec_1779387309804_6fo6sq",
+      "ts": "2026-05-21T18:15:09.804Z",
+      "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 38.65% > 30% - USDC-SOL: bot holders 38.65% > 30%",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "USDC-SOL: bot holders 38.65% > 30%",
+        "USDC-SOL: bot holders 38.65% > 30%"
+      ]
     },
     {
-      "id": "dec_1779255600394_pdq10y",
-      "ts": "2026-05-20T05:40:00.394Z",
-      "type": "skip",
+      "id": "dec_1779387003147_ok79nm",
+      "ts": "2026-05-21T18:10:03.147Z",
+      "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 38.35% > 30% - USDC-SOL: bot holders 38.35% > 30%",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "USDC-SOL: bot holders 38.35% > 30%",
+        "USDC-SOL: bot holders 38.35% > 30%"
+      ]
     },
     {
-      "id": "dec_1779255000232_vq50d4",
-      "ts": "2026-05-20T05:30:00.232Z",
-      "type": "skip",
+      "id": "dec_1779386706568_o54ec7",
+      "ts": "2026-05-21T18:05:06.568Z",
+      "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 38.62% > 30% - USDC-SOL: bot holders 38.62% > 30%",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "USDC-SOL: bot holders 38.62% > 30%",
+        "USDC-SOL: bot holders 38.62% > 30%"
+      ]
     },
     {
-      "id": "dec_1779254400887_ir57xs",
-      "ts": "2026-05-20T05:20:00.887Z",
-      "type": "skip",
+      "id": "dec_1779386411460_ywpc5m",
+      "ts": "2026-05-21T18:00:11.460Z",
+      "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 38.64% > 30%",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "USDC-SOL: bot holders 38.64% > 30%"
+      ]
     },
     {
-      "id": "dec_1779253800671_wo6iv4",
-      "ts": "2026-05-20T05:10:00.671Z",
-      "type": "skip",
+      "id": "dec_1779386105227_p315uj",
+      "ts": "2026-05-21T17:55:05.227Z",
+      "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 38.94% > 30% - USDC-SOL: bot holders 38.94% > 30%",
       "risks": [],
       "metrics": {},
-      "rejected": []
+      "rejected": [
+        "USDC-SOL: bot holders 38.94% > 30%",
+        "USDC-SOL: bot holders 38.94% > 30%"
+      ]
     },
     {
-      "id": "dec_1779253200407_0wyo2b",
-      "ts": "2026-05-20T05:00:00.407Z",
-      "type": "skip",
+      "id": "dec_1779385803986_6c01tc",
+      "ts": "2026-05-21T17:50:03.986Z",
+      "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
+      "summary": "No candidates available",
+      "reason": "- USDC-SOL: bot holders 38.67% > 30% - USDC-SOL: bot holders 38.67% > 30%",
       "risks": [],
       "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779252600211_1fxshu",
-      "ts": "2026-05-20T04:50:00.211Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779252000941_bk18cn",
-      "ts": "2026-05-20T04:40:00.941Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779251400687_fhxspi",
-      "ts": "2026-05-20T04:30:00.687Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779250800616_5xos5v",
-      "ts": "2026-05-20T04:20:00.616Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779250200253_3scbps",
-      "ts": "2026-05-20T04:10:00.253Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779250071306_0hys3z",
-      "ts": "2026-05-20T04:07:51.306Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "Hox5o75Kh9KAMJKzVV6FCFt3daGUAvC6pjL3UMahDDJR",
-      "pool_name": "testicle-SOL",
-      "position": "paper_5af62553443e8c0f",
-      "summary": "[PAPER] Deploy 0.3 SOL into testicle-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 53,
-        "bins_above": 0,
-        "entry_price": 0.000071542460394028,
-        "initial_value_usd": 25.228751306064556
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779250048036_mv30q1",
-      "ts": "2026-05-20T04:07:28.036Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "Hox5o75Kh9KAMJKzVV6FCFt3daGUAvC6pjL3UMahDDJR",
-      "pool_name": "testicle-SOL",
-      "position": "paper_7802d3e6a6544c4d",
-      "summary": "[PAPER] Close testicle-SOL — ⚡ Exit: Low yield: fee/TVL 0.27% < min 2% (age: 120m)",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "pnl_usd": 0.01,
-        "pnl_pct": 0.02,
-        "fees_earned_usd": 0.01,
-        "minutes_held": 120,
-        "minutes_in_range": 120
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779249600997_zsae0i",
-      "ts": "2026-05-20T04:00:00.997Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779249000795_ucsr03",
-      "ts": "2026-05-20T03:50:00.795Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779248400548_foqgjz",
-      "ts": "2026-05-20T03:40:00.548Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779247800350_a7xw3z",
-      "ts": "2026-05-20T03:30:00.350Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779247201114_xnyskw",
-      "ts": "2026-05-20T03:20:01.114Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779246600864_njxer2",
-      "ts": "2026-05-20T03:10:00.864Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779246000581_fon3st",
-      "ts": "2026-05-20T03:00:00.581Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779245400379_khg7fp",
-      "ts": "2026-05-20T02:50:00.379Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779244801131_toequo",
-      "ts": "2026-05-20T02:40:01.131Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779244200843_fko9v4",
-      "ts": "2026-05-20T02:30:00.843Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779243600715_dqsjhf",
-      "ts": "2026-05-20T02:20:00.715Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779243000387_0cfb4a",
-      "ts": "2026-05-20T02:10:00.387Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779242828139_pa9zly",
-      "ts": "2026-05-20T02:07:08.139Z",
-      "type": "deploy",
-      "actor": "SCREENER",
-      "pool": "Hox5o75Kh9KAMJKzVV6FCFt3daGUAvC6pjL3UMahDDJR",
-      "pool_name": "testicle-SOL",
-      "position": "paper_7802d3e6a6544c4d",
-      "summary": "[PAPER] Deploy 0.3 SOL into testicle-SOL",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "strategy": "bid_ask",
-        "bins_below": 52,
-        "bins_above": 0,
-        "entry_price": 0.000071542460394028,
-        "initial_value_usd": 25.2862015405689
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779242759791_xajof4",
-      "ts": "2026-05-20T02:05:59.791Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "6NLvUzfYH4TC98mYcKRnYjWsH6879tJwxEy2vopzLfzu",
-      "pool_name": "PAYAI-SOL",
-      "position": "paper_fefd75cbf1986296",
-      "summary": "[PAPER] Close PAYAI-SOL — Low yield: fee/TVL 1.40% < min 2% (age: 120m)",
-      "reason": null,
-      "risks": [],
-      "metrics": {
-        "pnl_usd": -0.03,
-        "pnl_pct": -0.11,
-        "fees_earned_usd": 0.03,
-        "minutes_held": 120,
-        "minutes_in_range": 120
-      },
-      "rejected": []
-    },
-    {
-      "id": "dec_1779241800961_0cdx4d",
-      "ts": "2026-05-20T01:50:00.961Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779241200728_f8r60x",
-      "ts": "2026-05-20T01:40:00.728Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779240600409_prx60o",
-      "ts": "2026-05-20T01:30:00.409Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779240000203_uqoh8u",
-      "ts": "2026-05-20T01:20:00.203Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779239400971_vizrmi",
-      "ts": "2026-05-20T01:10:00.971Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
-    },
-    {
-      "id": "dec_1779238800673_yb5u4n",
-      "ts": "2026-05-20T01:00:00.673Z",
-      "type": "skip",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "Screening skipped",
-      "reason": "Max positions reached (3/3)",
-      "risks": [],
-      "metrics": {},
-      "rejected": []
+      "rejected": [
+        "USDC-SOL: bot holders 38.67% > 30%",
+        "USDC-SOL: bot holders 38.67% > 30%"
+      ]
     }
   ]
 }

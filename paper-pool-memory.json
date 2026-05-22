@@ -283,7 +283,7 @@
         "age_minutes": 120
       }
     ],
-    "base_mint_cooldown_until": "2026-05-20T12:01:00.762Z",
+    "base_mint_cooldown_until": "2026-05-21T03:43:40.122Z",
     "base_mint_cooldown_reason": "repeat fee-generating deploys (3x pool)"
   },
   "8aQBjuutghvFxJaiPiKNSgbmuAQcotyWpcmBFR9pkzsP": {
@@ -2108,237 +2108,31 @@
         "close_reason": "OOR: Out of range for 30m (limit: 30m) — PnL 0.01%, value $25.3, fee/tvl 1.47%",
         "strategy": "bid_ask",
         "volatility_at_deploy": 1.8923
+      },
+      {
+        "deployed_at": "2026-05-20T13:59:29.367Z",
+        "closed_at": "2026-05-20T15:43:40.116Z",
+        "pnl_pct": 0.08,
+        "pnl_usd": 0.02,
+        "fees_earned_usd": 0.02,
+        "fees_earned_sol": 0.000189,
+        "fee_earned_pct": 0.07886435331230285,
+        "range_efficiency": 71.2,
+        "minutes_held": 104,
+        "close_reason": "⚡ Exit: Out of range for 30m (limit: 30m)",
+        "strategy": "bid_ask",
+        "volatility_at_deploy": 1.4536
       }
     ],
-    "total_deploys": 6,
-    "avg_pnl_pct": 0.15,
+    "total_deploys": 7,
+    "avg_pnl_pct": 0.14,
     "win_rate": 1,
     "adjusted_win_rate": 0,
     "adjusted_win_rate_sample_count": 0,
-    "last_deployed_at": "2026-05-20T00:01:00.757Z",
+    "last_deployed_at": "2026-05-20T15:43:40.116Z",
     "last_outcome": "profit",
     "notes": [],
     "snapshots": [
-      {
-        "ts": "2026-05-18T18:05:01.381Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.12,
-        "pnl_usd": 0.03,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.11,
-        "minutes_out_of_range": 0,
-        "age_minutes": 178
-      },
-      {
-        "ts": "2026-05-18T18:10:01.497Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.33,
-        "pnl_usd": 0.08,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.11,
-        "minutes_out_of_range": 0,
-        "age_minutes": 183
-      },
-      {
-        "ts": "2026-05-18T18:15:01.632Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.44,
-        "pnl_usd": 0.11,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.11,
-        "minutes_out_of_range": 0,
-        "age_minutes": 188
-      },
-      {
-        "ts": "2026-05-18T18:20:01.756Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.48,
-        "pnl_usd": 0.12,
-        "in_range": false,
-        "unclaimed_fees_usd": 0.12,
-        "minutes_out_of_range": 0,
-        "age_minutes": 193
-      },
-      {
-        "ts": "2026-05-18T18:25:01.870Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.48,
-        "pnl_usd": 0.12,
-        "in_range": false,
-        "unclaimed_fees_usd": 0.12,
-        "minutes_out_of_range": 5,
-        "age_minutes": 198
-      },
-      {
-        "ts": "2026-05-18T18:30:00.985Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.5,
-        "pnl_usd": 0.13,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.13,
-        "minutes_out_of_range": 0,
-        "age_minutes": 203
-      },
-      {
-        "ts": "2026-05-18T18:35:01.085Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.51,
-        "pnl_usd": 0.13,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.13,
-        "minutes_out_of_range": 0,
-        "age_minutes": 208
-      },
-      {
-        "ts": "2026-05-18T18:40:01.211Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.52,
-        "pnl_usd": 0.13,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.13,
-        "minutes_out_of_range": 0,
-        "age_minutes": 213
-      },
-      {
-        "ts": "2026-05-18T18:45:01.334Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.53,
-        "pnl_usd": 0.13,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.13,
-        "minutes_out_of_range": 0,
-        "age_minutes": 218
-      },
-      {
-        "ts": "2026-05-18T18:50:01.465Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.54,
-        "pnl_usd": 0.14,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.14,
-        "minutes_out_of_range": 0,
-        "age_minutes": 223
-      },
-      {
-        "ts": "2026-05-18T18:55:01.647Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.53,
-        "pnl_usd": 0.13,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.13,
-        "minutes_out_of_range": 0,
-        "age_minutes": 228
-      },
-      {
-        "ts": "2026-05-18T19:00:01.793Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.55,
-        "pnl_usd": 0.14,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.14,
-        "minutes_out_of_range": 0,
-        "age_minutes": 233
-      },
-      {
-        "ts": "2026-05-18T19:01:15.251Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.55,
-        "pnl_usd": 0.14,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.14,
-        "minutes_out_of_range": 0,
-        "age_minutes": 235
-      },
-      {
-        "ts": "2026-05-18T19:05:01.856Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.55,
-        "pnl_usd": 0.14,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.14,
-        "minutes_out_of_range": 0,
-        "age_minutes": 238
-      },
-      {
-        "ts": "2026-05-18T19:10:00.938Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.57,
-        "pnl_usd": 0.14,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.14,
-        "minutes_out_of_range": 0,
-        "age_minutes": 243
-      },
-      {
-        "ts": "2026-05-18T19:15:01.084Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.58,
-        "pnl_usd": 0.14,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.14,
-        "minutes_out_of_range": 0,
-        "age_minutes": 248
-      },
-      {
-        "ts": "2026-05-18T19:20:01.169Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.42,
-        "pnl_usd": 0.1,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.1,
-        "minutes_out_of_range": 0,
-        "age_minutes": 253
-      },
-      {
-        "ts": "2026-05-18T19:25:01.291Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.42,
-        "pnl_usd": 0.1,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.1,
-        "minutes_out_of_range": 0,
-        "age_minutes": 258
-      },
-      {
-        "ts": "2026-05-18T19:30:01.442Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.42,
-        "pnl_usd": 0.11,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.11,
-        "minutes_out_of_range": 0,
-        "age_minutes": 263
-      },
-      {
-        "ts": "2026-05-18T19:35:01.508Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.43,
-        "pnl_usd": 0.11,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.11,
-        "minutes_out_of_range": 0,
-        "age_minutes": 268
-      },
-      {
-        "ts": "2026-05-18T19:40:01.639Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.46,
-        "pnl_usd": 0.11,
-        "in_range": false,
-        "unclaimed_fees_usd": 0.11,
-        "minutes_out_of_range": 3,
-        "age_minutes": 273
-      },
-      {
-        "ts": "2026-05-18T19:45:01.735Z",
-        "position": "paper_a67f2a01a2270fe5",
-        "pnl_pct": 0.44,
-        "pnl_usd": 0.11,
-        "in_range": false,
-        "unclaimed_fees_usd": 0.11,
-        "minutes_out_of_range": 8,
-        "age_minutes": 278
-      },
       {
         "ts": "2026-05-18T19:50:01.845Z",
         "position": "paper_a67f2a01a2270fe5",
@@ -2598,11 +2392,231 @@
         "unclaimed_fees_usd": 0,
         "minutes_out_of_range": 30,
         "age_minutes": 35
+      },
+      {
+        "ts": "2026-05-20T14:00:01.309Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 0
+      },
+      {
+        "ts": "2026-05-20T14:05:01.562Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 5
+      },
+      {
+        "ts": "2026-05-20T14:10:01.183Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 10
+      },
+      {
+        "ts": "2026-05-20T14:15:01.878Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 15
+      },
+      {
+        "ts": "2026-05-20T14:20:01.716Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 20
+      },
+      {
+        "ts": "2026-05-20T14:25:02.073Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": -0.03,
+        "pnl_usd": -0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 25
+      },
+      {
+        "ts": "2026-05-20T14:30:00.971Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": -0.03,
+        "pnl_usd": -0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 30
+      },
+      {
+        "ts": "2026-05-20T14:35:01.363Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": -0.03,
+        "pnl_usd": -0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 35
+      },
+      {
+        "ts": "2026-05-20T14:40:01.159Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": -0.09,
+        "pnl_usd": -0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 40
+      },
+      {
+        "ts": "2026-05-20T14:45:01.598Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": -0.08,
+        "pnl_usd": -0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 45
+      },
+      {
+        "ts": "2026-05-20T14:50:01.354Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": -0.08,
+        "pnl_usd": -0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 50
+      },
+      {
+        "ts": "2026-05-20T14:55:01.674Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": -0.08,
+        "pnl_usd": -0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 55
+      },
+      {
+        "ts": "2026-05-20T15:00:01.642Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": -0.07,
+        "pnl_usd": -0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 60
+      },
+      {
+        "ts": "2026-05-20T15:05:02.216Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": -0.07,
+        "pnl_usd": -0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 65
+      },
+      {
+        "ts": "2026-05-20T15:10:01.821Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 0,
+        "age_minutes": 70
+      },
+      {
+        "ts": "2026-05-20T15:15:02.129Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0.06,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 1,
+        "age_minutes": 75
+      },
+      {
+        "ts": "2026-05-20T15:20:01.026Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0.06,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 6,
+        "age_minutes": 80
+      },
+      {
+        "ts": "2026-05-20T15:25:01.321Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0.06,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 11,
+        "age_minutes": 85
+      },
+      {
+        "ts": "2026-05-20T15:30:01.284Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0.06,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 16,
+        "age_minutes": 90
+      },
+      {
+        "ts": "2026-05-20T15:35:01.749Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0.06,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 21,
+        "age_minutes": 95
+      },
+      {
+        "ts": "2026-05-20T15:40:01.681Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0.06,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 26,
+        "age_minutes": 100
+      },
+      {
+        "ts": "2026-05-20T15:43:34.790Z",
+        "position": "paper_c62e4b931f65da7f",
+        "pnl_pct": 0.06,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 30,
+        "age_minutes": 104
       }
     ],
-    "cooldown_until": "2026-05-20T12:01:00.762Z",
+    "cooldown_until": "2026-05-21T03:43:40.121Z",
     "cooldown_reason": "repeated OOR closes (2x)",
-    "base_mint_cooldown_until": "2026-05-20T12:01:00.762Z",
+    "base_mint_cooldown_until": "2026-05-21T03:43:40.122Z",
     "base_mint_cooldown_reason": "repeat fee-generating deploys (3x pool)"
   },
   "8UYCgRrxZc3XKY8PBJDSKubAUP4mpbxoj1EZJ7A5G9wy": {
@@ -5476,14 +5490,28 @@
         "close_reason": "⚡ Exit: Out of range for 30m (limit: 30m)",
         "strategy": "bid_ask",
         "volatility_at_deploy": 2.9547
+      },
+      {
+        "deployed_at": "2026-05-20T12:49:24.395Z",
+        "closed_at": "2026-05-20T14:10:08.768Z",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "fees_earned_usd": 0.01,
+        "fees_earned_sol": 0.00016,
+        "fee_earned_pct": 0.0392156862745098,
+        "range_efficiency": 62.5,
+        "minutes_held": 80,
+        "close_reason": "OOR: Out of range for 30m (limit: 30m)",
+        "strategy": "bid_ask",
+        "volatility_at_deploy": 1.4006
       }
     ],
-    "total_deploys": 4,
-    "avg_pnl_pct": -0.16,
-    "win_rate": 0.75,
+    "total_deploys": 5,
+    "avg_pnl_pct": -0.12,
+    "win_rate": 0.8,
     "adjusted_win_rate": 50,
     "adjusted_win_rate_sample_count": 2,
-    "last_deployed_at": "2026-05-19T21:02:33.611Z",
+    "last_deployed_at": "2026-05-20T14:10:08.768Z",
     "last_outcome": "profit",
     "notes": [
       {
@@ -5496,116 +5524,6 @@
       }
     ],
     "snapshots": [
-      {
-        "ts": "2026-05-18T02:25:01.186Z",
-        "position": "paper_4d303cb607ef216c",
-        "pnl_pct": -0.15,
-        "pnl_usd": -0.04,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.02,
-        "minutes_out_of_range": 0,
-        "age_minutes": 99
-      },
-      {
-        "ts": "2026-05-18T02:30:01.339Z",
-        "position": "paper_4d303cb607ef216c",
-        "pnl_pct": -0.51,
-        "pnl_usd": -0.13,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.03,
-        "minutes_out_of_range": 0,
-        "age_minutes": 104
-      },
-      {
-        "ts": "2026-05-18T02:35:01.435Z",
-        "position": "paper_4d303cb607ef216c",
-        "pnl_pct": -0.66,
-        "pnl_usd": -0.17,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.03,
-        "minutes_out_of_range": 0,
-        "age_minutes": 109
-      },
-      {
-        "ts": "2026-05-18T02:40:01.591Z",
-        "position": "paper_4d303cb607ef216c",
-        "pnl_pct": -1.03,
-        "pnl_usd": -0.26,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.03,
-        "minutes_out_of_range": 0,
-        "age_minutes": 114
-      },
-      {
-        "ts": "2026-05-18T02:45:01.690Z",
-        "position": "paper_4d303cb607ef216c",
-        "pnl_pct": -0.83,
-        "pnl_usd": -0.21,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.03,
-        "minutes_out_of_range": 0,
-        "age_minutes": 119
-      },
-      {
-        "ts": "2026-05-18T02:45:56.653Z",
-        "position": "paper_4d303cb607ef216c",
-        "pnl_pct": -0.83,
-        "pnl_usd": -0.21,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.03,
-        "minutes_out_of_range": 0,
-        "age_minutes": 120
-      },
-      {
-        "ts": "2026-05-18T06:55:01.685Z",
-        "position": "paper_4922b7b2d9f526b4",
-        "pnl_pct": 0,
-        "pnl_usd": 0,
-        "in_range": true,
-        "unclaimed_fees_usd": 0,
-        "minutes_out_of_range": 0,
-        "age_minutes": 2
-      },
-      {
-        "ts": "2026-05-18T07:00:02.002Z",
-        "position": "paper_4922b7b2d9f526b4",
-        "pnl_pct": 0.01,
-        "pnl_usd": 0,
-        "in_range": true,
-        "unclaimed_fees_usd": 0,
-        "minutes_out_of_range": 0,
-        "age_minutes": 7
-      },
-      {
-        "ts": "2026-05-18T07:05:01.914Z",
-        "position": "paper_4922b7b2d9f526b4",
-        "pnl_pct": 0.01,
-        "pnl_usd": 0,
-        "in_range": true,
-        "unclaimed_fees_usd": 0,
-        "minutes_out_of_range": 0,
-        "age_minutes": 12
-      },
-      {
-        "ts": "2026-05-18T07:06:56.984Z",
-        "position": "paper_4922b7b2d9f526b4",
-        "pnl_pct": 0.02,
-        "pnl_usd": 0,
-        "in_range": true,
-        "unclaimed_fees_usd": 0,
-        "minutes_out_of_range": 0,
-        "age_minutes": 14
-      },
-      {
-        "ts": "2026-05-18T07:10:01.174Z",
-        "position": "paper_4922b7b2d9f526b4",
-        "pnl_pct": 0.02,
-        "pnl_usd": 0.01,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.01,
-        "minutes_out_of_range": 0,
-        "age_minutes": 17
-      },
       {
         "ts": "2026-05-18T07:15:01.205Z",
         "position": "paper_4922b7b2d9f526b4",
@@ -5975,10 +5893,122 @@
         "unclaimed_fees_usd": 0.01,
         "minutes_out_of_range": 0,
         "age_minutes": 30
+      },
+      {
+        "ts": "2026-05-20T13:25:01.618Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 1,
+        "age_minutes": 35
+      },
+      {
+        "ts": "2026-05-20T13:30:01.761Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 6,
+        "age_minutes": 40
+      },
+      {
+        "ts": "2026-05-20T13:35:01.861Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 11,
+        "age_minutes": 45
+      },
+      {
+        "ts": "2026-05-20T13:40:01.056Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 15,
+        "age_minutes": 50
+      },
+      {
+        "ts": "2026-05-20T13:45:01.032Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.05,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 15,
+        "age_minutes": 55
+      },
+      {
+        "ts": "2026-05-20T13:50:01.170Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.05,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 15,
+        "age_minutes": 60
+      },
+      {
+        "ts": "2026-05-20T13:55:01.313Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.07,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 15,
+        "age_minutes": 65
+      },
+      {
+        "ts": "2026-05-20T13:58:54.456Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.07,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 19,
+        "age_minutes": 69
+      },
+      {
+        "ts": "2026-05-20T14:00:01.291Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.07,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 20,
+        "age_minutes": 70
+      },
+      {
+        "ts": "2026-05-20T14:05:01.551Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.07,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 25,
+        "age_minutes": 75
+      },
+      {
+        "ts": "2026-05-20T14:10:01.168Z",
+        "position": "paper_2c0a8fb8de7386fc",
+        "pnl_pct": 0.07,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 30,
+        "age_minutes": 80
       }
     ],
-    "base_mint_cooldown_until": "2026-05-20T09:02:33.615Z",
-    "base_mint_cooldown_reason": "repeat fee-generating deploys (3x pool)"
+    "base_mint_cooldown_until": "2026-05-21T02:10:08.774Z",
+    "base_mint_cooldown_reason": "repeat fee-generating deploys (3x pool)",
+    "cooldown_until": "2026-05-21T02:10:08.774Z",
+    "cooldown_reason": "repeated OOR closes (2x)"
   },
   "FCL8pjNQsDAggZVczYfnn6tfbYoMnJykGT2cpdTULAxB": {
     "name": "PENGUIN-SOL",
@@ -13700,498 +13730,528 @@
         "close_reason": "Stop loss: PnL -15.48% <= -15%",
         "strategy": "bid_ask",
         "volatility_at_deploy": 2.5706
+      },
+      {
+        "deployed_at": "2026-05-20T15:50:45.681Z",
+        "closed_at": "2026-05-20T16:24:37.369Z",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "fees_earned_usd": 0.01,
+        "fees_earned_sol": 0.000079,
+        "fee_earned_pct": 0.038804811796662786,
+        "range_efficiency": 9.1,
+        "minutes_held": 33,
+        "close_reason": "⚡ Exit: Out of range for 30m (limit: 30m)",
+        "strategy": "bid_ask",
+        "volatility_at_deploy": 4.0137
+      },
+      {
+        "deployed_at": "2026-05-20T16:45:14.751Z",
+        "closed_at": "2026-05-21T08:45:25.734Z",
+        "pnl_pct": 5.19,
+        "pnl_usd": 1.34,
+        "fees_earned_usd": 1.6,
+        "fees_earned_sol": 0.0186,
+        "fee_earned_pct": 6.196746707978312,
+        "range_efficiency": 100,
+        "minutes_held": 960,
+        "close_reason": "Rule 2: take profit — PnL 5.14% triggered",
+        "strategy": "bid_ask",
+        "volatility_at_deploy": 4.0592
       }
     ],
-    "total_deploys": 1,
-    "avg_pnl_pct": -15.48,
-    "win_rate": 0,
-    "adjusted_win_rate": 0,
-    "adjusted_win_rate_sample_count": 1,
-    "last_deployed_at": "2026-05-19T16:51:31.736Z",
-    "last_outcome": "loss",
+    "total_deploys": 3,
+    "avg_pnl_pct": -3.42,
+    "win_rate": 0.67,
+    "adjusted_win_rate": 50,
+    "adjusted_win_rate_sample_count": 2,
+    "last_deployed_at": "2026-05-21T08:45:25.734Z",
+    "last_outcome": "profit",
     "notes": [],
     "snapshots": [
       {
-        "ts": "2026-05-19T13:15:01.229Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -6.97,
-        "pnl_usd": -1.77,
+        "ts": "2026-05-21T04:50:01.617Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": -0.18,
+        "pnl_usd": -0.05,
         "in_range": true,
-        "unclaimed_fees_usd": 0.21,
+        "unclaimed_fees_usd": 1.6,
         "minutes_out_of_range": 0,
-        "age_minutes": 134
+        "age_minutes": 724
       },
       {
-        "ts": "2026-05-19T13:20:01.373Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -6.41,
-        "pnl_usd": -1.63,
+        "ts": "2026-05-21T04:55:01.816Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": -0.05,
+        "pnl_usd": -0.01,
         "in_range": true,
-        "unclaimed_fees_usd": 0.22,
+        "unclaimed_fees_usd": 1.55,
         "minutes_out_of_range": 0,
-        "age_minutes": 139
+        "age_minutes": 729
       },
       {
-        "ts": "2026-05-19T13:25:01.427Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -6.91,
-        "pnl_usd": -1.76,
+        "ts": "2026-05-21T05:00:01.839Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": -1.1,
+        "pnl_usd": -0.29,
         "in_range": true,
-        "unclaimed_fees_usd": 0.22,
+        "unclaimed_fees_usd": 1.54,
         "minutes_out_of_range": 0,
-        "age_minutes": 144
+        "age_minutes": 734
       },
       {
-        "ts": "2026-05-19T13:30:01.596Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -6.34,
-        "pnl_usd": -1.61,
+        "ts": "2026-05-21T05:05:01.027Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": -1.5,
+        "pnl_usd": -0.39,
         "in_range": true,
-        "unclaimed_fees_usd": 0.23,
+        "unclaimed_fees_usd": 1.53,
         "minutes_out_of_range": 0,
-        "age_minutes": 149
+        "age_minutes": 739
       },
       {
-        "ts": "2026-05-19T13:35:01.698Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -7.36,
-        "pnl_usd": -1.87,
+        "ts": "2026-05-21T05:10:01.068Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": -1.1,
+        "pnl_usd": -0.29,
         "in_range": true,
-        "unclaimed_fees_usd": 0.25,
+        "unclaimed_fees_usd": 1.54,
         "minutes_out_of_range": 0,
-        "age_minutes": 154
+        "age_minutes": 744
       },
       {
-        "ts": "2026-05-19T13:40:01.805Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -7.32,
-        "pnl_usd": -1.86,
+        "ts": "2026-05-21T05:15:01.277Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": -0.95,
+        "pnl_usd": -0.25,
         "in_range": true,
-        "unclaimed_fees_usd": 0.26,
+        "unclaimed_fees_usd": 1.58,
         "minutes_out_of_range": 0,
-        "age_minutes": 159
+        "age_minutes": 749
       },
       {
-        "ts": "2026-05-19T13:43:23.744Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -7.31,
-        "pnl_usd": -1.86,
+        "ts": "2026-05-21T05:20:01.319Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": -0.97,
+        "pnl_usd": -0.25,
         "in_range": true,
-        "unclaimed_fees_usd": 0.26,
+        "unclaimed_fees_usd": 1.58,
         "minutes_out_of_range": 0,
-        "age_minutes": 162
+        "age_minutes": 754
       },
       {
-        "ts": "2026-05-19T13:50:01.042Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -6.72,
-        "pnl_usd": -1.71,
+        "ts": "2026-05-21T05:25:01.611Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": -0.23,
+        "pnl_usd": -0.06,
         "in_range": true,
-        "unclaimed_fees_usd": 0.27,
+        "unclaimed_fees_usd": 1.59,
         "minutes_out_of_range": 0,
-        "age_minutes": 169
+        "age_minutes": 759
       },
       {
-        "ts": "2026-05-19T13:55:01.176Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -6.7,
-        "pnl_usd": -1.7,
+        "ts": "2026-05-21T05:30:01.513Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 1.11,
+        "pnl_usd": 0.29,
         "in_range": true,
-        "unclaimed_fees_usd": 0.28,
+        "unclaimed_fees_usd": 1.6,
         "minutes_out_of_range": 0,
-        "age_minutes": 174
+        "age_minutes": 764
       },
       {
-        "ts": "2026-05-19T14:00:01.367Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -3.73,
-        "pnl_usd": -0.95,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.29,
-        "minutes_out_of_range": 0,
-        "age_minutes": 179
-      },
-      {
-        "ts": "2026-05-19T14:05:01.460Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -2.82,
-        "pnl_usd": -0.72,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.3,
-        "minutes_out_of_range": 0,
-        "age_minutes": 184
-      },
-      {
-        "ts": "2026-05-19T14:08:23.297Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -4.54,
-        "pnl_usd": -1.15,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.31,
-        "minutes_out_of_range": 0,
-        "age_minutes": 187
-      },
-      {
-        "ts": "2026-05-19T14:10:01.560Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -4.06,
-        "pnl_usd": -1.03,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.32,
-        "minutes_out_of_range": 0,
-        "age_minutes": 189
-      },
-      {
-        "ts": "2026-05-19T14:15:01.708Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -0.4,
-        "pnl_usd": -0.1,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.32,
-        "minutes_out_of_range": 0,
-        "age_minutes": 194
-      },
-      {
-        "ts": "2026-05-19T14:20:01.823Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -1.57,
-        "pnl_usd": -0.4,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.33,
-        "minutes_out_of_range": 0,
-        "age_minutes": 199
-      },
-      {
-        "ts": "2026-05-19T14:25:00.904Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -1.62,
-        "pnl_usd": -0.41,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.32,
-        "minutes_out_of_range": 0,
-        "age_minutes": 204
-      },
-      {
-        "ts": "2026-05-19T14:30:01.041Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -2.3,
-        "pnl_usd": -0.58,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.34,
-        "minutes_out_of_range": 0,
-        "age_minutes": 209
-      },
-      {
-        "ts": "2026-05-19T14:35:01.231Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -2.25,
-        "pnl_usd": -0.57,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.35,
-        "minutes_out_of_range": 0,
-        "age_minutes": 214
-      },
-      {
-        "ts": "2026-05-19T14:40:01.306Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -3.01,
-        "pnl_usd": -0.76,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.36,
-        "minutes_out_of_range": 0,
-        "age_minutes": 219
-      },
-      {
-        "ts": "2026-05-19T14:45:01.491Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -3.35,
-        "pnl_usd": -0.85,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.38,
-        "minutes_out_of_range": 0,
-        "age_minutes": 224
-      },
-      {
-        "ts": "2026-05-19T14:50:01.903Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -2.92,
-        "pnl_usd": -0.74,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.38,
-        "minutes_out_of_range": 0,
-        "age_minutes": 229
-      },
-      {
-        "ts": "2026-05-19T14:55:01.648Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -1.36,
-        "pnl_usd": -0.35,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.39,
-        "minutes_out_of_range": 0,
-        "age_minutes": 234
-      },
-      {
-        "ts": "2026-05-19T15:00:01.771Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -1.35,
-        "pnl_usd": -0.34,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.39,
-        "minutes_out_of_range": 0,
-        "age_minutes": 239
-      },
-      {
-        "ts": "2026-05-19T15:05:01.874Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -0.09,
-        "pnl_usd": -0.02,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.4,
-        "minutes_out_of_range": 0,
-        "age_minutes": 244
-      },
-      {
-        "ts": "2026-05-19T15:10:00.959Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": 1.55,
-        "pnl_usd": 0.39,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.39,
-        "minutes_out_of_range": 0,
-        "age_minutes": 249
-      },
-      {
-        "ts": "2026-05-19T15:15:01.156Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": 1.22,
+        "ts": "2026-05-21T05:35:01.748Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 1.21,
         "pnl_usd": 0.31,
         "in_range": true,
-        "unclaimed_fees_usd": 0.39,
+        "unclaimed_fees_usd": 1.62,
         "minutes_out_of_range": 0,
-        "age_minutes": 254
+        "age_minutes": 769
       },
       {
-        "ts": "2026-05-19T15:20:01.238Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": 1.31,
+        "ts": "2026-05-21T05:40:01.761Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 1.26,
         "pnl_usd": 0.33,
         "in_range": true,
-        "unclaimed_fees_usd": 0.38,
+        "unclaimed_fees_usd": 1.63,
         "minutes_out_of_range": 0,
-        "age_minutes": 259
+        "age_minutes": 774
       },
       {
-        "ts": "2026-05-19T15:25:01.378Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -1.01,
-        "pnl_usd": -0.26,
+        "ts": "2026-05-21T05:45:02.004Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 1.6,
+        "pnl_usd": 0.41,
         "in_range": true,
-        "unclaimed_fees_usd": 0.39,
+        "unclaimed_fees_usd": 1.64,
         "minutes_out_of_range": 0,
-        "age_minutes": 264
+        "age_minutes": 779
       },
       {
-        "ts": "2026-05-19T15:30:01.511Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -2.05,
-        "pnl_usd": -0.52,
+        "ts": "2026-05-21T05:50:00.979Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 1.6,
+        "pnl_usd": 0.41,
         "in_range": true,
-        "unclaimed_fees_usd": 0.4,
+        "unclaimed_fees_usd": 1.64,
         "minutes_out_of_range": 0,
-        "age_minutes": 269
+        "age_minutes": 784
       },
       {
-        "ts": "2026-05-19T15:35:01.588Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -0.34,
-        "pnl_usd": -0.09,
+        "ts": "2026-05-21T05:55:01.141Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 2.54,
+        "pnl_usd": 0.66,
         "in_range": true,
-        "unclaimed_fees_usd": 0.41,
+        "unclaimed_fees_usd": 1.66,
         "minutes_out_of_range": 0,
-        "age_minutes": 274
+        "age_minutes": 789
       },
       {
-        "ts": "2026-05-19T15:40:01.698Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -0.63,
-        "pnl_usd": -0.16,
+        "ts": "2026-05-21T06:00:01.177Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 2.57,
+        "pnl_usd": 0.66,
         "in_range": true,
-        "unclaimed_fees_usd": 0.41,
+        "unclaimed_fees_usd": 1.67,
         "minutes_out_of_range": 0,
-        "age_minutes": 279
+        "age_minutes": 794
       },
       {
-        "ts": "2026-05-19T15:45:01.817Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -0.58,
-        "pnl_usd": -0.15,
+        "ts": "2026-05-21T06:05:01.561Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 2.6,
+        "pnl_usd": 0.67,
         "in_range": true,
-        "unclaimed_fees_usd": 0.42,
+        "unclaimed_fees_usd": 1.68,
         "minutes_out_of_range": 0,
-        "age_minutes": 284
+        "age_minutes": 799
       },
       {
-        "ts": "2026-05-19T15:50:01.889Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -0.87,
-        "pnl_usd": -0.22,
+        "ts": "2026-05-21T06:10:01.420Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.96,
+        "pnl_usd": 1.02,
         "in_range": true,
-        "unclaimed_fees_usd": 0.43,
+        "unclaimed_fees_usd": 1.7,
         "minutes_out_of_range": 0,
-        "age_minutes": 289
+        "age_minutes": 804
       },
       {
-        "ts": "2026-05-19T15:50:53.340Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -1.57,
-        "pnl_usd": -0.4,
+        "ts": "2026-05-21T06:15:01.887Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.43,
+        "pnl_usd": 1.14,
         "in_range": true,
-        "unclaimed_fees_usd": 0.43,
+        "unclaimed_fees_usd": 1.65,
         "minutes_out_of_range": 0,
-        "age_minutes": 290
+        "age_minutes": 809
       },
       {
-        "ts": "2026-05-19T15:55:00.980Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -4.44,
-        "pnl_usd": -1.13,
+        "ts": "2026-05-21T06:20:01.663Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.37,
+        "pnl_usd": 1.13,
         "in_range": true,
-        "unclaimed_fees_usd": 0.46,
+        "unclaimed_fees_usd": 1.63,
         "minutes_out_of_range": 0,
-        "age_minutes": 294
+        "age_minutes": 814
       },
       {
-        "ts": "2026-05-19T16:00:01.164Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -4.49,
-        "pnl_usd": -1.14,
+        "ts": "2026-05-21T06:25:01.837Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.71,
+        "pnl_usd": 0.96,
         "in_range": true,
-        "unclaimed_fees_usd": 0.45,
+        "unclaimed_fees_usd": 1.57,
         "minutes_out_of_range": 0,
-        "age_minutes": 299
+        "age_minutes": 819
       },
       {
-        "ts": "2026-05-19T16:05:01.264Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -4.48,
-        "pnl_usd": -1.14,
+        "ts": "2026-05-21T06:30:01.895Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.66,
+        "pnl_usd": 0.94,
         "in_range": true,
-        "unclaimed_fees_usd": 0.45,
+        "unclaimed_fees_usd": 1.56,
         "minutes_out_of_range": 0,
-        "age_minutes": 304
+        "age_minutes": 824
       },
       {
-        "ts": "2026-05-19T16:10:01.428Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -4.41,
-        "pnl_usd": -1.12,
+        "ts": "2026-05-21T06:35:01.460Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.68,
+        "pnl_usd": 0.95,
         "in_range": true,
-        "unclaimed_fees_usd": 0.47,
+        "unclaimed_fees_usd": 1.56,
         "minutes_out_of_range": 0,
-        "age_minutes": 309
+        "age_minutes": 829
       },
       {
-        "ts": "2026-05-19T16:12:23.442Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -5.92,
-        "pnl_usd": -1.5,
+        "ts": "2026-05-21T06:40:01.095Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.74,
+        "pnl_usd": 0.97,
         "in_range": true,
-        "unclaimed_fees_usd": 0.47,
+        "unclaimed_fees_usd": 1.58,
         "minutes_out_of_range": 0,
-        "age_minutes": 311
+        "age_minutes": 834
       },
       {
-        "ts": "2026-05-19T16:15:01.491Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -5.95,
-        "pnl_usd": -1.51,
+        "ts": "2026-05-21T06:45:01.316Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.85,
+        "pnl_usd": 0.99,
         "in_range": true,
-        "unclaimed_fees_usd": 0.47,
+        "unclaimed_fees_usd": 1.61,
         "minutes_out_of_range": 0,
-        "age_minutes": 314
+        "age_minutes": 839
       },
       {
-        "ts": "2026-05-19T16:20:01.647Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -5.38,
-        "pnl_usd": -1.36,
+        "ts": "2026-05-21T06:50:01.305Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.16,
+        "pnl_usd": 1.07,
         "in_range": true,
-        "unclaimed_fees_usd": 0.48,
+        "unclaimed_fees_usd": 1.58,
         "minutes_out_of_range": 0,
-        "age_minutes": 319
+        "age_minutes": 844
       },
       {
-        "ts": "2026-05-19T16:25:01.879Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -6.45,
-        "pnl_usd": -1.64,
+        "ts": "2026-05-21T06:55:01.530Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.38,
+        "pnl_usd": 1.13,
         "in_range": true,
-        "unclaimed_fees_usd": 0.48,
+        "unclaimed_fees_usd": 1.58,
         "minutes_out_of_range": 0,
-        "age_minutes": 324
+        "age_minutes": 849
       },
       {
-        "ts": "2026-05-19T16:30:01.845Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -5.85,
-        "pnl_usd": -1.49,
+        "ts": "2026-05-21T07:00:01.506Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.44,
+        "pnl_usd": 1.15,
         "in_range": true,
-        "unclaimed_fees_usd": 0.49,
+        "unclaimed_fees_usd": 1.6,
         "minutes_out_of_range": 0,
-        "age_minutes": 329
+        "age_minutes": 854
       },
       {
-        "ts": "2026-05-19T16:35:00.937Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -6.93,
-        "pnl_usd": -1.76,
+        "ts": "2026-05-21T07:05:01.704Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.53,
+        "pnl_usd": 1.17,
         "in_range": true,
-        "unclaimed_fees_usd": 0.5,
+        "unclaimed_fees_usd": 1.62,
         "minutes_out_of_range": 0,
-        "age_minutes": 334
+        "age_minutes": 859
       },
       {
-        "ts": "2026-05-19T16:40:01.184Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -8.08,
-        "pnl_usd": -2.05,
+        "ts": "2026-05-21T07:10:01.743Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.11,
+        "pnl_usd": 0.8,
         "in_range": true,
-        "unclaimed_fees_usd": 0.5,
+        "unclaimed_fees_usd": 1.6,
         "minutes_out_of_range": 0,
-        "age_minutes": 339
+        "age_minutes": 864
       },
       {
-        "ts": "2026-05-19T16:45:01.247Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -11.98,
-        "pnl_usd": -3.04,
+        "ts": "2026-05-21T07:15:02.115Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 1.18,
+        "pnl_usd": 0.3,
         "in_range": true,
-        "unclaimed_fees_usd": 0.48,
+        "unclaimed_fees_usd": 1.53,
         "minutes_out_of_range": 0,
-        "age_minutes": 344
+        "age_minutes": 869
       },
       {
-        "ts": "2026-05-19T16:50:01.371Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -11.77,
-        "pnl_usd": -2.99,
+        "ts": "2026-05-21T07:20:00.970Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 0.64,
+        "pnl_usd": 0.16,
         "in_range": true,
-        "unclaimed_fees_usd": 0.54,
+        "unclaimed_fees_usd": 1.47,
         "minutes_out_of_range": 0,
-        "age_minutes": 349
+        "age_minutes": 874
       },
       {
-        "ts": "2026-05-19T16:51:23.755Z",
-        "position": "paper_a152521908b74cde",
-        "pnl_pct": -15.48,
-        "pnl_usd": -3.93,
+        "ts": "2026-05-21T07:25:01.223Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 0.37,
+        "pnl_usd": 0.1,
         "in_range": true,
-        "unclaimed_fees_usd": 0.49,
+        "unclaimed_fees_usd": 1.41,
         "minutes_out_of_range": 0,
-        "age_minutes": 350
+        "age_minutes": 879
+      },
+      {
+        "ts": "2026-05-21T07:30:01.223Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 0.3,
+        "pnl_usd": 0.08,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.39,
+        "minutes_out_of_range": 0,
+        "age_minutes": 884
+      },
+      {
+        "ts": "2026-05-21T07:35:01.377Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 0.31,
+        "pnl_usd": 0.08,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.39,
+        "minutes_out_of_range": 0,
+        "age_minutes": 889
+      },
+      {
+        "ts": "2026-05-21T07:40:01.420Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 1.06,
+        "pnl_usd": 0.27,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.43,
+        "minutes_out_of_range": 0,
+        "age_minutes": 894
+      },
+      {
+        "ts": "2026-05-21T07:45:01.658Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 1.11,
+        "pnl_usd": 0.29,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.44,
+        "minutes_out_of_range": 0,
+        "age_minutes": 899
+      },
+      {
+        "ts": "2026-05-21T07:50:01.702Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.18,
+        "pnl_usd": 0.82,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.49,
+        "minutes_out_of_range": 0,
+        "age_minutes": 904
+      },
+      {
+        "ts": "2026-05-21T07:55:01.937Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.97,
+        "pnl_usd": 1.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.43,
+        "minutes_out_of_range": 0,
+        "age_minutes": 909
+      },
+      {
+        "ts": "2026-05-21T08:00:01.936Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.76,
+        "pnl_usd": 0.97,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.42,
+        "minutes_out_of_range": 0,
+        "age_minutes": 914
+      },
+      {
+        "ts": "2026-05-21T08:05:01.077Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.76,
+        "pnl_usd": 0.97,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.42,
+        "minutes_out_of_range": 0,
+        "age_minutes": 919
+      },
+      {
+        "ts": "2026-05-21T08:10:01.098Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.75,
+        "pnl_usd": 0.97,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.42,
+        "minutes_out_of_range": 0,
+        "age_minutes": 924
+      },
+      {
+        "ts": "2026-05-21T08:15:01.352Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 3.67,
+        "pnl_usd": 0.95,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.4,
+        "minutes_out_of_range": 0,
+        "age_minutes": 929
+      },
+      {
+        "ts": "2026-05-21T08:20:01.275Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.26,
+        "pnl_usd": 1.1,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.5,
+        "minutes_out_of_range": 0,
+        "age_minutes": 934
+      },
+      {
+        "ts": "2026-05-21T08:25:01.427Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.29,
+        "pnl_usd": 1.11,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.51,
+        "minutes_out_of_range": 0,
+        "age_minutes": 939
+      },
+      {
+        "ts": "2026-05-21T08:30:01.497Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.19,
+        "pnl_usd": 1.08,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.53,
+        "minutes_out_of_range": 0,
+        "age_minutes": 944
+      },
+      {
+        "ts": "2026-05-21T08:35:01.672Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.22,
+        "pnl_usd": 1.09,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.54,
+        "minutes_out_of_range": 0,
+        "age_minutes": 949
+      },
+      {
+        "ts": "2026-05-21T08:40:01.764Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 4.47,
+        "pnl_usd": 1.15,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.56,
+        "minutes_out_of_range": 0,
+        "age_minutes": 954
+      },
+      {
+        "ts": "2026-05-21T08:45:01.941Z",
+        "position": "paper_aa3bb9caee33b779",
+        "pnl_pct": 5.14,
+        "pnl_usd": 1.33,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.6,
+        "minutes_out_of_range": 0,
+        "age_minutes": 959
       }
-    ]
+    ],
+    "base_mint_cooldown_until": "2026-05-21T20:45:25.740Z",
+    "base_mint_cooldown_reason": "repeat fee-generating deploys (3x pool)"
   },
   "FRkgppYGB4B2PvaEHio5hTh5BSzu3wyUznyWkYr2cM6v": {
     "name": "ROUTER-SOL",
@@ -15008,496 +15068,516 @@
   },
   "6qK2eXm5LsTj8muFPsujkA7m3E8it6ASk5BT415fnREz": {
     "name": "KERMIT-SOL",
-    "base_mint": null,
-    "deploys": [],
-    "total_deploys": 0,
-    "avg_pnl_pct": 0,
+    "base_mint": "2giC2MXhhENo4jkbRjfAgNAZboTJtXZTsSFbMZKwpump",
+    "deploys": [
+      {
+        "deployed_at": "2026-05-19T17:27:04.160Z",
+        "closed_at": "2026-05-20T18:05:14.238Z",
+        "pnl_pct": -0.75,
+        "pnl_usd": -0.19,
+        "fees_earned_usd": 0.49,
+        "fees_earned_sol": 0.005843,
+        "fee_earned_pct": 1.9283746556473829,
+        "range_efficiency": 100,
+        "minutes_held": 1478,
+        "close_reason": "Low yield: fee/TVL 1.90% < min 2% (age: 1477m)",
+        "strategy": "bid_ask",
+        "volatility_at_deploy": 4.7614
+      }
+    ],
+    "total_deploys": 1,
+    "avg_pnl_pct": -0.75,
     "win_rate": 0,
     "adjusted_win_rate": 0,
-    "adjusted_win_rate_sample_count": 0,
-    "last_deployed_at": null,
-    "last_outcome": null,
-    "notes": [],
+    "adjusted_win_rate_sample_count": 1,
+    "last_deployed_at": "2026-05-20T18:05:14.238Z",
+    "last_outcome": "loss",
+    "notes": [
+      {
+        "note": "Closed: low yield (fee/TVL below threshold) at 2026-05-20",
+        "added_at": "2026-05-20T18:05:14.256Z"
+      }
+    ],
     "snapshots": [
       {
-        "ts": "2026-05-20T09:45:01.380Z",
+        "ts": "2026-05-20T14:25:02.055Z",
         "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.43,
-        "pnl_usd": 0.62,
+        "pnl_pct": 4.13,
+        "pnl_usd": 1.05,
         "in_range": true,
-        "unclaimed_fees_usd": 0.97,
+        "unclaimed_fees_usd": 1.46,
         "minutes_out_of_range": 0,
-        "age_minutes": 977
+        "age_minutes": 1257
       },
       {
-        "ts": "2026-05-20T09:50:01.468Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.42,
-        "pnl_usd": 0.62,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.96,
-        "minutes_out_of_range": 0,
-        "age_minutes": 982
-      },
-      {
-        "ts": "2026-05-20T09:55:01.572Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.46,
-        "pnl_usd": 0.63,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.97,
-        "minutes_out_of_range": 0,
-        "age_minutes": 987
-      },
-      {
-        "ts": "2026-05-20T10:00:01.692Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.48,
-        "pnl_usd": 0.63,
-        "in_range": true,
-        "unclaimed_fees_usd": 0.98,
-        "minutes_out_of_range": 0,
-        "age_minutes": 992
-      },
-      {
-        "ts": "2026-05-20T10:05:01.831Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.58,
-        "pnl_usd": 0.65,
-        "in_range": true,
-        "unclaimed_fees_usd": 1,
-        "minutes_out_of_range": 0,
-        "age_minutes": 997
-      },
-      {
-        "ts": "2026-05-20T10:08:24.146Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.66,
-        "pnl_usd": 0.68,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.02,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1001
-      },
-      {
-        "ts": "2026-05-20T10:10:00.926Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.66,
-        "pnl_usd": 0.68,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.02,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1002
-      },
-      {
-        "ts": "2026-05-20T10:15:01.023Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.08,
-        "pnl_usd": 0.53,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.06,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1007
-      },
-      {
-        "ts": "2026-05-20T10:20:01.149Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.1,
-        "pnl_usd": 0.53,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.07,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1012
-      },
-      {
-        "ts": "2026-05-20T10:25:01.274Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.13,
-        "pnl_usd": 0.54,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.08,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1017
-      },
-      {
-        "ts": "2026-05-20T10:30:01.396Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.15,
-        "pnl_usd": 0.55,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.08,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1022
-      },
-      {
-        "ts": "2026-05-20T10:35:01.821Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.04,
-        "pnl_usd": 0.52,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.05,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1027
-      },
-      {
-        "ts": "2026-05-20T10:40:01.628Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.08,
-        "pnl_usd": 0.53,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.06,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1032
-      },
-      {
-        "ts": "2026-05-20T10:43:25.474Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.05,
-        "pnl_usd": 0.52,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.05,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1036
-      },
-      {
-        "ts": "2026-05-20T10:45:01.752Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.06,
-        "pnl_usd": 0.52,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.06,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1037
-      },
-      {
-        "ts": "2026-05-20T10:50:01.833Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.1,
-        "pnl_usd": 0.53,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.07,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1042
-      },
-      {
-        "ts": "2026-05-20T10:55:00.959Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.12,
-        "pnl_usd": 0.54,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.07,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1047
-      },
-      {
-        "ts": "2026-05-20T11:00:01.094Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.14,
-        "pnl_usd": 0.54,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.08,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1052
-      },
-      {
-        "ts": "2026-05-20T11:05:01.145Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.24,
-        "pnl_usd": 0.57,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.1,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1057
-      },
-      {
-        "ts": "2026-05-20T11:10:01.376Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.26,
-        "pnl_usd": 0.58,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.11,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1062
-      },
-      {
-        "ts": "2026-05-20T11:15:01.477Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.28,
-        "pnl_usd": 0.58,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.11,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1067
-      },
-      {
-        "ts": "2026-05-20T11:20:01.599Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.31,
-        "pnl_usd": 0.59,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.12,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1072
-      },
-      {
-        "ts": "2026-05-20T11:25:01.734Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.33,
-        "pnl_usd": 0.59,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.13,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1077
-      },
-      {
-        "ts": "2026-05-20T11:30:01.832Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.58,
-        "pnl_usd": 0.65,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.19,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1082
-      },
-      {
-        "ts": "2026-05-20T11:35:01.911Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.78,
-        "pnl_usd": 0.71,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.24,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1087
-      },
-      {
-        "ts": "2026-05-20T11:40:01.051Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.8,
-        "pnl_usd": 0.71,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.25,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1092
-      },
-      {
-        "ts": "2026-05-20T11:45:01.155Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.83,
-        "pnl_usd": 0.72,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.25,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1097
-      },
-      {
-        "ts": "2026-05-20T11:50:01.290Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.85,
-        "pnl_usd": 0.72,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.26,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1102
-      },
-      {
-        "ts": "2026-05-20T11:55:01.412Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.87,
-        "pnl_usd": 0.73,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.26,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1107
-      },
-      {
-        "ts": "2026-05-20T12:00:01.543Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.9,
-        "pnl_usd": 0.74,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.27,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1112
-      },
-      {
-        "ts": "2026-05-20T12:05:01.643Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.93,
-        "pnl_usd": 0.74,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.28,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1117
-      },
-      {
-        "ts": "2026-05-20T12:09:54.227Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.96,
-        "pnl_usd": 0.75,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.29,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1122
-      },
-      {
-        "ts": "2026-05-20T12:15:01.902Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 2.99,
-        "pnl_usd": 0.76,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.29,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1127
-      },
-      {
-        "ts": "2026-05-20T12:20:01.034Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.01,
-        "pnl_usd": 0.76,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.3,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1132
-      },
-      {
-        "ts": "2026-05-20T12:25:01.112Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.03,
-        "pnl_usd": 0.77,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.3,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1137
-      },
-      {
-        "ts": "2026-05-20T12:25:24.233Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3,
-        "pnl_usd": 0.76,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.3,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1138
-      },
-      {
-        "ts": "2026-05-20T12:30:01.285Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.01,
-        "pnl_usd": 0.77,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.3,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1142
-      },
-      {
-        "ts": "2026-05-20T12:35:01.383Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.03,
-        "pnl_usd": 0.77,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.3,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1147
-      },
-      {
-        "ts": "2026-05-20T12:40:01.548Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.03,
-        "pnl_usd": 0.77,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.31,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1152
-      },
-      {
-        "ts": "2026-05-20T12:45:01.684Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.06,
-        "pnl_usd": 0.78,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.31,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1157
-      },
-      {
-        "ts": "2026-05-20T12:48:24.238Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.07,
-        "pnl_usd": 0.78,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.32,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1161
-      },
-      {
-        "ts": "2026-05-20T12:50:02.058Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.08,
-        "pnl_usd": 0.78,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.32,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1162
-      },
-      {
-        "ts": "2026-05-20T12:55:01.895Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.6,
-        "pnl_usd": 0.91,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.32,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1167
-      },
-      {
-        "ts": "2026-05-20T13:00:01.165Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.62,
-        "pnl_usd": 0.92,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.32,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1172
-      },
-      {
-        "ts": "2026-05-20T13:05:01.140Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.64,
-        "pnl_usd": 0.92,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.33,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1177
-      },
-      {
-        "ts": "2026-05-20T13:10:01.274Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.66,
-        "pnl_usd": 0.93,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.34,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1182
-      },
-      {
-        "ts": "2026-05-20T13:15:01.370Z",
-        "position": "paper_589d58baec57933f",
-        "pnl_pct": 3.71,
-        "pnl_usd": 0.94,
-        "in_range": true,
-        "unclaimed_fees_usd": 1.35,
-        "minutes_out_of_range": 0,
-        "age_minutes": 1187
-      },
-      {
-        "ts": "2026-05-20T13:20:01.506Z",
+        "ts": "2026-05-20T14:30:00.960Z",
         "position": "paper_589d58baec57933f",
         "pnl_pct": 3.73,
         "pnl_usd": 0.95,
         "in_range": true,
-        "unclaimed_fees_usd": 1.35,
+        "unclaimed_fees_usd": 1.48,
         "minutes_out_of_range": 0,
-        "age_minutes": 1192
+        "age_minutes": 1262
+      },
+      {
+        "ts": "2026-05-20T14:35:01.353Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 3.75,
+        "pnl_usd": 0.95,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.49,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1267
+      },
+      {
+        "ts": "2026-05-20T14:40:01.149Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 3.75,
+        "pnl_usd": 0.95,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.49,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1272
+      },
+      {
+        "ts": "2026-05-20T14:45:01.588Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 3.78,
+        "pnl_usd": 0.96,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.49,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1277
+      },
+      {
+        "ts": "2026-05-20T14:50:01.338Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 3.8,
+        "pnl_usd": 0.96,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.5,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1282
+      },
+      {
+        "ts": "2026-05-20T14:55:01.656Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 3.79,
+        "pnl_usd": 0.96,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.5,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1287
+      },
+      {
+        "ts": "2026-05-20T15:00:01.631Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 3.82,
+        "pnl_usd": 0.97,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.5,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1292
+      },
+      {
+        "ts": "2026-05-20T15:05:02.199Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 2.53,
+        "pnl_usd": 0.64,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.18,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1297
+      },
+      {
+        "ts": "2026-05-20T15:10:01.810Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 1.82,
+        "pnl_usd": 0.46,
+        "in_range": true,
+        "unclaimed_fees_usd": 1,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1302
+      },
+      {
+        "ts": "2026-05-20T15:15:02.116Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 1.24,
+        "pnl_usd": 0.31,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.85,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1307
+      },
+      {
+        "ts": "2026-05-20T15:20:01.015Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 1.1,
+        "pnl_usd": 0.28,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.81,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1312
+      },
+      {
+        "ts": "2026-05-20T15:25:01.304Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 0.64,
+        "pnl_usd": 0.16,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.7,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1317
+      },
+      {
+        "ts": "2026-05-20T15:30:01.272Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 0.6,
+        "pnl_usd": 0.15,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.69,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1322
+      },
+      {
+        "ts": "2026-05-20T15:35:01.727Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 0.43,
+        "pnl_usd": 0.11,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.64,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1327
+      },
+      {
+        "ts": "2026-05-20T15:40:01.664Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 0.41,
+        "pnl_usd": 0.1,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.64,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1332
+      },
+      {
+        "ts": "2026-05-20T15:43:34.781Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 0.12,
+        "pnl_usd": 0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.64,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1336
+      },
+      {
+        "ts": "2026-05-20T15:45:01.792Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 0.12,
+        "pnl_usd": 0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.64,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1337
+      },
+      {
+        "ts": "2026-05-20T15:50:01.947Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 0.11,
+        "pnl_usd": 0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.63,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1342
+      },
+      {
+        "ts": "2026-05-20T15:55:02.309Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 0.12,
+        "pnl_usd": 0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.63,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1347
+      },
+      {
+        "ts": "2026-05-20T16:00:02.018Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 0.12,
+        "pnl_usd": 0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.63,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1352
+      },
+      {
+        "ts": "2026-05-20T16:05:01.199Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": 0.12,
+        "pnl_usd": 0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.64,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1357
+      },
+      {
+        "ts": "2026-05-20T16:10:01.461Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.15,
+        "pnl_usd": -0.04,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.64,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1362
+      },
+      {
+        "ts": "2026-05-20T16:15:01.439Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.25,
+        "pnl_usd": -0.06,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.62,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1367
+      },
+      {
+        "ts": "2026-05-20T16:20:01.305Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.24,
+        "pnl_usd": -0.06,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.62,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1372
+      },
+      {
+        "ts": "2026-05-20T16:24:34.592Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.31,
+        "pnl_usd": -0.08,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.6,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1377
+      },
+      {
+        "ts": "2026-05-20T16:25:01.552Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.31,
+        "pnl_usd": -0.08,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.6,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1377
+      },
+      {
+        "ts": "2026-05-20T16:30:01.575Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.31,
+        "pnl_usd": -0.08,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.6,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1382
+      },
+      {
+        "ts": "2026-05-20T16:35:01.916Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.99,
+        "pnl_usd": -0.25,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.59,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1387
+      },
+      {
+        "ts": "2026-05-20T16:40:01.794Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.98,
+        "pnl_usd": -0.25,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.59,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1392
+      },
+      {
+        "ts": "2026-05-20T16:45:02.117Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.98,
+        "pnl_usd": -0.25,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.59,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1397
+      },
+      {
+        "ts": "2026-05-20T16:46:04.632Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -1.03,
+        "pnl_usd": -0.26,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.58,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1399
+      },
+      {
+        "ts": "2026-05-20T16:50:01.013Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -1.04,
+        "pnl_usd": -0.26,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.57,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1402
+      },
+      {
+        "ts": "2026-05-20T16:55:01.254Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -1.09,
+        "pnl_usd": -0.28,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.56,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1407
+      },
+      {
+        "ts": "2026-05-20T17:00:01.275Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -1.12,
+        "pnl_usd": -0.28,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.56,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1412
+      },
+      {
+        "ts": "2026-05-20T17:05:01.693Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -1.11,
+        "pnl_usd": -0.28,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.56,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1417
+      },
+      {
+        "ts": "2026-05-20T17:10:01.429Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -1.11,
+        "pnl_usd": -0.28,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.56,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1422
+      },
+      {
+        "ts": "2026-05-20T17:15:01.634Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -1.11,
+        "pnl_usd": -0.28,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.56,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1427
+      },
+      {
+        "ts": "2026-05-20T17:20:01.590Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -1.15,
+        "pnl_usd": -0.29,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.55,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1432
+      },
+      {
+        "ts": "2026-05-20T17:25:01.864Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -1.16,
+        "pnl_usd": -0.29,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.54,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1437
+      },
+      {
+        "ts": "2026-05-20T17:30:01.826Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.52,
+        "pnl_usd": -0.13,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.55,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1442
+      },
+      {
+        "ts": "2026-05-20T17:35:02.026Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.55,
+        "pnl_usd": -0.14,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.54,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1447
+      },
+      {
+        "ts": "2026-05-20T17:40:00.996Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.55,
+        "pnl_usd": -0.14,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.54,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1452
+      },
+      {
+        "ts": "2026-05-20T17:45:01.255Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.55,
+        "pnl_usd": -0.14,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.54,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1457
+      },
+      {
+        "ts": "2026-05-20T17:50:01.228Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.54,
+        "pnl_usd": -0.14,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.54,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1462
+      },
+      {
+        "ts": "2026-05-20T17:55:01.475Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.53,
+        "pnl_usd": -0.13,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.54,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1467
+      },
+      {
+        "ts": "2026-05-20T18:00:01.522Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.51,
+        "pnl_usd": -0.13,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.55,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1472
+      },
+      {
+        "ts": "2026-05-20T18:05:01.745Z",
+        "position": "paper_589d58baec57933f",
+        "pnl_pct": -0.72,
+        "pnl_usd": -0.18,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.49,
+        "minutes_out_of_range": 0,
+        "age_minutes": 1477
       }
     ]
   },
@@ -15532,14 +15612,42 @@
         "close_reason": "⚡ Exit: Out of range for 30m (limit: 30m)",
         "strategy": "bid_ask",
         "volatility_at_deploy": 3.0163
+      },
+      {
+        "deployed_at": "2026-05-20T16:15:22.304Z",
+        "closed_at": "2026-05-20T16:46:06.311Z",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "fees_earned_usd": 0,
+        "fees_earned_sol": 0,
+        "fee_earned_pct": 0,
+        "range_efficiency": 0,
+        "minutes_held": 30,
+        "close_reason": "⚡ Exit: Out of range for 30m (limit: 30m)",
+        "strategy": "bid_ask",
+        "volatility_at_deploy": 3.0258
+      },
+      {
+        "deployed_at": "2026-05-21T11:55:49.344Z",
+        "closed_at": "2026-05-21T13:32:39.876Z",
+        "pnl_pct": 0.08,
+        "pnl_usd": 0.02,
+        "fees_earned_usd": 0.02,
+        "fees_earned_sol": 0.000193,
+        "fee_earned_pct": 0.0779423226812159,
+        "range_efficiency": 68.8,
+        "minutes_held": 96,
+        "close_reason": "⚡ Exit: Out of range for 30m (limit: 30m)",
+        "strategy": "bid_ask",
+        "volatility_at_deploy": 1.9335
       }
     ],
-    "total_deploys": 2,
-    "avg_pnl_pct": 0,
+    "total_deploys": 4,
+    "avg_pnl_pct": 0.02,
     "win_rate": 1,
     "adjusted_win_rate": 0,
     "adjusted_win_rate_sample_count": 0,
-    "last_deployed_at": "2026-05-19T21:10:59.143Z",
+    "last_deployed_at": "2026-05-21T13:32:39.876Z",
     "last_outcome": "profit",
     "notes": [],
     "snapshots": [
@@ -15712,11 +15820,291 @@
         "unclaimed_fees_usd": 0,
         "minutes_out_of_range": 30,
         "age_minutes": 34
+      },
+      {
+        "ts": "2026-05-20T16:20:01.337Z",
+        "position": "paper_c19dad736669627a",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 3,
+        "age_minutes": 4
+      },
+      {
+        "ts": "2026-05-20T16:24:34.622Z",
+        "position": "paper_c19dad736669627a",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 8,
+        "age_minutes": 9
+      },
+      {
+        "ts": "2026-05-20T16:25:01.592Z",
+        "position": "paper_c19dad736669627a",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 8,
+        "age_minutes": 9
+      },
+      {
+        "ts": "2026-05-20T16:30:01.607Z",
+        "position": "paper_c19dad736669627a",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 13,
+        "age_minutes": 14
+      },
+      {
+        "ts": "2026-05-20T16:35:01.954Z",
+        "position": "paper_c19dad736669627a",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 18,
+        "age_minutes": 19
+      },
+      {
+        "ts": "2026-05-20T16:40:01.832Z",
+        "position": "paper_c19dad736669627a",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 23,
+        "age_minutes": 24
+      },
+      {
+        "ts": "2026-05-20T16:45:02.139Z",
+        "position": "paper_c19dad736669627a",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 28,
+        "age_minutes": 29
+      },
+      {
+        "ts": "2026-05-20T16:46:04.652Z",
+        "position": "paper_c19dad736669627a",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 30,
+        "age_minutes": 30
+      },
+      {
+        "ts": "2026-05-21T12:00:01.046Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 0,
+        "age_minutes": 4
+      },
+      {
+        "ts": "2026-05-21T12:05:01.209Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 3,
+        "age_minutes": 9
+      },
+      {
+        "ts": "2026-05-21T12:10:01.267Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 8,
+        "age_minutes": 14
+      },
+      {
+        "ts": "2026-05-21T12:15:01.409Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 9,
+        "age_minutes": 19
+      },
+      {
+        "ts": "2026-05-21T12:20:01.489Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.02,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 9,
+        "age_minutes": 24
+      },
+      {
+        "ts": "2026-05-21T12:25:01.657Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.02,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 14,
+        "age_minutes": 29
+      },
+      {
+        "ts": "2026-05-21T12:30:01.665Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.03,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 17,
+        "age_minutes": 34
+      },
+      {
+        "ts": "2026-05-21T12:35:01.937Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.03,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 17,
+        "age_minutes": 39
+      },
+      {
+        "ts": "2026-05-21T12:40:01.882Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 17,
+        "age_minutes": 44
+      },
+      {
+        "ts": "2026-05-21T12:45:01.077Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 17,
+        "age_minutes": 49
+      },
+      {
+        "ts": "2026-05-21T12:50:01.177Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.05,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 17,
+        "age_minutes": 54
+      },
+      {
+        "ts": "2026-05-21T12:55:01.514Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 17,
+        "age_minutes": 59
+      },
+      {
+        "ts": "2026-05-21T13:00:01.344Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 17,
+        "age_minutes": 64
+      },
+      {
+        "ts": "2026-05-21T13:05:01.513Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.01,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 17,
+        "age_minutes": 69
+      },
+      {
+        "ts": "2026-05-21T13:10:01.587Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.07,
+        "pnl_usd": 0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 17,
+        "age_minutes": 74
+      },
+      {
+        "ts": "2026-05-21T13:15:01.660Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.08,
+        "pnl_usd": 0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 17,
+        "age_minutes": 79
+      },
+      {
+        "ts": "2026-05-21T13:20:01.736Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.08,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 17,
+        "age_minutes": 84
+      },
+      {
+        "ts": "2026-05-21T13:25:01.926Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.08,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 22,
+        "age_minutes": 89
+      },
+      {
+        "ts": "2026-05-21T13:30:00.927Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.08,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 27,
+        "age_minutes": 94
+      },
+      {
+        "ts": "2026-05-21T13:32:35.289Z",
+        "position": "paper_be8fa0a188bd8478",
+        "pnl_pct": 0.08,
+        "pnl_usd": 0.02,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 30,
+        "age_minutes": 96
       }
     ],
-    "cooldown_until": "2026-05-20T09:10:59.147Z",
+    "cooldown_until": "2026-05-22T01:32:39.882Z",
     "cooldown_reason": "repeated OOR closes (2x)",
-    "base_mint_cooldown_until": "2026-05-20T09:10:59.148Z",
+    "base_mint_cooldown_until": "2026-05-22T01:32:39.882Z",
     "base_mint_cooldown_reason": "repeated OOR closes (2x)"
   },
   "GxshbrXDJU1arcrGSqcp59eSf4QYimiBbTM35MwBQtU5": {
@@ -15736,14 +16124,28 @@
         "close_reason": "Out of range for 30m (limit: 30m)",
         "strategy": "bid_ask",
         "volatility_at_deploy": 4.5594
+      },
+      {
+        "deployed_at": "2026-05-20T12:26:50.659Z",
+        "closed_at": "2026-05-20T13:59:00.451Z",
+        "pnl_pct": 0.12,
+        "pnl_usd": 0.03,
+        "fees_earned_usd": 0.03,
+        "fees_earned_sol": 0.000345,
+        "fee_earned_pct": 0.1180173092053501,
+        "range_efficiency": 67.4,
+        "minutes_held": 92,
+        "close_reason": "OOR 30m: out of range for 30m (limit: 30m)",
+        "strategy": "bid_ask",
+        "volatility_at_deploy": 4.0521
       }
     ],
-    "total_deploys": 1,
-    "avg_pnl_pct": 0.08,
+    "total_deploys": 2,
+    "avg_pnl_pct": 0.1,
     "win_rate": 1,
     "adjusted_win_rate": 0,
     "adjusted_win_rate_sample_count": 0,
-    "last_deployed_at": "2026-05-20T12:25:57.608Z",
+    "last_deployed_at": "2026-05-20T13:59:00.451Z",
     "last_outcome": "profit",
     "notes": [],
     "snapshots": [
@@ -16036,6 +16438,1005 @@
         "unclaimed_fees_usd": 0.02,
         "minutes_out_of_range": 0,
         "age_minutes": 53
+      },
+      {
+        "ts": "2026-05-20T13:25:01.607Z",
+        "position": "paper_506d502882044f4c",
+        "pnl_pct": 0.11,
+        "pnl_usd": 0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 0,
+        "age_minutes": 58
+      },
+      {
+        "ts": "2026-05-20T13:30:01.742Z",
+        "position": "paper_506d502882044f4c",
+        "pnl_pct": 0.11,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 1,
+        "age_minutes": 63
+      },
+      {
+        "ts": "2026-05-20T13:35:01.849Z",
+        "position": "paper_506d502882044f4c",
+        "pnl_pct": 0.1,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 6,
+        "age_minutes": 68
+      },
+      {
+        "ts": "2026-05-20T13:40:01.044Z",
+        "position": "paper_506d502882044f4c",
+        "pnl_pct": 0.11,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 11,
+        "age_minutes": 73
+      },
+      {
+        "ts": "2026-05-20T13:45:01.022Z",
+        "position": "paper_506d502882044f4c",
+        "pnl_pct": 0.12,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 16,
+        "age_minutes": 78
+      },
+      {
+        "ts": "2026-05-20T13:50:01.158Z",
+        "position": "paper_506d502882044f4c",
+        "pnl_pct": 0.12,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 21,
+        "age_minutes": 83
+      },
+      {
+        "ts": "2026-05-20T13:55:01.297Z",
+        "position": "paper_506d502882044f4c",
+        "pnl_pct": 0.11,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 26,
+        "age_minutes": 88
+      },
+      {
+        "ts": "2026-05-20T13:58:54.445Z",
+        "position": "paper_506d502882044f4c",
+        "pnl_pct": 0.11,
+        "pnl_usd": 0.03,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 30,
+        "age_minutes": 92
+      }
+    ],
+    "cooldown_until": "2026-05-21T01:59:00.456Z",
+    "cooldown_reason": "repeated OOR closes (2x)",
+    "base_mint_cooldown_until": "2026-05-21T01:59:00.456Z",
+    "base_mint_cooldown_reason": "repeated OOR closes (2x)"
+  },
+  "BiB4ajTFpHwJtzEy5kA9kn8oap9cxXYKzCqycEWun8u3": {
+    "name": "DEGEN-SOL",
+    "base_mint": "FmjijgwEHpe32VPvHy1s7u7TLthh9yu1j75djVbWpump",
+    "deploys": [
+      {
+        "deployed_at": "2026-05-20T14:06:16.388Z",
+        "closed_at": "2026-05-20T20:42:40.718Z",
+        "pnl_pct": 5.28,
+        "pnl_usd": 1.34,
+        "fees_earned_usd": 1.65,
+        "fees_earned_sol": 0.019475,
+        "fee_earned_pct": 6.506309148264984,
+        "range_efficiency": 97.7,
+        "minutes_held": 396,
+        "close_reason": "Take profit: PnL 5.42% >= 5% threshold",
+        "strategy": "bid_ask",
+        "volatility_at_deploy": 2.8981
+      }
+    ],
+    "total_deploys": 1,
+    "avg_pnl_pct": 5.28,
+    "win_rate": 1,
+    "adjusted_win_rate": 100,
+    "adjusted_win_rate_sample_count": 1,
+    "last_deployed_at": "2026-05-20T20:42:40.718Z",
+    "last_outcome": "profit",
+    "notes": [],
+    "snapshots": [
+      {
+        "ts": "2026-05-20T16:50:01.023Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.87,
+        "pnl_usd": -0.22,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.54,
+        "minutes_out_of_range": 9,
+        "age_minutes": 163
+      },
+      {
+        "ts": "2026-05-20T16:55:01.266Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.32,
+        "pnl_usd": -0.08,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.56,
+        "minutes_out_of_range": 9,
+        "age_minutes": 168
+      },
+      {
+        "ts": "2026-05-20T17:00:01.287Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.01,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.59,
+        "minutes_out_of_range": 9,
+        "age_minutes": 173
+      },
+      {
+        "ts": "2026-05-20T17:05:01.704Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.28,
+        "pnl_usd": -0.07,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.63,
+        "minutes_out_of_range": 9,
+        "age_minutes": 178
+      },
+      {
+        "ts": "2026-05-20T17:10:01.445Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.46,
+        "pnl_usd": -0.12,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.64,
+        "minutes_out_of_range": 9,
+        "age_minutes": 183
+      },
+      {
+        "ts": "2026-05-20T17:15:01.645Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 0.13,
+        "pnl_usd": 0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.68,
+        "minutes_out_of_range": 9,
+        "age_minutes": 188
+      },
+      {
+        "ts": "2026-05-20T17:20:01.601Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 0.22,
+        "pnl_usd": 0.06,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.7,
+        "minutes_out_of_range": 9,
+        "age_minutes": 193
+      },
+      {
+        "ts": "2026-05-20T17:25:01.876Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 0.33,
+        "pnl_usd": 0.08,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.73,
+        "minutes_out_of_range": 9,
+        "age_minutes": 198
+      },
+      {
+        "ts": "2026-05-20T17:30:01.845Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 0.37,
+        "pnl_usd": 0.09,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.79,
+        "minutes_out_of_range": 9,
+        "age_minutes": 203
+      },
+      {
+        "ts": "2026-05-20T17:35:02.038Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.17,
+        "pnl_usd": -0.04,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.84,
+        "minutes_out_of_range": 9,
+        "age_minutes": 208
+      },
+      {
+        "ts": "2026-05-20T17:40:01.006Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.97,
+        "pnl_usd": -0.25,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.9,
+        "minutes_out_of_range": 9,
+        "age_minutes": 213
+      },
+      {
+        "ts": "2026-05-20T17:45:01.277Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -1.22,
+        "pnl_usd": -0.31,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.91,
+        "minutes_out_of_range": 9,
+        "age_minutes": 218
+      },
+      {
+        "ts": "2026-05-20T17:50:01.239Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 1.17,
+        "pnl_usd": 0.3,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.94,
+        "minutes_out_of_range": 9,
+        "age_minutes": 223
+      },
+      {
+        "ts": "2026-05-20T17:55:01.490Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.36,
+        "pnl_usd": -0.09,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.92,
+        "minutes_out_of_range": 9,
+        "age_minutes": 228
+      },
+      {
+        "ts": "2026-05-20T18:00:01.539Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 0.3,
+        "pnl_usd": 0.08,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.89,
+        "minutes_out_of_range": 9,
+        "age_minutes": 233
+      },
+      {
+        "ts": "2026-05-20T18:05:01.755Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 0.33,
+        "pnl_usd": 0.08,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.9,
+        "minutes_out_of_range": 9,
+        "age_minutes": 238
+      },
+      {
+        "ts": "2026-05-20T18:10:01.736Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.13,
+        "pnl_usd": -0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.98,
+        "minutes_out_of_range": 9,
+        "age_minutes": 243
+      },
+      {
+        "ts": "2026-05-20T18:15:01.930Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.48,
+        "pnl_usd": -0.12,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.96,
+        "minutes_out_of_range": 9,
+        "age_minutes": 248
+      },
+      {
+        "ts": "2026-05-20T18:20:01.924Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.47,
+        "pnl_usd": -0.12,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.96,
+        "minutes_out_of_range": 9,
+        "age_minutes": 253
+      },
+      {
+        "ts": "2026-05-20T18:25:01.106Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.65,
+        "pnl_usd": -0.17,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.98,
+        "minutes_out_of_range": 9,
+        "age_minutes": 258
+      },
+      {
+        "ts": "2026-05-20T18:30:01.142Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.39,
+        "pnl_usd": -0.1,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.05,
+        "minutes_out_of_range": 9,
+        "age_minutes": 263
+      },
+      {
+        "ts": "2026-05-20T18:35:01.342Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.09,
+        "minutes_out_of_range": 9,
+        "age_minutes": 268
+      },
+      {
+        "ts": "2026-05-20T18:40:01.312Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": -0.11,
+        "pnl_usd": -0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.12,
+        "minutes_out_of_range": 9,
+        "age_minutes": 273
+      },
+      {
+        "ts": "2026-05-20T18:45:01.758Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 0.25,
+        "pnl_usd": 0.06,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.14,
+        "minutes_out_of_range": 9,
+        "age_minutes": 278
+      },
+      {
+        "ts": "2026-05-20T18:50:01.535Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 0.43,
+        "pnl_usd": 0.11,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.19,
+        "minutes_out_of_range": 9,
+        "age_minutes": 283
+      },
+      {
+        "ts": "2026-05-20T18:55:01.918Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 1.47,
+        "pnl_usd": 0.37,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.19,
+        "minutes_out_of_range": 9,
+        "age_minutes": 288
+      },
+      {
+        "ts": "2026-05-20T19:00:01.732Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 2.52,
+        "pnl_usd": 0.64,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.28,
+        "minutes_out_of_range": 9,
+        "age_minutes": 293
+      },
+      {
+        "ts": "2026-05-20T19:05:02.101Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 4.58,
+        "pnl_usd": 1.16,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.36,
+        "minutes_out_of_range": 9,
+        "age_minutes": 298
+      },
+      {
+        "ts": "2026-05-20T19:10:00.949Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.83,
+        "pnl_usd": 0.97,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.28,
+        "minutes_out_of_range": 9,
+        "age_minutes": 303
+      },
+      {
+        "ts": "2026-05-20T19:15:01.216Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.53,
+        "pnl_usd": 0.89,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.25,
+        "minutes_out_of_range": 9,
+        "age_minutes": 308
+      },
+      {
+        "ts": "2026-05-20T19:20:01.154Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.12,
+        "pnl_usd": 0.79,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.23,
+        "minutes_out_of_range": 9,
+        "age_minutes": 313
+      },
+      {
+        "ts": "2026-05-20T19:25:01.530Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.3,
+        "pnl_usd": 0.84,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.23,
+        "minutes_out_of_range": 9,
+        "age_minutes": 318
+      },
+      {
+        "ts": "2026-05-20T19:30:01.405Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.05,
+        "pnl_usd": 0.77,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.26,
+        "minutes_out_of_range": 9,
+        "age_minutes": 323
+      },
+      {
+        "ts": "2026-05-20T19:35:01.589Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.28,
+        "pnl_usd": 0.83,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.27,
+        "minutes_out_of_range": 9,
+        "age_minutes": 328
+      },
+      {
+        "ts": "2026-05-20T19:40:01.563Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.73,
+        "pnl_usd": 0.95,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.39,
+        "minutes_out_of_range": 9,
+        "age_minutes": 333
+      },
+      {
+        "ts": "2026-05-20T19:45:01.774Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.79,
+        "pnl_usd": 0.96,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.4,
+        "minutes_out_of_range": 9,
+        "age_minutes": 338
+      },
+      {
+        "ts": "2026-05-20T19:50:01.798Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 2.67,
+        "pnl_usd": 0.68,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.43,
+        "minutes_out_of_range": 9,
+        "age_minutes": 343
+      },
+      {
+        "ts": "2026-05-20T19:55:02.010Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 2.71,
+        "pnl_usd": 0.69,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.45,
+        "minutes_out_of_range": 9,
+        "age_minutes": 348
+      },
+      {
+        "ts": "2026-05-20T20:00:00.990Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 2.83,
+        "pnl_usd": 0.72,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.42,
+        "minutes_out_of_range": 9,
+        "age_minutes": 353
+      },
+      {
+        "ts": "2026-05-20T20:05:01.225Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.48,
+        "pnl_usd": 0.88,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.42,
+        "minutes_out_of_range": 9,
+        "age_minutes": 358
+      },
+      {
+        "ts": "2026-05-20T20:10:01.167Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.58,
+        "pnl_usd": 0.91,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.45,
+        "minutes_out_of_range": 9,
+        "age_minutes": 363
+      },
+      {
+        "ts": "2026-05-20T20:15:01.372Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.61,
+        "pnl_usd": 0.92,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.51,
+        "minutes_out_of_range": 9,
+        "age_minutes": 368
+      },
+      {
+        "ts": "2026-05-20T20:20:01.385Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.93,
+        "pnl_usd": 1,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.54,
+        "minutes_out_of_range": 9,
+        "age_minutes": 373
+      },
+      {
+        "ts": "2026-05-20T20:25:01.579Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 3.85,
+        "pnl_usd": 0.98,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.57,
+        "minutes_out_of_range": 9,
+        "age_minutes": 378
+      },
+      {
+        "ts": "2026-05-20T20:30:01.604Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 4.47,
+        "pnl_usd": 1.13,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.57,
+        "minutes_out_of_range": 9,
+        "age_minutes": 383
+      },
+      {
+        "ts": "2026-05-20T20:35:01.760Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 4.51,
+        "pnl_usd": 1.14,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.58,
+        "minutes_out_of_range": 9,
+        "age_minutes": 388
+      },
+      {
+        "ts": "2026-05-20T20:40:01.795Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 4.69,
+        "pnl_usd": 1.19,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.58,
+        "minutes_out_of_range": 9,
+        "age_minutes": 393
+      },
+      {
+        "ts": "2026-05-20T20:42:34.695Z",
+        "position": "paper_a744c96f109ade95",
+        "pnl_pct": 5.42,
+        "pnl_usd": 1.37,
+        "in_range": true,
+        "unclaimed_fees_usd": 1.68,
+        "minutes_out_of_range": 9,
+        "age_minutes": 396
+      }
+    ]
+  },
+  "CBsWwE4F2h8awoALcdGVGbNPyGVDZrZ4WFvCvWr8PL66": {
+    "name": "Ball-SOL",
+    "base_mint": "H3pH7frVidjqQTpBpZtDhvuMZu97VkBGPHkngYegpump",
+    "deploys": [
+      {
+        "deployed_at": "2026-05-21T15:45:26.832Z",
+        "closed_at": "2026-05-21T18:25:08.895Z",
+        "pnl_pct": 0.7,
+        "pnl_usd": 0.18,
+        "fees_earned_usd": 0.18,
+        "fees_earned_sol": 0.002126,
+        "fee_earned_pct": 0.6952491309385863,
+        "range_efficiency": 81.8,
+        "minutes_held": 159,
+        "close_reason": "TA exit: bb_plus_rsi confirmed on 15_MINUTE | PnL 0.86% | fee_per_tvl_24h 7.85%",
+        "strategy": "bid_ask",
+        "volatility_at_deploy": 4.2368
+      }
+    ],
+    "total_deploys": 1,
+    "avg_pnl_pct": 0.7,
+    "win_rate": 1,
+    "adjusted_win_rate": 100,
+    "adjusted_win_rate_sample_count": 1,
+    "last_deployed_at": "2026-05-21T18:25:08.895Z",
+    "last_outcome": "profit",
+    "notes": [],
+    "snapshots": [
+      {
+        "ts": "2026-05-21T15:50:01.933Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 3,
+        "age_minutes": 4
+      },
+      {
+        "ts": "2026-05-21T15:55:01.243Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0,
+        "pnl_usd": 0,
+        "in_range": false,
+        "unclaimed_fees_usd": 0,
+        "minutes_out_of_range": 8,
+        "age_minutes": 9
+      },
+      {
+        "ts": "2026-05-21T16:00:01.138Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.03,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 13,
+        "age_minutes": 14
+      },
+      {
+        "ts": "2026-05-21T16:05:01.831Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.04,
+        "pnl_usd": 0.01,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 13,
+        "age_minutes": 19
+      },
+      {
+        "ts": "2026-05-21T16:10:01.319Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.05,
+        "pnl_usd": 0.01,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 15,
+        "age_minutes": 24
+      },
+      {
+        "ts": "2026-05-21T16:15:01.528Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.06,
+        "pnl_usd": 0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 20,
+        "age_minutes": 29
+      },
+      {
+        "ts": "2026-05-21T16:20:01.595Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.12,
+        "pnl_usd": -0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 20,
+        "age_minutes": 34
+      },
+      {
+        "ts": "2026-05-21T16:25:01.887Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.26,
+        "pnl_usd": -0.07,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 20,
+        "age_minutes": 39
+      },
+      {
+        "ts": "2026-05-21T16:30:01.882Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.53,
+        "pnl_usd": -0.14,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 20,
+        "age_minutes": 44
+      },
+      {
+        "ts": "2026-05-21T16:35:01.044Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.76,
+        "pnl_usd": -0.2,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 20,
+        "age_minutes": 49
+      },
+      {
+        "ts": "2026-05-21T16:40:01.006Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.74,
+        "pnl_usd": -0.19,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 20,
+        "age_minutes": 54
+      },
+      {
+        "ts": "2026-05-21T16:45:01.196Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.73,
+        "pnl_usd": -0.19,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.04,
+        "minutes_out_of_range": 20,
+        "age_minutes": 59
+      },
+      {
+        "ts": "2026-05-21T16:50:01.259Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.1,
+        "pnl_usd": -0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.04,
+        "minutes_out_of_range": 20,
+        "age_minutes": 64
+      },
+      {
+        "ts": "2026-05-21T16:55:01.398Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.08,
+        "pnl_usd": -0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.05,
+        "minutes_out_of_range": 20,
+        "age_minutes": 69
+      },
+      {
+        "ts": "2026-05-21T17:00:01.507Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.68,
+        "pnl_usd": -0.18,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.05,
+        "minutes_out_of_range": 20,
+        "age_minutes": 74
+      },
+      {
+        "ts": "2026-05-21T17:05:01.674Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.8,
+        "pnl_usd": -0.21,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.05,
+        "minutes_out_of_range": 20,
+        "age_minutes": 79
+      },
+      {
+        "ts": "2026-05-21T17:10:01.658Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -1.08,
+        "pnl_usd": -0.28,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.06,
+        "minutes_out_of_range": 20,
+        "age_minutes": 84
+      },
+      {
+        "ts": "2026-05-21T17:15:01.860Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -1.37,
+        "pnl_usd": -0.35,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.07,
+        "minutes_out_of_range": 20,
+        "age_minutes": 89
+      },
+      {
+        "ts": "2026-05-21T17:20:01.954Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -1.37,
+        "pnl_usd": -0.35,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.07,
+        "minutes_out_of_range": 20,
+        "age_minutes": 94
+      },
+      {
+        "ts": "2026-05-21T17:25:01.131Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.7,
+        "pnl_usd": -0.18,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.08,
+        "minutes_out_of_range": 20,
+        "age_minutes": 99
+      },
+      {
+        "ts": "2026-05-21T17:30:01.135Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -1.28,
+        "pnl_usd": -0.33,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.09,
+        "minutes_out_of_range": 20,
+        "age_minutes": 104
+      },
+      {
+        "ts": "2026-05-21T17:35:01.316Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -1.27,
+        "pnl_usd": -0.33,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.09,
+        "minutes_out_of_range": 20,
+        "age_minutes": 109
+      },
+      {
+        "ts": "2026-05-21T17:40:01.303Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -1.57,
+        "pnl_usd": -0.41,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.11,
+        "minutes_out_of_range": 20,
+        "age_minutes": 114
+      },
+      {
+        "ts": "2026-05-21T17:45:01.539Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -1.35,
+        "pnl_usd": -0.35,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.12,
+        "minutes_out_of_range": 20,
+        "age_minutes": 119
+      },
+      {
+        "ts": "2026-05-21T17:50:01.563Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": -0.99,
+        "pnl_usd": -0.26,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.12,
+        "minutes_out_of_range": 20,
+        "age_minutes": 124
+      },
+      {
+        "ts": "2026-05-21T17:55:01.813Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.13,
+        "pnl_usd": 0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.15,
+        "minutes_out_of_range": 20,
+        "age_minutes": 129
+      },
+      {
+        "ts": "2026-05-21T18:00:01.807Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.06,
+        "pnl_usd": 0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.13,
+        "minutes_out_of_range": 20,
+        "age_minutes": 134
+      },
+      {
+        "ts": "2026-05-21T18:05:01.998Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.11,
+        "pnl_usd": 0.03,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.14,
+        "minutes_out_of_range": 20,
+        "age_minutes": 139
+      },
+      {
+        "ts": "2026-05-21T18:10:01.019Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.55,
+        "pnl_usd": 0.14,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.15,
+        "minutes_out_of_range": 20,
+        "age_minutes": 144
+      },
+      {
+        "ts": "2026-05-21T18:15:01.208Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.63,
+        "pnl_usd": 0.16,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.16,
+        "minutes_out_of_range": 23,
+        "age_minutes": 149
+      },
+      {
+        "ts": "2026-05-21T18:20:01.255Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.62,
+        "pnl_usd": 0.16,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.17,
+        "minutes_out_of_range": 28,
+        "age_minutes": 154
+      },
+      {
+        "ts": "2026-05-21T18:25:01.473Z",
+        "position": "paper_a695992faecd93cf",
+        "pnl_pct": 0.86,
+        "pnl_usd": 0.22,
+        "in_range": false,
+        "unclaimed_fees_usd": 0.22,
+        "minutes_out_of_range": 29,
+        "age_minutes": 159
+      }
+    ]
+  },
+  "4fAQF2roWPBwWg5Z2pLaBkkxkbmtM94EKeBGNynLcAAW": {
+    "name": "BABYTROLL-SOL",
+    "base_mint": null,
+    "deploys": [],
+    "total_deploys": 0,
+    "avg_pnl_pct": 0,
+    "win_rate": 0,
+    "adjusted_win_rate": 0,
+    "adjusted_win_rate_sample_count": 0,
+    "last_deployed_at": null,
+    "last_outcome": null,
+    "notes": [],
+    "snapshots": [
+      {
+        "ts": "2026-05-22T01:45:01.953Z",
+        "position": "paper_4340330ea8484d9d",
+        "pnl_pct": -0.01,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 4
+      },
+      {
+        "ts": "2026-05-22T01:50:01.026Z",
+        "position": "paper_4340330ea8484d9d",
+        "pnl_pct": -0.01,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.01,
+        "minutes_out_of_range": 0,
+        "age_minutes": 9
+      },
+      {
+        "ts": "2026-05-22T01:55:01.486Z",
+        "position": "paper_4340330ea8484d9d",
+        "pnl_pct": 0.02,
+        "pnl_usd": 0,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.02,
+        "minutes_out_of_range": 0,
+        "age_minutes": 14
+      },
+      {
+        "ts": "2026-05-22T02:00:01.319Z",
+        "position": "paper_4340330ea8484d9d",
+        "pnl_pct": 0.08,
+        "pnl_usd": 0.02,
+        "in_range": true,
+        "unclaimed_fees_usd": 0.03,
+        "minutes_out_of_range": 0,
+        "age_minutes": 19
       }
     ]
   }

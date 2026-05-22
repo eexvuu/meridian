@@ -4036,9 +4036,11 @@
       "last_claim_at": null,
       "total_fees_claimed_usd": 0,
       "rebalance_count": 0,
-      "closed": false,
-      "closed_at": null,
-      "notes": [],
+      "closed": true,
+      "closed_at": "2026-05-20T18:05:14.249Z",
+      "notes": [
+        "Closed at 2026-05-20T18:05:14.249Z: Low yield: fee/TVL 1.90% < min 2% (age: 1477m)"
+      ],
       "peak_pnl_pct": 4.23,
       "pending_peak_pnl_pct": null,
       "pending_peak_started_at": null,
@@ -5017,15 +5019,17 @@
         "_last_tick_at": "2026-05-20T12:26:50.658Z"
       },
       "deployed_at": "2026-05-20T12:26:50.659Z",
-      "out_of_range_since": null,
+      "out_of_range_since": "2026-05-20T13:28:54.227Z",
       "oor_total_minutes": 0,
       "last_claim_at": null,
       "total_fees_claimed_usd": 0,
       "rebalance_count": 0,
-      "closed": false,
-      "closed_at": null,
-      "notes": [],
-      "peak_pnl_pct": 0.09,
+      "closed": true,
+      "closed_at": "2026-05-20T13:59:00.462Z",
+      "notes": [
+        "Closed at 2026-05-20T13:59:00.462Z: OOR 30m: out of range for 30m (limit: 30m)"
+      ],
+      "peak_pnl_pct": 0.19,
       "pending_peak_pnl_pct": null,
       "pending_peak_started_at": null,
       "pending_trailing_current_pnl_pct": null,
@@ -5067,6 +5071,420 @@
         "_last_tick_at": "2026-05-20T12:49:24.394Z"
       },
       "deployed_at": "2026-05-20T12:49:24.395Z",
+      "out_of_range_since": "2026-05-20T13:54:54.278Z",
+      "oor_total_minutes": 15,
+      "last_claim_at": null,
+      "total_fees_claimed_usd": 0,
+      "rebalance_count": 0,
+      "closed": true,
+      "closed_at": "2026-05-20T14:10:08.779Z",
+      "notes": [
+        "Closed at 2026-05-20T14:10:08.779Z: OOR: Out of range for 30m (limit: 30m)"
+      ],
+      "peak_pnl_pct": 0.07,
+      "pending_peak_pnl_pct": null,
+      "pending_peak_started_at": null,
+      "pending_trailing_current_pnl_pct": null,
+      "pending_trailing_peak_pnl_pct": null,
+      "pending_trailing_drop_pct": null,
+      "pending_trailing_started_at": null,
+      "confirmed_trailing_exit_reason": null,
+      "confirmed_trailing_exit_until": null,
+      "trailing_active": false
+    },
+    "paper_c62e4b931f65da7f": {
+      "position": "paper_c62e4b931f65da7f",
+      "pool": "6NTWdxDPB7q3TQymGPjdiGVD5DZ3ZW7MmYYHEgJ6WSFB",
+      "pool_name": "RKC-SOL",
+      "strategy": "bid_ask",
+      "bin_range": {
+        "min": -303,
+        "max": -258,
+        "bins_below": 45,
+        "bins_above": 0
+      },
+      "amount_sol": 0.3,
+      "amount_x": 0,
+      "active_bin_at_deploy": -258,
+      "bin_step": 100,
+      "volatility": 1.4536,
+      "fee_tvl_ratio": 0.1303,
+      "initial_fee_tvl_24h": 0.1303,
+      "organic_score": 89,
+      "initial_value_usd": 25.364206394008647,
+      "signal_snapshot": {
+        "paper_trading": true,
+        "base_mint": "7HgfXftRBBqsYtAEYcqjGLQrNJLL6Tww9ek4rE3Apump",
+        "entry_price": 0.000076751268871993,
+        "lower_price": 0.000049048275651113624,
+        "upper_price": 0.000076751268871993,
+        "sol_usd_price": 84.5473546466955,
+        "_minutes_in_range_cum": 0,
+        "_last_tick_at": "2026-05-20T13:59:29.366Z"
+      },
+      "deployed_at": "2026-05-20T13:59:29.367Z",
+      "out_of_range_since": "2026-05-20T15:13:34.473Z",
+      "oor_total_minutes": 0,
+      "last_claim_at": null,
+      "total_fees_claimed_usd": 0,
+      "rebalance_count": 0,
+      "closed": true,
+      "closed_at": "2026-05-20T15:43:40.129Z",
+      "notes": [
+        "Closed at 2026-05-20T15:43:40.129Z: ⚡ Exit: Out of range for 30m (limit: 30m)"
+      ],
+      "peak_pnl_pct": 0.06,
+      "pending_peak_pnl_pct": null,
+      "pending_peak_started_at": null,
+      "pending_trailing_current_pnl_pct": null,
+      "pending_trailing_peak_pnl_pct": null,
+      "pending_trailing_drop_pct": null,
+      "pending_trailing_started_at": null,
+      "confirmed_trailing_exit_reason": null,
+      "confirmed_trailing_exit_until": null,
+      "trailing_active": false
+    },
+    "paper_a744c96f109ade95": {
+      "position": "paper_a744c96f109ade95",
+      "pool": "BiB4ajTFpHwJtzEy5kA9kn8oap9cxXYKzCqycEWun8u3",
+      "pool_name": "DEGEN-SOL",
+      "strategy": "bid_ask",
+      "bin_range": {
+        "min": -574,
+        "max": -387,
+        "bins_below": 187,
+        "bins_above": 0
+      },
+      "amount_sol": 0.3,
+      "amount_x": 0,
+      "active_bin_at_deploy": -387,
+      "bin_step": 100,
+      "volatility": 2.8981,
+      "fee_tvl_ratio": 3.2314,
+      "initial_fee_tvl_24h": 3.2314,
+      "organic_score": 86,
+      "initial_value_usd": 25.362894561981367,
+      "signal_snapshot": {
+        "paper_trading": true,
+        "base_mint": "FmjijgwEHpe32VPvHy1s7u7TLthh9yu1j75djVbWpump",
+        "entry_price": 0.000021263186387629,
+        "lower_price": 0.000003307740636842233,
+        "upper_price": 0.000021263186387629,
+        "sol_usd_price": 84.54298187327123,
+        "_minutes_in_range_cum": 0,
+        "_last_tick_at": "2026-05-20T14:06:16.387Z"
+      },
+      "deployed_at": "2026-05-20T14:06:16.388Z",
+      "out_of_range_since": null,
+      "oor_total_minutes": 9,
+      "last_claim_at": null,
+      "total_fees_claimed_usd": 0,
+      "rebalance_count": 0,
+      "closed": true,
+      "closed_at": "2026-05-20T20:42:40.730Z",
+      "notes": [
+        "Closed at 2026-05-20T20:42:40.730Z: Take profit: PnL 5.42% >= 5% threshold"
+      ],
+      "peak_pnl_pct": 5.42,
+      "pending_peak_pnl_pct": null,
+      "pending_peak_started_at": null,
+      "pending_trailing_current_pnl_pct": null,
+      "pending_trailing_peak_pnl_pct": null,
+      "pending_trailing_drop_pct": null,
+      "pending_trailing_started_at": null,
+      "confirmed_trailing_exit_reason": null,
+      "confirmed_trailing_exit_until": null,
+      "trailing_active": true
+    },
+    "paper_70cd0d8f7f8fe915": {
+      "position": "paper_70cd0d8f7f8fe915",
+      "pool": "Cbj8TZQdBwEWVgjLc7p2Xqx2D4CpekiPxPTB1qLS3SdT",
+      "pool_name": "TOLYBOT-SOL",
+      "strategy": "bid_ask",
+      "bin_range": {
+        "min": -623,
+        "max": -402,
+        "bins_below": 221,
+        "bins_above": 0
+      },
+      "amount_sol": 0.3,
+      "amount_x": 0,
+      "active_bin_at_deploy": -402,
+      "bin_step": 100,
+      "volatility": 4.0137,
+      "fee_tvl_ratio": 2.5386,
+      "initial_fee_tvl_24h": 2.5386,
+      "organic_score": 83,
+      "initial_value_usd": 25.771318697320087,
+      "signal_snapshot": {
+        "paper_trading": true,
+        "base_mint": "FjgXCL8ov5BkvZGoY2QthvhUmx82mVkSmhni6nCJpump",
+        "entry_price": 0.000018315034428162,
+        "lower_price": 0.0000020313470764934234,
+        "upper_price": 0.000018315034428162,
+        "sol_usd_price": 85.90439565773363,
+        "_minutes_in_range_cum": 0,
+        "_last_tick_at": "2026-05-20T15:50:45.680Z"
+      },
+      "deployed_at": "2026-05-20T15:50:45.681Z",
+      "out_of_range_since": "2026-05-20T15:54:34.509Z",
+      "oor_total_minutes": 0,
+      "last_claim_at": null,
+      "total_fees_claimed_usd": 0,
+      "rebalance_count": 0,
+      "closed": true,
+      "closed_at": "2026-05-20T16:24:37.385Z",
+      "notes": [
+        "Closed at 2026-05-20T16:24:37.385Z: ⚡ Exit: Out of range for 30m (limit: 30m)"
+      ],
+      "peak_pnl_pct": 0.04,
+      "pending_peak_pnl_pct": null,
+      "pending_peak_started_at": null,
+      "pending_trailing_current_pnl_pct": null,
+      "pending_trailing_peak_pnl_pct": null,
+      "pending_trailing_drop_pct": null,
+      "pending_trailing_started_at": null,
+      "confirmed_trailing_exit_reason": null,
+      "confirmed_trailing_exit_until": null,
+      "trailing_active": false
+    },
+    "paper_c19dad736669627a": {
+      "position": "paper_c19dad736669627a",
+      "pool": "E6MAQLdiP9R2TLo8Z66t4LUKhSA1HQuqVMLWGNyFDYf9",
+      "pool_name": "TOESCOIN-SOL",
+      "strategy": "bid_ask",
+      "bin_range": {
+        "min": -452,
+        "max": -261,
+        "bins_below": 191,
+        "bins_above": 0
+      },
+      "amount_sol": 0.3,
+      "amount_x": 0,
+      "active_bin_at_deploy": -261,
+      "bin_step": 100,
+      "volatility": 3.0258,
+      "organic_score": 85,
+      "initial_value_usd": 25.854915662752582,
+      "signal_snapshot": {
+        "paper_trading": true,
+        "base_mint": "6ehEcTMCc85aNF4x9CWx8HuvWGhxQtvKdhKVf2HDpump",
+        "entry_price": 0.000074494025408103,
+        "lower_price": 0.000011136252007837573,
+        "upper_price": 0.000074494025408103,
+        "sol_usd_price": 86.18305220917527,
+        "_minutes_in_range_cum": 0,
+        "_last_tick_at": "2026-05-20T16:15:22.302Z"
+      },
+      "deployed_at": "2026-05-20T16:15:22.304Z",
+      "out_of_range_since": "2026-05-20T16:16:04.586Z",
+      "oor_total_minutes": 0,
+      "last_claim_at": null,
+      "total_fees_claimed_usd": 0,
+      "rebalance_count": 0,
+      "closed": true,
+      "closed_at": "2026-05-20T16:46:06.322Z",
+      "notes": [
+        "Closed at 2026-05-20T16:46:06.322Z: ⚡ Exit: Out of range for 30m (limit: 30m)"
+      ],
+      "peak_pnl_pct": 0,
+      "pending_peak_pnl_pct": null,
+      "pending_peak_started_at": null,
+      "pending_trailing_current_pnl_pct": null,
+      "pending_trailing_peak_pnl_pct": null,
+      "pending_trailing_drop_pct": null,
+      "pending_trailing_started_at": null,
+      "confirmed_trailing_exit_reason": null,
+      "confirmed_trailing_exit_until": null,
+      "trailing_active": false
+    },
+    "paper_aa3bb9caee33b779": {
+      "position": "paper_aa3bb9caee33b779",
+      "pool": "Cbj8TZQdBwEWVgjLc7p2Xqx2D4CpekiPxPTB1qLS3SdT",
+      "pool_name": "TOLYBOT-SOL",
+      "strategy": "bid_ask",
+      "bin_range": {
+        "min": -547,
+        "max": -406,
+        "bins_below": 141,
+        "bins_above": 0
+      },
+      "amount_sol": 0.3,
+      "amount_x": 0,
+      "active_bin_at_deploy": -406,
+      "bin_step": 100,
+      "volatility": 4.0592,
+      "fee_tvl_ratio": 2.8198,
+      "initial_fee_tvl_24h": 2.8198,
+      "organic_score": 86,
+      "initial_value_usd": 25.8243638789811,
+      "signal_snapshot": {
+        "paper_trading": true,
+        "base_mint": "FjgXCL8ov5BkvZGoY2QthvhUmx82mVkSmhni6nCJpump",
+        "entry_price": 0.00001760038809399,
+        "lower_price": 0.000004327215667625673,
+        "upper_price": 0.00001760038809399,
+        "sol_usd_price": 86.081212929937,
+        "_minutes_in_range_cum": 0,
+        "_last_tick_at": "2026-05-20T16:45:14.750Z"
+      },
+      "deployed_at": "2026-05-20T16:45:14.751Z",
+      "out_of_range_since": null,
+      "oor_total_minutes": 0,
+      "last_claim_at": null,
+      "total_fees_claimed_usd": 0,
+      "rebalance_count": 0,
+      "closed": true,
+      "closed_at": "2026-05-21T08:45:25.746Z",
+      "notes": [
+        "Closed at 2026-05-21T08:45:25.746Z: Rule 2: take profit — PnL 5.14% triggered"
+      ],
+      "peak_pnl_pct": 5.14,
+      "pending_peak_pnl_pct": null,
+      "pending_peak_started_at": null,
+      "pending_trailing_current_pnl_pct": null,
+      "pending_trailing_peak_pnl_pct": null,
+      "pending_trailing_drop_pct": null,
+      "pending_trailing_started_at": null,
+      "confirmed_trailing_exit_reason": null,
+      "confirmed_trailing_exit_until": null,
+      "trailing_active": true
+    },
+    "paper_be8fa0a188bd8478": {
+      "position": "paper_be8fa0a188bd8478",
+      "pool": "E6MAQLdiP9R2TLo8Z66t4LUKhSA1HQuqVMLWGNyFDYf9",
+      "pool_name": "TOESCOIN-SOL",
+      "strategy": "bid_ask",
+      "bin_range": {
+        "min": -396,
+        "max": -238,
+        "bins_below": 158,
+        "bins_above": 0
+      },
+      "amount_sol": 0.3,
+      "amount_x": 0,
+      "active_bin_at_deploy": -238,
+      "bin_step": 100,
+      "volatility": 1.9335,
+      "fee_tvl_ratio": 0.1885,
+      "initial_fee_tvl_24h": 0.1885,
+      "organic_score": 79,
+      "initial_value_usd": 25.656913023700824,
+      "signal_snapshot": {
+        "paper_trading": true,
+        "base_mint": "6ehEcTMCc85aNF4x9CWx8HuvWGhxQtvKdhKVf2HDpump",
+        "entry_price": 0.000093651133830975,
+        "lower_price": 0.000019441778104445472,
+        "upper_price": 0.000093651133830975,
+        "sol_usd_price": 85.52304341233608,
+        "_minutes_in_range_cum": 0,
+        "_last_tick_at": "2026-05-21T11:55:49.342Z"
+      },
+      "deployed_at": "2026-05-21T11:55:49.344Z",
+      "out_of_range_since": "2026-05-21T13:19:35.274Z",
+      "oor_total_minutes": 17,
+      "last_claim_at": null,
+      "total_fees_claimed_usd": 0,
+      "rebalance_count": 0,
+      "closed": true,
+      "closed_at": "2026-05-21T13:32:39.891Z",
+      "notes": [
+        "Closed at 2026-05-21T13:32:39.891Z: ⚡ Exit: Out of range for 30m (limit: 30m)"
+      ],
+      "peak_pnl_pct": 0.08,
+      "pending_peak_pnl_pct": null,
+      "pending_peak_started_at": null,
+      "pending_trailing_current_pnl_pct": null,
+      "pending_trailing_peak_pnl_pct": null,
+      "pending_trailing_drop_pct": null,
+      "pending_trailing_started_at": null,
+      "confirmed_trailing_exit_reason": null,
+      "confirmed_trailing_exit_until": null,
+      "trailing_active": false
+    },
+    "paper_a695992faecd93cf": {
+      "position": "paper_a695992faecd93cf",
+      "pool": "CBsWwE4F2h8awoALcdGVGbNPyGVDZrZ4WFvCvWr8PL66",
+      "pool_name": "Ball-SOL",
+      "strategy": "bid_ask",
+      "bin_range": {
+        "min": -775,
+        "max": -548,
+        "bins_below": 227,
+        "bins_above": 0
+      },
+      "amount_sol": 0.3,
+      "amount_x": 0,
+      "active_bin_at_deploy": -548,
+      "bin_step": 100,
+      "volatility": 4.2368,
+      "fee_tvl_ratio": 3.0923,
+      "initial_fee_tvl_24h": 3.0923,
+      "organic_score": 81,
+      "initial_value_usd": 25.892767538687274,
+      "signal_snapshot": {
+        "paper_trading": true,
+        "base_mint": "H3pH7frVidjqQTpBpZtDhvuMZu97VkBGPHkngYegpump",
+        "entry_price": 0.000004284371948144,
+        "lower_price": 4.4764662906439337e-7,
+        "upper_price": 0.000004284371948144,
+        "sol_usd_price": 86.30922512895758,
+        "_minutes_in_range_cum": 0,
+        "_last_tick_at": "2026-05-21T15:45:26.830Z"
+      },
+      "deployed_at": "2026-05-21T15:45:26.832Z",
+      "out_of_range_since": "2026-05-21T18:23:35.482Z",
+      "oor_total_minutes": 28,
+      "last_claim_at": null,
+      "total_fees_claimed_usd": 0,
+      "rebalance_count": 0,
+      "closed": true,
+      "closed_at": "2026-05-21T18:25:08.907Z",
+      "notes": [
+        "Closed at 2026-05-21T18:25:08.907Z: TA exit: bb_plus_rsi confirmed on 15_MINUTE | PnL 0.86% | fee_per_tvl_24h 7.85%"
+      ],
+      "peak_pnl_pct": 0.93,
+      "pending_peak_pnl_pct": null,
+      "pending_peak_started_at": null,
+      "pending_trailing_current_pnl_pct": null,
+      "pending_trailing_peak_pnl_pct": null,
+      "pending_trailing_drop_pct": null,
+      "pending_trailing_started_at": null,
+      "confirmed_trailing_exit_reason": null,
+      "confirmed_trailing_exit_until": null,
+      "trailing_active": false
+    },
+    "paper_4340330ea8484d9d": {
+      "position": "paper_4340330ea8484d9d",
+      "pool": "4fAQF2roWPBwWg5Z2pLaBkkxkbmtM94EKeBGNynLcAAW",
+      "pool_name": "BABYTROLL-SOL",
+      "strategy": "bid_ask",
+      "bin_range": {
+        "min": -725,
+        "max": -556,
+        "bins_below": 169,
+        "bins_above": 0
+      },
+      "amount_sol": 0.3,
+      "amount_x": 0,
+      "active_bin_at_deploy": -556,
+      "bin_step": 80,
+      "volatility": 2.3087,
+      "fee_tvl_ratio": 3.1271,
+      "initial_fee_tvl_24h": 3.1271,
+      "organic_score": 83,
+      "initial_value_usd": 25.98920377443267,
+      "signal_snapshot": {
+        "paper_trading": true,
+        "base_mint": "6qdzMx4c9rL2X3Ns3SwZ8uEo4zReDPjdXpAEmpo7pump",
+        "entry_price": 0.000011910888169825,
+        "lower_price": 0.000003098234035892802,
+        "upper_price": 0.000011910888169825,
+        "sol_usd_price": 86.6306792481089,
+        "_minutes_in_range_cum": 0,
+        "_last_tick_at": "2026-05-22T01:40:10.215Z"
+      },
+      "deployed_at": "2026-05-22T01:40:10.217Z",
       "out_of_range_since": null,
       "oor_total_minutes": 0,
       "last_claim_at": null,
@@ -5075,7 +5493,7 @@
       "closed": false,
       "closed_at": null,
       "notes": [],
-      "peak_pnl_pct": 0.03,
+      "peak_pnl_pct": 0.09,
       "pending_peak_pnl_pct": null,
       "pending_peak_started_at": null,
       "pending_trailing_current_pnl_pct": null,
@@ -5089,123 +5507,6 @@
   },
   "recentEvents": [
     {
-      "ts": "2026-05-20T04:07:28.034Z",
-      "action": "close",
-      "position": "paper_7802d3e6a6544c4d",
-      "pool_name": "testicle-SOL",
-      "reason": "⚡ Exit: Low yield: fee/TVL 0.27% < min 2% (age: 120m)"
-    },
-    {
-      "ts": "2026-05-20T04:07:51.303Z",
-      "action": "deploy",
-      "position": "paper_5af62553443e8c0f",
-      "pool_name": "testicle-SOL"
-    },
-    {
-      "ts": "2026-05-20T06:08:00.941Z",
-      "action": "close",
-      "position": "paper_5af62553443e8c0f",
-      "pool_name": "testicle-SOL",
-      "reason": "Low yield: fee/TVL 0.28% < min 2% (age: 120m)"
-    },
-    {
-      "ts": "2026-05-20T06:11:01.444Z",
-      "action": "deploy",
-      "position": "paper_9f6afe9bac0864ad",
-      "pool_name": "67-SOL"
-    },
-    {
-      "ts": "2026-05-20T08:11:29.643Z",
-      "action": "close",
-      "position": "paper_9f6afe9bac0864ad",
-      "pool_name": "67-SOL",
-      "reason": "Low yield: fee/TVL 1.38% < min 2% (age: 120m)"
-    },
-    {
-      "ts": "2026-05-20T08:16:45.728Z",
-      "action": "deploy",
-      "position": "paper_8ea659d501382b10",
-      "pool_name": "PENGUIN-SOL"
-    },
-    {
-      "ts": "2026-05-20T08:53:34.623Z",
-      "action": "close",
-      "position": "paper_8ea659d501382b10",
-      "pool_name": "PENGUIN-SOL",
-      "reason": "OOR: Out of range for 30m (limit: 30m) — PnL 0.01%, fee/TVL 1.33%"
-    },
-    {
-      "ts": "2026-05-20T08:55:45.177Z",
-      "action": "deploy",
-      "position": "paper_21b966a6edb43f6c",
-      "pool_name": "MOBY-SOL"
-    },
-    {
-      "ts": "2026-05-20T09:31:02.655Z",
-      "action": "close",
-      "position": "paper_0fd7814d6138a04d",
-      "pool_name": "SPCX-SOL",
-      "reason": "OOR 30m (limit: 30m) — ⚡ exit alert"
-    },
-    {
-      "ts": "2026-05-20T09:40:23.557Z",
-      "action": "deploy",
-      "position": "paper_6d35c8fc5e48fe84",
-      "pool_name": "Punch-SOL"
-    },
-    {
-      "ts": "2026-05-20T10:08:33.289Z",
-      "action": "close",
-      "position": "paper_21b966a6edb43f6c",
-      "pool_name": "MOBY-SOL",
-      "reason": "Out of range for 30m (limit: 30m)"
-    },
-    {
-      "ts": "2026-05-20T10:09:35.643Z",
-      "action": "deploy",
-      "position": "paper_2c9709bafa5a0b68",
-      "pool_name": "unc-SOL"
-    },
-    {
-      "ts": "2026-05-20T10:43:36.128Z",
-      "action": "close",
-      "position": "paper_6d35c8fc5e48fe84",
-      "pool_name": "Punch-SOL",
-      "reason": "OOR cooldown: out of range for 30m (limit: 30m)"
-    },
-    {
-      "ts": "2026-05-20T11:06:03.396Z",
-      "action": "deploy",
-      "position": "paper_15093a7fb2631ad4",
-      "pool_name": "VIRL-SOL"
-    },
-    {
-      "ts": "2026-05-20T12:10:03.994Z",
-      "action": "close",
-      "position": "paper_2c9709bafa5a0b68",
-      "pool_name": "unc-SOL",
-      "reason": "Low yield exit: fee/TVL 0.75% < min 2% (age: 120m)"
-    },
-    {
-      "ts": "2026-05-20T12:16:29.344Z",
-      "action": "deploy",
-      "position": "paper_6f6cbbc1d85b9abe",
-      "pool_name": "Clude-SOL"
-    },
-    {
-      "ts": "2026-05-20T12:25:57.621Z",
-      "action": "close",
-      "position": "paper_15093a7fb2631ad4",
-      "pool_name": "VIRL-SOL",
-      "reason": "Out of range for 30m (limit: 30m)"
-    },
-    {
-      "ts": "2026-05-20T12:26:50.659Z",
-      "action": "deploy",
-      "position": "paper_506d502882044f4c",
-      "pool_name": "VIRL-SOL"
-    },
-    {
       "ts": "2026-05-20T12:48:59.138Z",
       "action": "close",
       "position": "paper_6f6cbbc1d85b9abe",
@@ -5217,8 +5518,126 @@
       "action": "deploy",
       "position": "paper_2c0a8fb8de7386fc",
       "pool_name": "BURNIE-SOL"
+    },
+    {
+      "ts": "2026-05-20T13:59:00.462Z",
+      "action": "close",
+      "position": "paper_506d502882044f4c",
+      "pool_name": "VIRL-SOL",
+      "reason": "OOR 30m: out of range for 30m (limit: 30m)"
+    },
+    {
+      "ts": "2026-05-20T13:59:29.367Z",
+      "action": "deploy",
+      "position": "paper_c62e4b931f65da7f",
+      "pool_name": "RKC-SOL"
+    },
+    {
+      "ts": "2026-05-20T14:06:16.388Z",
+      "action": "deploy",
+      "position": "paper_a744c96f109ade95",
+      "pool_name": "DEGEN-SOL"
+    },
+    {
+      "ts": "2026-05-20T14:10:08.779Z",
+      "action": "close",
+      "position": "paper_2c0a8fb8de7386fc",
+      "pool_name": "BURNIE-SOL",
+      "reason": "OOR: Out of range for 30m (limit: 30m)"
+    },
+    {
+      "ts": "2026-05-20T15:43:40.129Z",
+      "action": "close",
+      "position": "paper_c62e4b931f65da7f",
+      "pool_name": "RKC-SOL",
+      "reason": "⚡ Exit: Out of range for 30m (limit: 30m)"
+    },
+    {
+      "ts": "2026-05-20T15:50:45.681Z",
+      "action": "deploy",
+      "position": "paper_70cd0d8f7f8fe915",
+      "pool_name": "TOLYBOT-SOL"
+    },
+    {
+      "ts": "2026-05-20T16:15:22.304Z",
+      "action": "deploy",
+      "position": "paper_c19dad736669627a",
+      "pool_name": "TOESCOIN-SOL"
+    },
+    {
+      "ts": "2026-05-20T16:24:37.385Z",
+      "action": "close",
+      "position": "paper_70cd0d8f7f8fe915",
+      "pool_name": "TOLYBOT-SOL",
+      "reason": "⚡ Exit: Out of range for 30m (limit: 30m)"
+    },
+    {
+      "ts": "2026-05-20T16:45:14.751Z",
+      "action": "deploy",
+      "position": "paper_aa3bb9caee33b779",
+      "pool_name": "TOLYBOT-SOL"
+    },
+    {
+      "ts": "2026-05-20T16:46:06.322Z",
+      "action": "close",
+      "position": "paper_c19dad736669627a",
+      "pool_name": "TOESCOIN-SOL",
+      "reason": "⚡ Exit: Out of range for 30m (limit: 30m)"
+    },
+    {
+      "ts": "2026-05-20T18:05:14.249Z",
+      "action": "close",
+      "position": "paper_589d58baec57933f",
+      "pool_name": "KERMIT-SOL",
+      "reason": "Low yield: fee/TVL 1.90% < min 2% (age: 1477m)"
+    },
+    {
+      "ts": "2026-05-20T20:42:40.730Z",
+      "action": "close",
+      "position": "paper_a744c96f109ade95",
+      "pool_name": "DEGEN-SOL",
+      "reason": "Take profit: PnL 5.42% >= 5% threshold"
+    },
+    {
+      "ts": "2026-05-21T08:45:25.746Z",
+      "action": "close",
+      "position": "paper_aa3bb9caee33b779",
+      "pool_name": "TOLYBOT-SOL",
+      "reason": "Rule 2: take profit — PnL 5.14% triggered"
+    },
+    {
+      "ts": "2026-05-21T11:55:49.344Z",
+      "action": "deploy",
+      "position": "paper_be8fa0a188bd8478",
+      "pool_name": "TOESCOIN-SOL"
+    },
+    {
+      "ts": "2026-05-21T13:32:39.891Z",
+      "action": "close",
+      "position": "paper_be8fa0a188bd8478",
+      "pool_name": "TOESCOIN-SOL",
+      "reason": "⚡ Exit: Out of range for 30m (limit: 30m)"
+    },
+    {
+      "ts": "2026-05-21T15:45:26.832Z",
+      "action": "deploy",
+      "position": "paper_a695992faecd93cf",
+      "pool_name": "Ball-SOL"
+    },
+    {
+      "ts": "2026-05-21T18:25:08.907Z",
+      "action": "close",
+      "position": "paper_a695992faecd93cf",
+      "pool_name": "Ball-SOL",
+      "reason": "TA exit: bb_plus_rsi confirmed on 15_MINUTE | PnL 0.86% | fee_per_tvl_24h 7.85%"
+    },
+    {
+      "ts": "2026-05-22T01:40:10.217Z",
+      "action": "deploy",
+      "position": "paper_4340330ea8484d9d",
+      "pool_name": "BABYTROLL-SOL"
     }
   ],
-  "lastUpdated": "2026-05-20T13:20:54.258Z",
-  "_lastBriefingDate": "2026-05-20"
+  "lastUpdated": "2026-05-22T02:01:35.787Z",
+  "_lastBriefingDate": "2026-05-22"
 }
