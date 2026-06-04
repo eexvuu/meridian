@@ -59,6 +59,10 @@ function save(data) {
   fs.writeFileSync(LESSONS_FILE, JSON.stringify(data, null, 2));
 }
 
+function isStopLossReason(reason) {
+  return String(reason || "").trim().toLowerCase().startsWith("stop loss");
+}
+
 function buildSignalSnapshot(perf) {
   const snapshot = { ...(perf.signal_snapshot || {}) };
   if (perf.base_mint && snapshot.base_mint == null) snapshot.base_mint = perf.base_mint;
@@ -176,6 +180,33 @@ export async function recordPerformance(perf) {
       strategy: perf.strategy,
       volatility: perf.volatility,
     });
+  }
+
+  // Auto-blacklist: count lifetime stop-loss closes for this base_mint across all pools.
+  // After enough of them the token has demonstrated it dumps faster than fees compensate,
+  // and a time-windowed cooldown can't catch the long-tail re-entry (e.g. grail-SOL had
+  // two SLs 6 days apart). Promote from cooldown to permanent ban.
+  if (perf.base_mint && isStopLossReason(perf.close_reason)) {
+    const { config } = await import("./config.js");
+    if (config.management.autoBlacklistOnSlEnabled) {
+      const minCount = Math.max(1, Number(config.management.autoBlacklistOnSlMinCount ?? 2));
+      const slCount = data.performance.filter(
+        (r) => r.base_mint === perf.base_mint && isStopLossReason(r.close_reason)
+      ).length;
+      if (slCount >= minCount) {
+        const { addToBlacklist } = await import("./token-blacklist.js");
+        const symbol = (perf.pool_name || "").split("-")[0] || "UNKNOWN";
+        const result = addToBlacklist({
+          mint: perf.base_mint,
+          symbol,
+          reason: `auto: ${slCount} stop-loss closes on this mint`,
+          addedBy: "auto-sl",
+        });
+        if (result?.blacklisted) {
+          log("blacklist", `Auto-blacklisted ${symbol} (${perf.base_mint.slice(0, 8)}) after ${slCount} SL closes`);
+        }
+      }
+    }
   }
 
   // Evolve thresholds every 5 closed positions

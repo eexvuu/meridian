@@ -117,6 +117,11 @@ export const config = {
     repeatDeployCooldownHours: u.repeatDeployCooldownHours ?? 12,
     repeatDeployCooldownScope: u.repeatDeployCooldownScope ?? "token", // pool | token | both
     repeatDeployCooldownMinFeeEarnedPct: u.repeatDeployCooldownMinFeeEarnedPct ?? u.repeatDeployCooldownMinFeeYieldPct ?? 0,
+    // Stop-loss-driven safeguards. First SL on a (pool, mint) sets a cooldown;
+    // hitting the lifetime count for a base_mint flips it to a permanent blacklist.
+    slCooldownHours:              u.slCooldownHours              ?? 48,
+    autoBlacklistOnSlEnabled:     u.autoBlacklistOnSlEnabled     ?? true,
+    autoBlacklistOnSlMinCount:    u.autoBlacklistOnSlMinCount    ?? 2,
     minVolumeToRebalance:  u.minVolumeToRebalance  ?? 1000,
     stopLossPct:           u.stopLossPct           ?? u.emergencyPriceDropPct ?? -50,
     takeProfitPct:         u.takeProfitPct         ?? u.takeProfitFeePct ?? 5,

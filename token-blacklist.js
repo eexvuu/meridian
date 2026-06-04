@@ -8,7 +8,9 @@
 import fs from "fs";
 import { log } from "./logger.js";
 
-const BLACKLIST_FILE = "./token-blacklist.json";
+const BLACKLIST_FILE = process.env.DRY_RUN === "true"
+  ? "./paper-token-blacklist.json"
+  : "./token-blacklist.json";
 
 function load() {
   if (!fs.existsSync(BLACKLIST_FILE)) return {};
@@ -41,7 +43,7 @@ export function isBlacklisted(mint) {
 /**
  * Tool handler: add_to_blacklist
  */
-export function addToBlacklist({ mint, symbol, reason }) {
+export function addToBlacklist({ mint, symbol, reason, addedBy = "agent" }) {
   if (!mint) return { error: "mint required" };
 
   const db = load();
@@ -59,7 +61,7 @@ export function addToBlacklist({ mint, symbol, reason }) {
     symbol: symbol || "UNKNOWN",
     reason: reason || "no reason provided",
     added_at: new Date().toISOString(),
-    added_by: "agent",
+    added_by: addedBy,
   };
 
   save(db);
