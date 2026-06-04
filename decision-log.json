@@ -1,1669 +1,1727 @@
 {
   "decisions": [
     {
-      "id": "dec_1779415209170_j2q9oe",
-      "ts": "2026-05-22T02:00:09.170Z",
+      "id": "dec_1780578004603_f0n0xg",
+      "ts": "2026-06-04T13:00:04.603Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: already have an open position in this pool - 我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "reason": "- GACHA-SOL: token cooldown active - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: already have an open position in this pool",
-        "我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+        "GACHA-SOL: token cooldown active",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779414906022_0vu2sp",
-      "ts": "2026-05-22T01:55:06.022Z",
+      "id": "dec_1780577704579_ieeso3",
+      "ts": "2026-06-04T12:55:04.579Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: already have an open position in this pool - 我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "reason": "- GACHA-SOL: token cooldown active - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: already have an open position in this pool",
-        "我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+        "GACHA-SOL: token cooldown active",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779414604306_fnpp7w",
-      "ts": "2026-05-22T01:50:04.306Z",
+      "id": "dec_1780577403823_m88nsn",
+      "ts": "2026-06-04T12:50:03.823Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: already have an open position in this pool - 我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "reason": "- GACHA-SOL: token cooldown active - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: already have an open position in this pool",
-        "我的刀盾-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+        "GACHA-SOL: token cooldown active",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779414302942_wnm7h9",
-      "ts": "2026-05-22T01:45:02.942Z",
+      "id": "dec_1780577104448_l2yxwn",
+      "ts": "2026-06-04T12:45:04.448Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: already have an open position in this pool",
+      "reason": "- GACHA-SOL: token cooldown active - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: already have an open position in this pool"
+        "GACHA-SOL: token cooldown active",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779414010219_050x3l",
-      "ts": "2026-05-22T01:40:10.219Z",
+      "id": "dec_1780576807649_ylr9ub",
+      "ts": "2026-06-04T12:40:07.649Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: token cooldown active - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: token cooldown active",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780576509492_ttpn26",
+      "ts": "2026-06-04T12:35:09.492Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: token cooldown active - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: token cooldown active",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780576204395_qu2vss",
+      "ts": "2026-06-04T12:30:04.395Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: token cooldown active - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: token cooldown active",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780575904826_08fwj8",
+      "ts": "2026-06-04T12:25:04.826Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: token cooldown active - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: token cooldown active",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780575655657_m33k00",
+      "ts": "2026-06-04T12:20:55.657Z",
+      "type": "close",
+      "actor": "MANAGER",
+      "pool": "9bL8Pptpb8M2jEAb63EoarA6Po6Akarpha3JPzQfXGS3",
+      "pool_name": "GACHA-SOL",
+      "position": "paper_f6e364dc38cb5e91",
+      "summary": "[PAPER] Close GACHA-SOL — Take profit: PnL 5.02% >= 5% threshold",
+      "reason": null,
+      "risks": [],
+      "metrics": {
+        "pnl_usd": 1.01,
+        "pnl_pct": 4.94,
+        "fees_earned_usd": 1.35,
+        "minutes_held": 165,
+        "minutes_in_range": 163
+      },
+      "rejected": []
+    },
+    {
+      "id": "dec_1780575608450_imneb9",
+      "ts": "2026-06-04T12:20:08.450Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780575307579_bwnyi2",
+      "ts": "2026-06-04T12:15:07.579Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780575008293_qiyvmg",
+      "ts": "2026-06-04T12:10:08.293Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780574717192_677uzp",
+      "ts": "2026-06-04T12:05:17.192Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780574403156_57vcvu",
+      "ts": "2026-06-04T12:00:03.156Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780574118852_vsjwt9",
+      "ts": "2026-06-04T11:55:18.852Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780573803562_0zo2tn",
+      "ts": "2026-06-04T11:50:03.562Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780573505492_czgix8",
+      "ts": "2026-06-04T11:45:05.492Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780573203505_e34vst",
+      "ts": "2026-06-04T11:40:03.505Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780572914805_kq6gb9",
+      "ts": "2026-06-04T11:35:14.805Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780572603730_uqcdkj",
+      "ts": "2026-06-04T11:30:03.730Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780572304059_5wh2j7",
+      "ts": "2026-06-04T11:25:04.059Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780572011030_ogknft",
+      "ts": "2026-06-04T11:20:11.030Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780571705208_a7ourx",
+      "ts": "2026-06-04T11:15:05.208Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780571403837_8j3vyu",
+      "ts": "2026-06-04T11:10:03.837Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - three-SOL: token cooldown active - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "three-SOL: token cooldown active",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780571109890_6324lq",
+      "ts": "2026-06-04T11:05:09.890Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780570804200_bf5ry4",
+      "ts": "2026-06-04T11:00:04.200Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - three-SOL: token cooldown active - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "three-SOL: token cooldown active",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780570504992_92b76w",
+      "ts": "2026-06-04T10:55:04.992Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780570209442_l0fqtd",
+      "ts": "2026-06-04T10:50:09.442Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780569904625_69ir1b",
+      "ts": "2026-06-04T10:45:04.625Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780569604192_qtbmya",
+      "ts": "2026-06-04T10:40:04.192Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780569318013_ql53ba",
+      "ts": "2026-06-04T10:35:18.013Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780569004397_b6iv5s",
+      "ts": "2026-06-04T10:30:04.398Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780568710738_303ua5",
+      "ts": "2026-06-04T10:25:10.738Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780568403480_xxjhl7",
+      "ts": "2026-06-04T10:20:03.480Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780568106425_yzd97k",
+      "ts": "2026-06-04T10:15:06.425Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780567803205_9c1c02",
+      "ts": "2026-06-04T10:10:03.205Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780567508083_13ko8y",
+      "ts": "2026-06-04T10:05:08.083Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780567203212_1r71qe",
+      "ts": "2026-06-04T10:00:03.212Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780566909552_wr2e3v",
+      "ts": "2026-06-04T09:55:09.552Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780566604351_dmenpz",
+      "ts": "2026-06-04T09:50:04.351Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780566306495_5sp7zs",
+      "ts": "2026-06-04T09:45:06.495Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780566009191_780csr",
+      "ts": "2026-06-04T09:40:09.191Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: already have an open position in this pool - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: already have an open position in this pool",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780565875987_ew2amu",
+      "ts": "2026-06-04T09:37:55.987Z",
+      "type": "close",
+      "actor": "MANAGER",
+      "pool": "DZQxKSC79umfyyvJVqPM9m6FRmnkUSH1xAafWAPg3hTd",
+      "pool_name": "HeavyPulp-SOL",
+      "position": "paper_2a612d43499b1307",
+      "summary": "[PAPER] Close HeavyPulp-SOL — ⚡ Exit: Out of range for 30m (limit: 30m)",
+      "reason": null,
+      "risks": [],
+      "metrics": {
+        "pnl_usd": 0.01,
+        "pnl_pct": 0.04,
+        "fees_earned_usd": 0.01,
+        "minutes_held": 32,
+        "minutes_in_range": 2
+      },
+      "rejected": []
+    },
+    {
+      "id": "dec_1780565723811_451ve4",
+      "ts": "2026-06-04T09:35:23.811Z",
       "type": "deploy",
       "actor": "SCREENER",
-      "pool": "4fAQF2roWPBwWg5Z2pLaBkkxkbmtM94EKeBGNynLcAAW",
-      "pool_name": "BABYTROLL-SOL",
-      "position": "paper_4340330ea8484d9d",
-      "summary": "[PAPER] Deploy 0.3 SOL into BABYTROLL-SOL",
+      "pool": "9bL8Pptpb8M2jEAb63EoarA6Po6Akarpha3JPzQfXGS3",
+      "pool_name": "GACHA-SOL",
+      "position": "paper_f6e364dc38cb5e91",
+      "summary": "[PAPER] Deploy 0.3 SOL into GACHA-SOL",
       "reason": null,
       "risks": [],
       "metrics": {
         "strategy": "bid_ask",
-        "bins_below": 169,
+        "bins_below": 218,
         "bins_above": 0,
-        "entry_price": 0.000011910888169825,
-        "initial_value_usd": 25.98920377443267
+        "entry_price": 0.000013588343782313,
+        "initial_value_usd": 20.405207579966177
       },
       "rejected": []
     },
     {
-      "id": "dec_1779413705402_yd33x5",
-      "ts": "2026-05-22T01:35:05.402Z",
+      "id": "dec_1780565403336_e16fpi",
+      "ts": "2026-06-04T09:30:03.336Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "reason": "- HeavyPulp-SOL: already have an open position in this pool - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+        "HeavyPulp-SOL: already have an open position in this pool",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779413405997_n2m8xs",
-      "ts": "2026-05-22T01:30:05.997Z",
+      "id": "dec_1780565113778_zdhi44",
+      "ts": "2026-06-04T09:25:13.778Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "reason": "- HeavyPulp-SOL: already have an open position in this pool - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+        "HeavyPulp-SOL: already have an open position in this pool",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779413105152_ftpj80",
-      "ts": "2026-05-22T01:25:05.152Z",
+      "id": "dec_1780564810892_ointu1",
+      "ts": "2026-06-04T09:20:10.892Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "reason": "- HeavyPulp-SOL: already have an open position in this pool - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+        "HeavyPulp-SOL: already have an open position in this pool",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779412804323_bkizkm",
-      "ts": "2026-05-22T01:20:04.323Z",
+      "id": "dec_1780564504557_gnlkqx",
+      "ts": "2026-06-04T09:15:04.557Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "reason": "- HeavyPulp-SOL: already have an open position in this pool - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+        "HeavyPulp-SOL: already have an open position in this pool",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779412510961_mx2trb",
-      "ts": "2026-05-22T01:15:10.961Z",
+      "id": "dec_1780564203761_wl4rn3",
+      "ts": "2026-06-04T09:10:03.761Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "reason": "- HeavyPulp-SOL: already have an open position in this pool - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+        "HeavyPulp-SOL: already have an open position in this pool",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779412203523_wb2h7h",
-      "ts": "2026-05-22T01:10:03.523Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779411904961_duwnxi",
-      "ts": "2026-05-22T01:05:04.961Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779411610091_q3sowk",
-      "ts": "2026-05-22T01:00:10.091Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779411306604_21qdaf",
-      "ts": "2026-05-22T00:55:06.604Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779411004984_mp45uh",
-      "ts": "2026-05-22T00:50:04.984Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779410709102_d3az86",
-      "ts": "2026-05-22T00:45:09.102Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779410404170_268qcw",
-      "ts": "2026-05-22T00:40:04.170Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779410105365_clgenr",
-      "ts": "2026-05-22T00:35:05.365Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779409810972_p3t7b9",
-      "ts": "2026-05-22T00:30:10.972Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779409505457_b6qyp7",
-      "ts": "2026-05-22T00:25:05.457Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779409207349_owpr1c",
-      "ts": "2026-05-22T00:20:07.349Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779408910090_ls7iqd",
-      "ts": "2026-05-22T00:15:10.090Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779408604244_xk1aw9",
-      "ts": "2026-05-22T00:10:04.244Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779408305425_f40w6j",
-      "ts": "2026-05-22T00:05:05.425Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779408018283_e5zeww",
-      "ts": "2026-05-22T00:00:18.283Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779407705255_5ghdbn",
-      "ts": "2026-05-21T23:55:05.255Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779407404575_yu7stz",
-      "ts": "2026-05-21T23:50:04.575Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779407108984_7cbvnp",
-      "ts": "2026-05-21T23:45:08.984Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779406805415_d8wn55",
-      "ts": "2026-05-21T23:40:05.415Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779406506219_xpd6oi",
-      "ts": "2026-05-21T23:35:06.219Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779406215352_a233vh",
-      "ts": "2026-05-21T23:30:15.352Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779405906071_y3kzs8",
-      "ts": "2026-05-21T23:25:06.071Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779405604434_e6ywcw",
-      "ts": "2026-05-21T23:20:04.434Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779405311091_6z8d5l",
-      "ts": "2026-05-21T23:15:11.091Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779405005641_rx9rx0",
-      "ts": "2026-05-21T23:10:05.642Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779404705498_xhuj41",
-      "ts": "2026-05-21T23:05:05.498Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779404408435_3uwcrl",
-      "ts": "2026-05-21T23:00:08.435Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779404105097_xfplx8",
-      "ts": "2026-05-21T22:55:05.097Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice) - BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)",
-        "BABYTROLL-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
-      ]
-    },
-    {
-      "id": "dec_1779403801144_n6zv9j",
-      "ts": "2026-05-21T22:50:01.144Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779403501883_9fnjfh",
-      "ts": "2026-05-21T22:45:01.883Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779403202048_r5c67d",
-      "ts": "2026-05-21T22:40:02.048Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779402902743_4n0osu",
-      "ts": "2026-05-21T22:35:02.743Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779402601873_cdmgy6",
-      "ts": "2026-05-21T22:30:01.873Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779402302454_wyqjzl",
-      "ts": "2026-05-21T22:25:02.454Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779402001686_5jzqnl",
-      "ts": "2026-05-21T22:20:01.686Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779401702284_0rdj0t",
-      "ts": "2026-05-21T22:15:02.284Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779401401449_o7vpng",
-      "ts": "2026-05-21T22:10:01.449Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779401102091_6mavy6",
-      "ts": "2026-05-21T22:05:02.091Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779400801215_5qvihf",
-      "ts": "2026-05-21T22:00:01.215Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779400502796_yr660l",
-      "ts": "2026-05-21T21:55:02.796Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779400202019_1v5n46",
-      "ts": "2026-05-21T21:50:02.019Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779399902655_6mu7hb",
-      "ts": "2026-05-21T21:45:02.655Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779399601825_rbjkgu",
-      "ts": "2026-05-21T21:40:01.825Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779399302453_5gmg1l",
-      "ts": "2026-05-21T21:35:02.453Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779399001571_crv5vv",
-      "ts": "2026-05-21T21:30:01.571Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779398702189_wraif7",
-      "ts": "2026-05-21T21:25:02.189Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779398401287_qi1mft",
-      "ts": "2026-05-21T21:20:01.287Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779398101658_5k2sj9",
-      "ts": "2026-05-21T21:15:01.658Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779397801164_ck8o9e",
-      "ts": "2026-05-21T21:10:01.164Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779397502771_humplp",
-      "ts": "2026-05-21T21:05:02.771Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779397201954_sy5mdi",
-      "ts": "2026-05-21T21:00:01.954Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779396902633_pyfiir",
-      "ts": "2026-05-21T20:55:02.633Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779396601658_nuxi01",
-      "ts": "2026-05-21T20:50:01.658Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779396302338_k5q10c",
-      "ts": "2026-05-21T20:45:02.338Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779396001558_brj107",
-      "ts": "2026-05-21T20:40:01.558Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779395702236_hsev9l",
-      "ts": "2026-05-21T20:35:02.236Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779395401361_ajd779",
-      "ts": "2026-05-21T20:30:01.361Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779395101953_etz1ot",
-      "ts": "2026-05-21T20:25:01.953Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779394802071_6b38oa",
-      "ts": "2026-05-21T20:20:02.071Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779394502682_edcxip",
-      "ts": "2026-05-21T20:15:02.682Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779394201898_pbutb0",
-      "ts": "2026-05-21T20:10:01.898Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779393902519_xj3kpq",
-      "ts": "2026-05-21T20:05:02.519Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779393601590_8kq3c4",
-      "ts": "2026-05-21T20:00:01.590Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779393304742_yhssfb",
-      "ts": "2026-05-21T19:55:04.742Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 35.01% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 35.01% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779393003673_2skbmh",
-      "ts": "2026-05-21T19:50:03.673Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 35.14% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 35.14% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779392701982_k05cgx",
-      "ts": "2026-05-21T19:45:01.982Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779392403218_rpjuo5",
-      "ts": "2026-05-21T19:40:03.218Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 35.38% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 35.38% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779392105158_q9l4si",
-      "ts": "2026-05-21T19:35:05.158Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 35.90% > 30% - USDC-SOL: bot holders 35.90% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 35.90% > 30%",
-        "USDC-SOL: bot holders 35.90% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779391805907_0j91j8",
-      "ts": "2026-05-21T19:30:05.907Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 36.07% > 30% - USDC-SOL: bot holders 36.07% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 36.07% > 30%",
-        "USDC-SOL: bot holders 36.07% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779391502655_jlbi9l",
-      "ts": "2026-05-21T19:25:02.655Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779391201810_5y3j6m",
-      "ts": "2026-05-21T19:20:01.810Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779390902402_ooolmx",
-      "ts": "2026-05-21T19:15:02.402Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779390603653_gafds6",
-      "ts": "2026-05-21T19:10:03.653Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 36.78% > 30% - USDC-SOL: bot holders 36.78% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 36.78% > 30%",
-        "USDC-SOL: bot holders 36.78% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779390302191_lho76f",
-      "ts": "2026-05-21T19:05:02.191Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- HENRY-SOL: blocked keyword in token (justice)",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "HENRY-SOL: blocked keyword in token (justice)"
-      ]
-    },
-    {
-      "id": "dec_1779390007614_qwsbsl",
-      "ts": "2026-05-21T19:00:07.614Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 36.68% > 30% - USDC-SOL: bot holders 36.68% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 36.68% > 30%",
-        "USDC-SOL: bot holders 36.68% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779389705268_xxopck",
-      "ts": "2026-05-21T18:55:05.268Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 37.29% > 30% - USDC-SOL: bot holders 37.29% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 37.29% > 30%",
-        "USDC-SOL: bot holders 37.29% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779389404181_kh3old",
-      "ts": "2026-05-21T18:50:04.181Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 36.09% > 30% - USDC-SOL: bot holders 36.09% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 36.09% > 30%",
-        "USDC-SOL: bot holders 36.09% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779389105887_fi2dk3",
-      "ts": "2026-05-21T18:45:05.887Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 36.62% > 30% - USDC-SOL: bot holders 36.62% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 36.62% > 30%",
-        "USDC-SOL: bot holders 36.62% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779388804101_bnqj8l",
-      "ts": "2026-05-21T18:40:04.101Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 36.52% > 30% - USDC-SOL: bot holders 36.52% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 36.52% > 30%",
-        "USDC-SOL: bot holders 36.52% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779388507867_kmngn1",
-      "ts": "2026-05-21T18:35:07.867Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 36.86% > 30% - USDC-SOL: bot holders 36.86% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 36.86% > 30%",
-        "USDC-SOL: bot holders 36.86% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779388206371_49zz65",
-      "ts": "2026-05-21T18:30:06.371Z",
-      "type": "no_deploy",
-      "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 37.15% > 30% - USDC-SOL: bot holders 37.15% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 37.15% > 30%",
-        "USDC-SOL: bot holders 37.15% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779387912783_tfcwez",
-      "ts": "2026-05-21T18:25:12.783Z",
-      "type": "no_deploy",
+      "id": "dec_1780563942586_6r73sg",
+      "ts": "2026-06-04T09:05:42.586Z",
+      "type": "deploy",
       "actor": "SCREENER",
-      "pool": null,
-      "pool_name": null,
-      "position": null,
-      "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 38.18% > 30% - USDC-SOL: bot holders 38.18% > 30%",
-      "risks": [],
-      "metrics": {},
-      "rejected": [
-        "USDC-SOL: bot holders 38.18% > 30%",
-        "USDC-SOL: bot holders 38.18% > 30%"
-      ]
-    },
-    {
-      "id": "dec_1779387908909_ota86m",
-      "ts": "2026-05-21T18:25:08.909Z",
-      "type": "close",
-      "actor": "MANAGER",
-      "pool": "CBsWwE4F2h8awoALcdGVGbNPyGVDZrZ4WFvCvWr8PL66",
-      "pool_name": "Ball-SOL",
-      "position": "paper_a695992faecd93cf",
-      "summary": "[PAPER] Close Ball-SOL — TA exit: bb_plus_rsi confirmed on 15_MINUTE | PnL 0.86% | fee_per_tvl_24h 7.85%",
+      "pool": "DZQxKSC79umfyyvJVqPM9m6FRmnkUSH1xAafWAPg3hTd",
+      "pool_name": "HeavyPulp-SOL",
+      "position": "paper_2a612d43499b1307",
+      "summary": "[PAPER] Deploy 0.3 SOL into HeavyPulp-SOL",
       "reason": null,
       "risks": [],
       "metrics": {
-        "pnl_usd": 0.18,
-        "pnl_pct": 0.71,
-        "fees_earned_usd": 0.18,
-        "minutes_held": 159,
-        "minutes_in_range": 130
+        "strategy": "bid_ask",
+        "bins_below": 217,
+        "bins_above": 0,
+        "entry_price": 0.00001886999828637,
+        "initial_value_usd": 20.615622362796664
       },
       "rejected": []
     },
     {
-      "id": "dec_1779387604970_kedkxn",
-      "ts": "2026-05-21T18:20:04.970Z",
+      "id": "dec_1780563604092_ijxpy0",
+      "ts": "2026-06-04T09:00:04.092Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 37.94% > 30% - USDC-SOL: bot holders 37.94% > 30%",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "USDC-SOL: bot holders 37.94% > 30%",
-        "USDC-SOL: bot holders 37.94% > 30%"
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779387309804_6fo6sq",
-      "ts": "2026-05-21T18:15:09.804Z",
+      "id": "dec_1780563304686_ny8bhq",
+      "ts": "2026-06-04T08:55:04.686Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 38.65% > 30% - USDC-SOL: bot holders 38.65% > 30%",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "USDC-SOL: bot holders 38.65% > 30%",
-        "USDC-SOL: bot holders 38.65% > 30%"
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779387003147_ok79nm",
-      "ts": "2026-05-21T18:10:03.147Z",
+      "id": "dec_1780563003995_juxjtv",
+      "ts": "2026-06-04T08:50:03.995Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 38.35% > 30% - USDC-SOL: bot holders 38.35% > 30%",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "USDC-SOL: bot holders 38.35% > 30%",
-        "USDC-SOL: bot holders 38.35% > 30%"
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779386706568_o54ec7",
-      "ts": "2026-05-21T18:05:06.568Z",
+      "id": "dec_1780562704753_ou9ltj",
+      "ts": "2026-06-04T08:45:04.753Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 38.62% > 30% - USDC-SOL: bot holders 38.62% > 30%",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "USDC-SOL: bot holders 38.62% > 30%",
-        "USDC-SOL: bot holders 38.62% > 30%"
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779386411460_ywpc5m",
-      "ts": "2026-05-21T18:00:11.460Z",
+      "id": "dec_1780562408758_p0ntpy",
+      "ts": "2026-06-04T08:40:08.759Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 38.64% > 30%",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "USDC-SOL: bot holders 38.64% > 30%"
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779386105227_p315uj",
-      "ts": "2026-05-21T17:55:05.227Z",
+      "id": "dec_1780562104608_q9bmm6",
+      "ts": "2026-06-04T08:35:04.608Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 38.94% > 30% - USDC-SOL: bot holders 38.94% > 30%",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "USDC-SOL: bot holders 38.94% > 30%",
-        "USDC-SOL: bot holders 38.94% > 30%"
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
     },
     {
-      "id": "dec_1779385803986_6c01tc",
-      "ts": "2026-05-21T17:50:03.986Z",
+      "id": "dec_1780561805157_60m5o2",
+      "ts": "2026-06-04T08:30:05.157Z",
       "type": "no_deploy",
       "actor": "SCREENER",
       "pool": null,
       "pool_name": null,
       "position": null,
       "summary": "No candidates available",
-      "reason": "- USDC-SOL: bot holders 38.67% > 30% - USDC-SOL: bot holders 38.67% > 30%",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
       "risks": [],
       "metrics": {},
       "rejected": [
-        "USDC-SOL: bot holders 38.67% > 30%",
-        "USDC-SOL: bot holders 38.67% > 30%"
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
       ]
+    },
+    {
+      "id": "dec_1780561514413_flfeys",
+      "ts": "2026-06-04T08:25:14.413Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780561212209_r6pxl4",
+      "ts": "2026-06-04T08:20:12.209Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780560904828_jekdw8",
+      "ts": "2026-06-04T08:15:04.828Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780560609587_a3bm07",
+      "ts": "2026-06-04T08:10:09.587Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780560309589_jcswvt",
+      "ts": "2026-06-04T08:05:09.589Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780560004365_covobe",
+      "ts": "2026-06-04T08:00:04.366Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780559712563_kn9eo4",
+      "ts": "2026-06-04T07:55:12.563Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780559403548_b3vfgm",
+      "ts": "2026-06-04T07:50:03.548Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780559105176_yv3eor",
+      "ts": "2026-06-04T07:45:05.176Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780558813158_1puwjc",
+      "ts": "2026-06-04T07:40:13.158Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780558506754_rg9pg0",
+      "ts": "2026-06-04T07:35:06.754Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780558204496_q4hlak",
+      "ts": "2026-06-04T07:30:04.496Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780557926516_f5enah",
+      "ts": "2026-06-04T07:25:26.516Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780557616200_143rjr",
+      "ts": "2026-06-04T07:20:16.200Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780557304629_k4i71w",
+      "ts": "2026-06-04T07:15:04.629Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780557008593_zqvbhz",
+      "ts": "2026-06-04T07:10:08.593Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "unc-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780556726974_ieqc5c",
+      "ts": "2026-06-04T07:05:26.974Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780556404632_0ecat6",
+      "ts": "2026-06-04T07:00:04.632Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780556105048_uhydfv",
+      "ts": "2026-06-04T06:55:05.048Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780555815293_twtux4",
+      "ts": "2026-06-04T06:50:15.293Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780555504781_snghcl",
+      "ts": "2026-06-04T06:45:04.781Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780555203698_png7uc",
+      "ts": "2026-06-04T06:40:03.698Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "wNEAR-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780554904508_5z48d5",
+      "ts": "2026-06-04T06:35:04.508Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780554603906_2jdrij",
+      "ts": "2026-06-04T06:30:03.906Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780554307534_r8r2j0",
+      "ts": "2026-06-04T06:25:07.534Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780554006777_benbnw",
+      "ts": "2026-06-04T06:20:06.777Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780553705051_rufuq5",
+      "ts": "2026-06-04T06:15:05.051Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780553408713_tjvzs4",
+      "ts": "2026-06-04T06:10:08.713Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780553126612_miq0di",
+      "ts": "2026-06-04T06:05:26.612Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780552805485_vajjik",
+      "ts": "2026-06-04T06:00:05.485Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780552508576_5ovtkw",
+      "ts": "2026-06-04T05:55:08.576Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780552222472_vvgvmt",
+      "ts": "2026-06-04T05:50:22.472Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780551904468_t3dcoc",
+      "ts": "2026-06-04T05:45:04.468Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "No candidates available",
+      "reason": "- HENRY-SOL: blocked keyword in token (justice) - GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE - HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+      "risks": [],
+      "metrics": {},
+      "rejected": [
+        "HENRY-SOL: blocked keyword in token (justice)",
+        "GACHA-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE",
+        "HeavyPulp-SOL: indicator reject: supertrend_break not confirmed on 15_MINUTE"
+      ]
+    },
+    {
+      "id": "dec_1780551629395_nl93u9",
+      "ts": "2026-06-04T05:40:29.395Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "LLM chose no deploy",
+      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GYM-SOL WHY SKIPPED GYM-SOL volatility (5.96) exceeds the maxVolatilityForDeploy threshold of 5 — system hard-blocked the deploy. This is a safety limit to prevent deploying into extremely volatile pools with bin steps that would result in unmanageable ranges for the 0.3 SOL deposit size. REJECTED • GYM-SOL — volatility exceeds max threshold (5.96 > 5.0 max)",
+      "risks": [],
+      "metrics": {},
+      "rejected": []
+    },
+    {
+      "id": "dec_1780551363237_09nb60",
+      "ts": "2026-06-04T05:36:03.237Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "LLM chose no deploy",
+      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE **GYM-SOL** (6WkjJNpn...XTZ) WHY SKIPPED The only candidate fails the volatility gate: GYM-SOL volatility 4h = **6.01**, which exceeds the max threshold of 5. The pool is clean — strong narrative (Pokémon card battle gym inspired by KOL promotion/clanker), OKX flags show no rugpull/wash, organic score 76, fees paid 37.88 SOL, top10 concentration modest at 25.16%. However, the volatility system rule blocks deployment regard",
+      "risks": [],
+      "metrics": {},
+      "rejected": []
+    },
+    {
+      "id": "dec_1780551038464_cl66j9",
+      "ts": "2026-06-04T05:30:38.464Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "LLM chose no deploy",
+      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GYM-SOL WHY SKIPPED Volatility 5.9034 exceeds hard cap of 5.0. Even though GYM-SOL has strong fundamentals (26% price spike, 66 net buyers, 76 organic score, acceptable audit metrics with top10=25%, bots=12%, fees=37.87SOL), the volatility ceiling prevents deployment. No alternative candidates loaded. REJECTED GYM-SOL — volatility too high (5.90 > 5.00 max)",
+      "risks": [],
+      "metrics": {},
+      "rejected": []
+    },
+    {
+      "id": "dec_1780550737621_e8mi62",
+      "ts": "2026-06-04T05:25:37.621Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "LLM chose no deploy",
+      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GYM-SOL WHY SKIPPED Volatility 5.8805 exceeds max allowed (5.0). GYM-SOL was the only candidate pre-loaded but it is blocked from deployment due to excessive price swings. No other candidates are available in this cycle. REJECTED GYM-SOL — volatility 5.88 exceeds maxVolatilityForDeploy=5 (blocked by protocol safety guard).",
+      "risks": [],
+      "metrics": {},
+      "rejected": []
+    },
+    {
+      "id": "dec_1780550486019_z1b7tx",
+      "ts": "2026-06-04T05:21:26.019Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "LLM chose no deploy",
+      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GYM-SOL (6WkjJNpnFYmuHLg18zX4b8JaoGFBXNqwnektaSdofXTZ) WHY SKIPPED Pool address resolution failed — the pre-loaded pool identifier matched the token mint, not a valid DLMM pool. Subsequent retry blocked by safety guard. REJECTED - GYM-SOL: Pool address mismatch, deploy blocked by SDK safety check",
+      "risks": [],
+      "metrics": {},
+      "rejected": []
+    },
+    {
+      "id": "dec_1780550139055_vrbkd6",
+      "ts": "2026-06-04T05:15:39.055Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "LLM chose no deploy",
+      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GYM-SOL WHY SKIPPED Volatility 5.8137 exceeds max threshold of 5.0 — pool is too volatile for safe deploy under current risk parameters. This is a hard guardrail preventing deployment into extreme swings. Combined with zero smart wallet presence and no override signal, no valid entry exists this cycle. REJECTED • GYM-SOL — volatility 5.81 > 5.0 limit (blocked by guardrail)",
+      "risks": [],
+      "metrics": {},
+      "rejected": []
+    },
+    {
+      "id": "dec_1780549860203_0uo5r8",
+      "ts": "2026-06-04T05:11:00.203Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "LLM chose no deploy",
+      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GYM-SOL WHY SKIPPED GYM-SOL volatility of 6.44 exceeds the maxVolatilityForDeploy threshold of 5.0. The pool has a decent organic score (76), low top10 concentration (25.16%), and a clean OKX record (no rugpull/wash), but the elevated volatility makes it incompatible with the Evil Panda strategy's risk parameters. A lower-volatility candidate is needed. REJECTED GYM-SOL — volatility 6.44 > max threshold 5.0 (hard filter).",
+      "risks": [],
+      "metrics": {},
+      "rejected": []
+    },
+    {
+      "id": "dec_1780549554570_yuevsy",
+      "ts": "2026-06-04T05:05:54.570Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "LLM chose no deploy",
+      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GYM-SOL WHY SKIPPED GYM-SOL has strong organic score (76), decent fee/TVL (5.58%), and 62h age — but volatility of **6.38 exceeds the hard cap of 5.0**. The high volatility makes the position too exposed to rapid bin jumps during a dump. With zero smart wallets present and no override, this is an easy skip. REJECTED GYM-SOL — volatility 6.38 > max 5.0 (hard block)",
+      "risks": [],
+      "metrics": {},
+      "rejected": []
+    },
+    {
+      "id": "dec_1780549260029_sp7cik",
+      "ts": "2026-06-04T05:01:00.029Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "LLM chose no deploy",
+      "reason": "**Analysis** | Check | GYM-SOL | |---|---| | fees_sol | 37.75 ✅ (>30) | | bots | 12.28% ✅ (<30) | | OKX rugpull | NO ✅ | | OKX wash | NO ✅ | | volatility | 6.3364 ✅ (>0) | | bin_step | 100 ✅ (80-125) | | smart_wallets | 0 ❌ (no override) | | narrative | Pokémon card battle gym + clanker KOL — specific but thin | **Volatility → bins_below:** round(100 + (6.3364/5) × 150) = round(100 + 190.09) = round(290.09) → clamped to 250 **Concerns:** No smart wallets, organic score below average, fee/TVL",
+      "risks": [],
+      "metrics": {},
+      "rejected": []
+    },
+    {
+      "id": "dec_1780548927075_myzq6u",
+      "ts": "2026-06-04T04:55:27.075Z",
+      "type": "no_deploy",
+      "actor": "SCREENER",
+      "pool": null,
+      "pool_name": null,
+      "position": null,
+      "summary": "LLM chose no deploy",
+      "reason": "⛔ NO DEPLOY Cycle finished with no valid entry. BEST LOOKING CANDIDATE GYM-SOL WHY SKIPPED Deploy blocked by screening verification error: \"Pool GYM-SOL not found.\" The pool exists in search results but fails pre-deploy verification — likely a temporary indexing lag or the pool is not yet fully indexed on-chain. Retry in next cycle once pool confirms as available. REJECTED GYM-SOL — Pool verified exists but blocked by screening engine. Technical issue, not a quality skip.",
+      "risks": [],
+      "metrics": {},
+      "rejected": []
     }
   ]
 }
